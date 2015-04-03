@@ -4,10 +4,10 @@
     <title>Joël Krähemann</title>
     <description>GSequencer is music composition tool using GObject and Gtk+. It features a source/drain and effect tree. As well a fully feautured notation editor.
 </description>
-    <link>http://www.gsequencer.org/ags-devel/</link>
-    <atom:link href="http://www.gsequencer.org/ags-devel/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 03 Apr 2015 02:22:15 +0000</pubDate>
-    <lastBuildDate>Fri, 03 Apr 2015 02:22:15 +0000</lastBuildDate>
+    <link>http://www.gsequencer.org/</link>
+    <atom:link href="http://www.gsequencer.org/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 03 Apr 2015 04:50:37 +0000</pubDate>
+    <lastBuildDate>Fri, 03 Apr 2015 04:50:37 +0000</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -46,8 +46,8 @@
 
 </description>
         <pubDate>Thu, 02 Apr 2015 23:13:32 +0000</pubDate>
-        <link>http://www.gsequencer.org/ags-devel/gsequencer/announcements/2015/04/02/welcome-to-gsequencer.html</link>
-        <guid isPermaLink="true">http://www.gsequencer.org/ags-devel/gsequencer/announcements/2015/04/02/welcome-to-gsequencer.html</guid>
+        <link>http://www.gsequencer.org/gsequencer/announcements/2015/04/02/welcome-to-gsequencer.html</link>
+        <guid isPermaLink="true">http://www.gsequencer.org/gsequencer/announcements/2015/04/02/welcome-to-gsequencer.html</guid>
         
         
         <category>gsequencer</category>
