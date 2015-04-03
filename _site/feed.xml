@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 03 Apr 2015 01:06:43 +0000</pubDate>
+    <lastBuildDate>Fri, 03 Apr 2015 01:06:43 +0000</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Welcome to GSequencer</title>
+        <description>&lt;p&gt;Visit &lt;a href=&quot;http://gsequencer.org&quot;&gt;Advanced Gtk+ Sequencer’s&lt;/a&gt; project site. There many things to tell you what’s going on. Like me just migrated to &lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt; - work in progress.&lt;/p&gt;
+
+&lt;p&gt;Even the release of 0.4.3 was dated back again for 3 weeks it is still something you may be excited about. Since me decided to support MIDI and lv2 as well, in oncomming release. The release date is still uncertain because new matter isn’t to underestimate.&lt;/p&gt;
+
+&lt;p&gt;But in entirely, me have to say it will be a great release. Much is already done like the effect bridge or the pattern editor. Advanced Gtk+ Sequencer is know as gsequencer for now but the acronym ags is still provided by include paths and library naming.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;libags&lt;/li&gt;
+  &lt;li&gt;libags-thread&lt;/li&gt;
+  &lt;li&gt;libags-audio&lt;/li&gt;
+  &lt;li&gt;libags-gui&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At the glance release version 0.4.3 of gsequencer includes following new features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;lv2 plugin support&lt;/li&gt;
+  &lt;li&gt;MIDI input/output support&lt;/li&gt;
+  &lt;li&gt;pattern editor&lt;/li&gt;
+  &lt;li&gt;automation editor&lt;/li&gt;
+  &lt;li&gt;ladspa bridge&lt;/li&gt;
+  &lt;li&gt;generic effect bridge for all machines&lt;/li&gt;
+  &lt;li&gt;library support&lt;/li&gt;
+  &lt;li&gt;API enhancements&lt;/li&gt;
+  &lt;li&gt;support for application contices&lt;/li&gt;
+  &lt;li&gt;new Makefile.am&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And yes, me even fixed current release to version 0.4.2-44&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/screenshots/ags-0_4_2.png&quot; alt=&quot;Advanced Gtk+ Sequencer v0.4.2&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 02 Apr 2015 23:13:32 +0000</pubDate>
+        <link>/blog/gsequencer/announcements/2015/04/02/welcome-to-gsequencer.html</link>
+        <guid isPermaLink="true">/blog/gsequencer/announcements/2015/04/02/welcome-to-gsequencer.html</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>gsequencer</category>
+        
+        <category>announcements</category>
+        
+      </item>
+    
+  </channel>
+</rss>
