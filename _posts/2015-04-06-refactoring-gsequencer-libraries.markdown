@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Refactoring GSequencer libraries"
-date:   2015-04-02 23:13:32
+date:   2015-04-06 12:27:26
 categories: gsequencer specifications
 ---
 GSequencer development tree just passed a big refactoring. The AgsMain struct disappeared from code base. It was superseeded by AgsApplicationContext and derivates. Note each library has it's very own AgsApplicationContext and they are connected by its sibling field.
