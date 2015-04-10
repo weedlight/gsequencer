@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "`ags` 0.4.2-45 is out"
-date:   2015-04-09 17:37:44
+date:   2015-04-10 15:15:13
 categories: gsequencer announcements
 ---
 Download of Advanced Gtk+ Sequencer version 0.4.2-45 available, now. Most concurrency problems should be fixed. But me don't feel satisfied about stability. For example can still crash the engine by resizing input of a running machine like AgsMatrix or AgsDrum.
