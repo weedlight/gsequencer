@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Final release Advanced Gtk+ Sequencer 0.4.2-49"
+date:   2015-04-13 20:35:30
+categories: gsequencer release
+---
+Probably me broke everything during development of new final release 0.4.2-49 but all problems just went away because of not resign. The final version fixed all known issues. At this point me have to say the editor isn't well tested. Not at least of this fact me fixed the selection tool of the editor.
+
+Further the bank of the sequencers was fixed as well. As next me considering making a screencast to share with you. Me now really want to focus on the next release 0.4.3. It should be a great step towards reusability.
+
+The Advanced Gtk+ Sequencer libraries should give anyone with a great idea to solve problems the possebility to do so.
