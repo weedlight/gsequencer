@@ -598,7 +598,7 @@ libags_audio_a-ags_copy_pattern_audio.o: \
  src/ags/audio/ags_recall_channel.h src/ags/audio/ags_pattern.h \
  src/ags/audio/recall/ags_copy_pattern_channel_run.h \
  src/ags/audio/ags_recall_channel_run.h src/ags/main.h \
- src/ags/object/ags_plugin.h
+ src/ags-lib/object/ags_connectable.h src/ags/object/ags_plugin.h
 
 /usr/include/stdc-predef.h:
 
@@ -2063,5 +2063,7 @@ src/ags/audio/recall/ags_copy_pattern_channel_run.h:
 src/ags/audio/ags_recall_channel_run.h:
 
 src/ags/main.h:
+
+src/ags-lib/object/ags_connectable.h:
 
 src/ags/object/ags_plugin.h:
