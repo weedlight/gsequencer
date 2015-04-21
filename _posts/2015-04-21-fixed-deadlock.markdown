@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Fixed dead-lock"
+date:   2015-04-18 21:57:09
+categories: gsequencer announcements
+---
+There was important fix to 0.4.2, `ags` didn't release a mutex as returning from initializing alsa as the soundcard was busy. So initialization failed ended in a dead-lock. This is fixed for now.
+
+You may await the next fix version where me doing a clean version without any compiler warnings and grained error reporting from soundcard, hope so.
+
+
+Download fix version: [ags-0.4.2-51][ags-0_4_2-51]
+
+[ags-0_4_2-51]:      http://gsequencer.org/downloads/ags-0_4_2-51.tar.bz2
