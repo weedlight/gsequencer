@@ -1,4 +1,0 @@
-
-
-typedef struct _AgsTaskCompletion AgsTaskCompletion;
-typedef struct _AgsTaskCompletionClass AgsTaskCompletionClass;
