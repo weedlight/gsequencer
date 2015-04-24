@@ -12,14 +12,16 @@ The first screencast shows you AgsMatrix in action. Selecting different banks, m
 
 <video width="800" height="600" controls>
 <source src="http://gsequencer.org/videos/ags-matrix.mp4" type="video/mp4">
-Your browser does not support HTML 5 video tag or MPEG-4 Video.
+<source src="http://gsequencer.org/videos/ags-matrix.webm" type="video/webm">
+Your browser does not support HTML 5 video tag.
 </video> 
 
 During the second screencast AgsDrum is used extensively to by selecting banks, modifying pattern or doing playback using AgsPad's play button.
 
 <video width="800" height="600" controls>
 <source src="http://gsequencer.org/videos/ags-drum.mp4" type="video/mp4">
-Your browser does not support HTML 5 video tag or MPEG-4 video.
+<source src="http://gsequencer.org/videos/ags-drum.webm" type="video/webm">
+Your browser does not support HTML 5 video tag.
 </video> 
 
 Download version: [ags-0.4.2-54][ags-0_4_2-54]
