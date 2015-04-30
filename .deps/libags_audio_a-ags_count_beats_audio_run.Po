@@ -571,6 +571,11 @@ libags_audio_a-ags_count_beats_audio_run.o: \
  src/ags/widget/ags_waveform.h src/ags/widget/ags_dial.h \
  src/ags/widget/ags_cartesian.h src/ags/file/ags_file_id_ref.h \
  src/ags/file/ags_file_lookup.h src/ags/audio/ags_recall_container.h \
+ src/ags/audio/thread/ags_audio_loop.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
  src/ags/audio/recall/ags_stream_channel_run.h \
  src/ags/audio/ags_recall_channel_run.h src/ags/audio/ags_devout.h \
  src/ags/audio/thread/ags_iterator_thread.h /usr/include/alsa/asoundlib.h \
@@ -590,11 +595,7 @@ libags_audio_a-ags_count_beats_audio_run.o: \
  /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
  /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
  /usr/include/alsa/seq_midi_event.h src/ags/audio/ags_recall_channel.h \
- src/ags/audio/recall/ags_stream_channel.h /usr/include/math.h \
- /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
- /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
- /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
- /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h
+ src/ags/audio/recall/ags_stream_channel.h
 
 /usr/include/stdc-predef.h:
 
@@ -1950,6 +1951,26 @@ src/ags/file/ags_file_lookup.h:
 
 src/ags/audio/ags_recall_container.h:
 
+src/ags/audio/thread/ags_audio_loop.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
 src/ags/audio/recall/ags_stream_channel_run.h:
 
 src/ags/audio/ags_recall_channel_run.h:
@@ -2029,21 +2050,3 @@ src/ags/audio/thread/ags_iterator_thread.h:
 src/ags/audio/ags_recall_channel.h:
 
 src/ags/audio/recall/ags_stream_channel.h:
-
-/usr/include/math.h:
-
-/usr/include/bits/huge_val.h:
-
-/usr/include/bits/huge_valf.h:
-
-/usr/include/bits/huge_vall.h:
-
-/usr/include/bits/inf.h:
-
-/usr/include/bits/nan.h:
-
-/usr/include/bits/mathdef.h:
-
-/usr/include/bits/mathcalls.h:
-
-/usr/include/bits/mathinline.h:

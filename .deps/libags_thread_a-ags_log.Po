@@ -1,7 +1,5 @@
-gsequencer-ags_server_application_context.o: \
- src/ags/server/ags_server_application_context.c \
- /usr/include/stdc-predef.h \
- src/ags/server/ags_server_application_context.h \
+libags_thread_a-ags_log.o: src/ags/log/ags_log.c \
+ /usr/include/stdc-predef.h src/ags/log/ags_log.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/glib-2.0/include/glibconfig.h \
@@ -105,11 +103,10 @@ gsequencer-ags_server_application_context.o: \
  /usr/include/glib-2.0/gobject/gtypemodule.h \
  /usr/include/glib-2.0/gobject/gtypeplugin.h \
  /usr/include/glib-2.0/gobject/gvaluearray.h \
- /usr/include/glib-2.0/gobject/gvaluetypes.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/include/bits/stdio_lim.h \
- /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
+ /usr/include/glib-2.0/gobject/gvaluetypes.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h src/ags/object/ags_application_context.h \
  src/ags/object/ags_config.h src/ags/file/ags_file.h \
  /usr/include/libxml2/libxml/tree.h \
  /usr/include/libxml2/libxml/xmlversion.h \
@@ -132,20 +129,16 @@ gsequencer-ags_server_application_context.o: \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
- src/ags/server/ags_server.h /usr/include/netinet/in.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h \
- /usr/include/sys/socket.h /usr/include/sys/uio.h /usr/include/bits/uio.h \
- /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
- /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
- /usr/include/asm-generic/sockios.h /usr/include/bits/in.h \
- src/ags/server/ags_registry.h src/ags/server/ags_remote_task.h \
- src/ags/object/ags_connectable.h
+ src/ags/thread/ags_concurrency_provider.h \
+ src/ags/thread/ags_thread-posix.h src/ags/thread/ags_thread_pool.h \
+ src/ags/object/ags_main_loop.h src/ags/thread/ags_mutex_manager.h \
+ src/ags/thread/ags_task_thread.h src/ags/thread/ags_task.h \
+ src/ags/log/task/ags_log_task.h /usr/include/string.h \
+ /usr/include/bits/string.h /usr/include/bits/string2.h
 
 /usr/include/stdc-predef.h:
 
-src/ags/server/ags_server_application_context.h:
+src/ags/log/ags_log.h:
 
 /usr/include/glib-2.0/glib.h:
 
@@ -423,10 +416,6 @@ src/ags/server/ags_server_application_context.h:
 
 /usr/include/glib-2.0/gobject/gvaluetypes.h:
 
-src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
-
 /usr/include/stdio.h:
 
 /usr/include/libio.h:
@@ -440,6 +429,8 @@ src/ags/log/ags_log.h:
 /usr/include/bits/sys_errlist.h:
 
 /usr/include/bits/stdio.h:
+
+src/ags/object/ags_application_context.h:
 
 src/ags/object/ags_config.h:
 
@@ -501,40 +492,24 @@ src/ags/file/ags_file.h:
 
 /usr/include/libxml2/libxml/SAX2.h:
 
-src/ags/server/ags_server.h:
+src/ags/thread/ags_concurrency_provider.h:
 
-/usr/include/netinet/in.h:
+src/ags/thread/ags_thread-posix.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h:
+src/ags/thread/ags_thread_pool.h:
 
-/usr/include/stdint.h:
+src/ags/object/ags_main_loop.h:
 
-/usr/include/bits/wchar.h:
+src/ags/thread/ags_mutex_manager.h:
 
-/usr/include/sys/socket.h:
+src/ags/thread/ags_task_thread.h:
 
-/usr/include/sys/uio.h:
+src/ags/thread/ags_task.h:
 
-/usr/include/bits/uio.h:
+src/ags/log/task/ags_log_task.h:
 
-/usr/include/bits/socket.h:
+/usr/include/string.h:
 
-/usr/include/bits/socket_type.h:
+/usr/include/bits/string.h:
 
-/usr/include/bits/sockaddr.h:
-
-/usr/include/asm/socket.h:
-
-/usr/include/asm-generic/socket.h:
-
-/usr/include/asm/sockios.h:
-
-/usr/include/asm-generic/sockios.h:
-
-/usr/include/bits/in.h:
-
-src/ags/server/ags_registry.h:
-
-src/ags/server/ags_remote_task.h:
-
-src/ags/object/ags_connectable.h:
+/usr/include/bits/string2.h:
