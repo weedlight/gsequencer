@@ -580,10 +580,9 @@ libags_audio_a-ags_buffer_channel_run.o: \
  src/ags/audio/recall/ags_buffer_recycling.h \
  src/ags/audio/ags_recall_recycling.h src/ags/object/ags_connectable.h \
  src/ags/main.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/file/ags_file.h src/ags/object/ags_dynamic_connectable.h \
- src/ags/object/ags_plugin.h src/ags/audio/task/ags_cancel_recall.h \
- src/ags/thread/ags_task.h
+ src/ags/object/ags_config.h src/ags/file/ags_file.h \
+ src/ags/object/ags_dynamic_connectable.h src/ags/object/ags_plugin.h \
+ src/ags/audio/task/ags_cancel_recall.h src/ags/thread/ags_task.h
 
 /usr/include/stdc-predef.h:
 
@@ -1978,8 +1977,6 @@ src/ags/object/ags_connectable.h:
 src/ags/main.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

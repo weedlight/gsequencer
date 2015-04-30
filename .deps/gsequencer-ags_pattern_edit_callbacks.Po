@@ -558,15 +558,15 @@ gsequencer-ags_pattern_edit_callbacks.o: \
  src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/X/ags_editor.h src/ags/object/ags_soundcard.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/X/ags_machine.h src/ags/X/editor/ags_toolbar.h \
- src/ags/X/editor/ags_machine_selector.h src/ags/X/editor/ags_notebook.h \
- src/ags/X/editor/ags_meter.h src/ags/X/editor/ags_soundset.h \
- src/ags/X/editor/ags_note_edit.h src/ags/X/editor/ags_automation_edit.h \
- src/ags/audio/ags_automation.h src/ags/audio/ags_acceleration.h \
- src/ags/X/machine/ags_panel.h src/ags/X/machine/ags_mixer.h \
- src/ags/X/machine/ags_drum.h src/ags/audio/ags_recall_container.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/X/ags_machine.h \
+ src/ags/X/editor/ags_toolbar.h src/ags/X/editor/ags_machine_selector.h \
+ src/ags/X/editor/ags_notebook.h src/ags/X/editor/ags_meter.h \
+ src/ags/X/editor/ags_soundset.h src/ags/X/editor/ags_note_edit.h \
+ src/ags/X/editor/ags_automation_edit.h src/ags/audio/ags_automation.h \
+ src/ags/audio/ags_acceleration.h src/ags/X/machine/ags_panel.h \
+ src/ags/X/machine/ags_mixer.h src/ags/X/machine/ags_drum.h \
+ src/ags/audio/ags_recall_container.h \
  src/ags/X/machine/ags_drum_input_pad.h src/ags/X/ags_pad.h \
  src/ags/widget/ags_expander_set.h src/ags/X/ags_line.h \
  src/ags/widget/ags_expander.h src/ags/X/machine/ags_matrix.h \
@@ -1963,8 +1963,6 @@ src/ags/X/ags_editor.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

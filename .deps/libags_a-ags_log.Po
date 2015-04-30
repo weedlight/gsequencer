@@ -128,11 +128,11 @@ libags_a-ags_log.o: src/ags/log/ags_log.c /usr/include/stdc-predef.h \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ src/ags/log/task/ags_log_task.h src/ags/thread/ags_task.h \
  src/ags/thread/ags_concurrency_provider.h \
  src/ags/thread/ags_thread-posix.h src/ags/thread/ags_thread_pool.h \
  src/ags/object/ags_main_loop.h src/ags/thread/ags_mutex_manager.h \
- src/ags/thread/ags_task_thread.h src/ags/thread/ags_task.h \
- src/ags/log/task/ags_log_task.h /usr/include/string.h \
+ src/ags/thread/ags_task_thread.h /usr/include/string.h \
  /usr/include/bits/string.h /usr/include/bits/string2.h
 
 /usr/include/stdc-predef.h:
@@ -491,6 +491,10 @@ src/ags/file/ags_file.h:
 
 /usr/include/libxml2/libxml/SAX2.h:
 
+src/ags/log/task/ags_log_task.h:
+
+src/ags/thread/ags_task.h:
+
 src/ags/thread/ags_concurrency_provider.h:
 
 src/ags/thread/ags_thread-posix.h:
@@ -502,10 +506,6 @@ src/ags/object/ags_main_loop.h:
 src/ags/thread/ags_mutex_manager.h:
 
 src/ags/thread/ags_task_thread.h:
-
-src/ags/thread/ags_task.h:
-
-src/ags/log/task/ags_log_task.h:
 
 /usr/include/string.h:
 

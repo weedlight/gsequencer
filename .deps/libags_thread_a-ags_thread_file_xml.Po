@@ -129,10 +129,9 @@ libags_thread_a-ags_thread_file_xml.o: \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/thread/ags_thread-posix.h src/ags/thread/ags_thread_pool.h \
  src/ags/object/ags_main_loop.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/thread/ags_returnable_thread.h src/ags/util/ags_id_generator.h \
- src/ags/file/ags_file_stock.h /usr/include/gtk-2.0/gtk/gtk.h \
- /usr/include/gtk-2.0/gdk/gdk.h \
+ src/ags/object/ags_config.h src/ags/thread/ags_returnable_thread.h \
+ src/ags/util/ags_id_generator.h src/ags/file/ags_file_stock.h \
+ /usr/include/gtk-2.0/gtk/gtk.h /usr/include/gtk-2.0/gdk/gdk.h \
  /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h \
  /usr/include/glib-2.0/gio/gio.h /usr/include/glib-2.0/gio/giotypes.h \
  /usr/include/glib-2.0/gio/gioenums.h /usr/include/glib-2.0/gio/gaction.h \
@@ -918,8 +917,6 @@ src/ags/thread/ags_thread_pool.h:
 src/ags/object/ags_main_loop.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

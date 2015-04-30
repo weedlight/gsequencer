@@ -556,8 +556,8 @@ libags_audio_a-ags_recall_factory.o: src/ags/audio/ags_recall_factory.c \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/audio/ags_recall_container.h src/ags/object/ags_connectable.h \
  src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/file/ags_file.h src/ags/audio/ags_recall_channel_run_dummy.h \
+ src/ags/object/ags_config.h src/ags/file/ags_file.h \
+ src/ags/audio/ags_recall_channel_run_dummy.h \
  src/ags/audio/ags_recall_channel.h \
  src/ags/audio/ags_recall_channel_run.h src/ags/audio/ags_devout.h \
  src/ags/audio/thread/ags_iterator_thread.h /usr/include/alsa/asoundlib.h \
@@ -1919,8 +1919,6 @@ src/ags/object/ags_connectable.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

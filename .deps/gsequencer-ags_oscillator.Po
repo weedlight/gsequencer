@@ -550,13 +550,12 @@ gsequencer-ags_oscillator.o: src/ags/X/machine/ags_oscillator.c \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/file/ags_file.h src/ags/X/machine/ags_oscillator_callbacks.h \
  src/ags/util/ags_id_generator.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/object/ags_connectable.h src/ags/object/ags_plugin.h \
- src/ags/file/ags_file_stock.h src/ags/widget/ags_led.h \
- src/ags/widget/ags_vindicator.h src/ags/widget/ags_indicator.h \
- src/ags/widget/ags_hindicator.h src/ags/widget/ags_waveform.h \
- src/ags/widget/ags_dial.h src/ags/widget/ags_cartesian.h \
- src/ags/file/ags_file_id_ref.h
+ src/ags/object/ags_config.h src/ags/object/ags_connectable.h \
+ src/ags/object/ags_plugin.h src/ags/file/ags_file_stock.h \
+ src/ags/widget/ags_led.h src/ags/widget/ags_vindicator.h \
+ src/ags/widget/ags_indicator.h src/ags/widget/ags_hindicator.h \
+ src/ags/widget/ags_waveform.h src/ags/widget/ags_dial.h \
+ src/ags/widget/ags_cartesian.h src/ags/file/ags_file_id_ref.h
 
 /usr/include/stdc-predef.h:
 
@@ -1837,8 +1836,6 @@ src/ags/X/machine/ags_oscillator_callbacks.h:
 src/ags/util/ags_id_generator.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

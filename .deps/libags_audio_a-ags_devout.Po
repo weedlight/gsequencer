@@ -572,9 +572,8 @@ libags_audio_a-ags_devout.o: src/ags/audio/ags_devout.c \
  /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
  /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
  /usr/include/alsa/seq_midi_event.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/object/ags_connectable.h src/ags/main.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/object/ags_connectable.h src/ags/main.h \
  src/ags/object/ags_soundcard.h /usr/include/sys/stat.h \
  /usr/include/sys/ioctl.h /usr/include/bits/ioctls.h \
  /usr/include/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
@@ -1959,8 +1958,6 @@ src/ags/audio/ags_note.h:
 /usr/include/alsa/seq_midi_event.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

@@ -555,12 +555,12 @@ libags_audio_a-ags_open_file.o: src/ags/audio/task/ags_open_file.c \
  src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/object/ags_connectable.h src/ags/object/ags_soundcard.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/file/ags_file_link.h src/ags/audio/ags_input.h \
- /usr/include/glib-2.0/glib/gstdio.h /usr/include/glib-2.0/glib/gprintf.h \
- /usr/include/sys/stat.h /usr/include/bits/stat.h \
- src/ags/audio/file/ags_audio_file.h src/ags/X/ags_machine.h
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/file/ags_file_link.h \
+ src/ags/audio/ags_input.h /usr/include/glib-2.0/glib/gstdio.h \
+ /usr/include/glib-2.0/glib/gprintf.h /usr/include/sys/stat.h \
+ /usr/include/bits/stat.h src/ags/audio/file/ags_audio_file.h \
+ src/ags/X/ags_machine.h
 
 /usr/include/stdc-predef.h:
 
@@ -1871,8 +1871,6 @@ src/ags/object/ags_connectable.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

@@ -558,11 +558,11 @@ gsequencer-ags_matrix_callbacks.o: \
  src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/X/machine/ags_matrix.h src/ags/X/ags_machine.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/thread/ags_task_thread.h src/ags/thread/ags_thread_pool.h \
- src/ags/object/ags_main_loop.h src/ags/thread/ags_task.h \
- src/ags/audio/ags_pattern.h src/ags/audio/ags_recall_container.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/thread/ags_task_thread.h \
+ src/ags/thread/ags_thread_pool.h src/ags/object/ags_main_loop.h \
+ src/ags/thread/ags_task.h src/ags/audio/ags_pattern.h \
+ src/ags/audio/ags_recall_container.h \
  src/ags/audio/task/ags_toggle_pattern_bit.h \
  src/ags/audio/task/recall/ags_apply_bpm.h \
  src/ags/audio/task/recall/ags_apply_sequencer_length.h \
@@ -1926,8 +1926,6 @@ src/ags/X/machine/ags_matrix.h:
 src/ags/X/ags_machine.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

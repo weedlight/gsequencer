@@ -552,12 +552,11 @@ libags_a-ags_file.o: src/ags/file/ags_file.c /usr/include/stdc-predef.h \
  src/ags/widget/ags_hindicator.h src/ags/widget/ags_waveform.h \
  src/ags/widget/ags_dial.h src/ags/widget/ags_cartesian.h \
  src/ags/util/ags_id_generator.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/object/ags_connectable.h src/ags/object/ags_marshal.h \
- src/ags/file/ags_file_lookup.h src/ags/file/ags_file_id_ref.h \
- src/ags/file/ags_file_launch.h src/ags/thread/ags_thread_pool.h \
- src/ags/object/ags_main_loop.h src/ags/thread/ags_thread-posix.h \
- /usr/include/libxml2/libxml/xpath.h \
+ src/ags/object/ags_config.h src/ags/object/ags_connectable.h \
+ src/ags/object/ags_marshal.h src/ags/file/ags_file_lookup.h \
+ src/ags/file/ags_file_id_ref.h src/ags/file/ags_file_launch.h \
+ src/ags/thread/ags_thread_pool.h src/ags/object/ags_main_loop.h \
+ src/ags/thread/ags_thread-posix.h /usr/include/libxml2/libxml/xpath.h \
  /usr/include/libxml2/libxml/xmlsave.h
 
 /usr/include/stdc-predef.h:
@@ -1851,8 +1850,6 @@ src/ags/widget/ags_cartesian.h:
 src/ags/util/ags_id_generator.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

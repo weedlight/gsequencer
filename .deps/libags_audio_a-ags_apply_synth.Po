@@ -557,7 +557,7 @@ libags_audio_a-ags_apply_synth.o: src/ags/audio/task/ags_apply_synth.c \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/object/ags_config.h src/ags/object/ags_connectable.h \
  src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/file/ags_file.h src/ags/audio/ags_audio.h \
+ src/ags/file/ags_file.h src/ags/audio/ags_audio.h \
  src/ags/audio/ags_synths.h src/ags/audio/ags_devout.h \
  src/ags/audio/thread/ags_iterator_thread.h /usr/include/alsa/asoundlib.h \
  /usr/include/string.h /usr/include/bits/string.h \
@@ -1890,8 +1890,6 @@ src/ags/object/ags_connectable.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/file/ags_file.h:
 

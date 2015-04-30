@@ -136,8 +136,7 @@ gsequencer-ags_server.o: src/ags/server/ags_server.c \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/server/ags_remote_task.h src/ags/object/ags_connectable.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
  src/ags/server/ags_server_application_context.h
 
 /usr/include/stdc-predef.h:
@@ -529,8 +528,6 @@ src/ags/server/ags_remote_task.h:
 src/ags/object/ags_connectable.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

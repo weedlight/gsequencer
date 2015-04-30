@@ -532,9 +532,8 @@ gsequencer-ags_line_member.o: src/ags/X/ags_line_member.c \
  src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_container.h \
  src/ags/audio/ags_recall_dependency.h src/ags/thread/ags_task.h \
  src/ags/X/ags_line_member_callbacks.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- /usr/include/libxml2/libxml/tree.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h /usr/include/libxml2/libxml/tree.h \
  /usr/include/libxml2/libxml/xmlversion.h \
  /usr/include/libxml2/libxml/xmlexports.h \
  /usr/include/libxml2/libxml/xmlstring.h \
@@ -1832,8 +1831,6 @@ src/ags/thread/ags_task.h:
 src/ags/X/ags_line_member_callbacks.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

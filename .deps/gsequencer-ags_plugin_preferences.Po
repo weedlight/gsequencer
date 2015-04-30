@@ -550,9 +550,8 @@ gsequencer-ags_plugin_preferences.o: src/ags/X/ags_plugin_preferences.c \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/X/ags_window.h src/ags/object/ags_soundcard.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/X/ags_automation_editor.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/X/ags_automation_editor.h \
  src/ags/X/editor/ags_automation_toolbar.h \
  src/ags/X/editor/ags_port_selection.h src/ags/audio/ags_port.h \
  /usr/include/ladspa.h src/ags/X/editor/ags_notebook.h \
@@ -1856,8 +1855,6 @@ src/ags/X/ags_window.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

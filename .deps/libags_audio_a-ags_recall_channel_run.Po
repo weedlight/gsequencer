@@ -575,15 +575,14 @@ libags_audio_a-ags_recall_channel_run.o: \
  src/ags/audio/ags_recall_audio.h src/ags/audio/ags_audio.h \
  src/ags/audio/ags_recall_channel.h src/ags/lib/ags_parameter.h \
  src/ags/object/ags_marshal.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/file/ags_file.h src/ags/object/ags_connectable.h \
- src/ags/object/ags_packable.h src/ags/object/ags_dynamic_connectable.h \
- src/ags/object/ags_soundcard.h src/ags/thread/ags_task_thread.h \
- src/ags/thread/ags_thread_pool.h src/ags/object/ags_main_loop.h \
- src/ags/thread/ags_task.h src/ags/audio/ags_output.h \
- src/ags/audio/ags_input.h /usr/include/glib-2.0/glib/gstdio.h \
- /usr/include/glib-2.0/glib/gprintf.h /usr/include/sys/stat.h \
- src/ags/audio/ags_recall_container.h \
+ src/ags/object/ags_config.h src/ags/file/ags_file.h \
+ src/ags/object/ags_connectable.h src/ags/object/ags_packable.h \
+ src/ags/object/ags_dynamic_connectable.h src/ags/object/ags_soundcard.h \
+ src/ags/thread/ags_task_thread.h src/ags/thread/ags_thread_pool.h \
+ src/ags/object/ags_main_loop.h src/ags/thread/ags_task.h \
+ src/ags/audio/ags_output.h src/ags/audio/ags_input.h \
+ /usr/include/glib-2.0/glib/gstdio.h /usr/include/glib-2.0/glib/gprintf.h \
+ /usr/include/sys/stat.h src/ags/audio/ags_recall_container.h \
  src/ags/audio/ags_recall_recycling.h \
  src/ags/audio/recall/ags_copy_recycling.h \
  src/ags/audio/task/ags_cancel_recall.h
@@ -1973,8 +1972,6 @@ src/ags/lib/ags_parameter.h:
 src/ags/object/ags_marshal.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

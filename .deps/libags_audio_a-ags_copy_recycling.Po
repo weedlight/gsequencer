@@ -573,9 +573,8 @@ libags_audio_a-ags_copy_recycling.o: \
  /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
  /usr/include/alsa/seq_midi_event.h src/ags/audio/ags_recall_recycling.h \
  src/ags/object/ags_connectable.h src/ags/main.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/object/ags_dynamic_connectable.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/object/ags_dynamic_connectable.h \
  src/ags/audio/recall/ags_copy_audio_signal.h \
  src/ags/audio/ags_recall_audio_signal.h
 
@@ -1958,8 +1957,6 @@ src/ags/object/ags_connectable.h:
 src/ags/main.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

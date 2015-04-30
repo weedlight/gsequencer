@@ -574,13 +574,12 @@ libags_audio_a-ags_libao.o: src/ags/audio/ags_libao.c \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/thread/ags_timestamp_thread.h src/ags/audio/ags_timestamp.h \
  src/ags/audio/ags_note.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/file/ags_file.h src/ags/object/ags_connectable.h src/ags/main.h \
- /usr/include/math.h /usr/include/bits/huge_val.h \
- /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
- /usr/include/bits/inf.h /usr/include/bits/nan.h \
- /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
- /usr/include/bits/mathinline.h
+ src/ags/object/ags_config.h src/ags/file/ags_file.h \
+ src/ags/object/ags_connectable.h src/ags/main.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h
 
 /usr/include/stdc-predef.h:
 
@@ -1957,8 +1956,6 @@ src/ags/audio/ags_timestamp.h:
 src/ags/audio/ags_note.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

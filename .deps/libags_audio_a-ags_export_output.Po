@@ -131,8 +131,7 @@ libags_audio_a-ags_export_output.o: \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/file/ags_file.h
+ src/ags/object/ags_config.h src/ags/file/ags_file.h
 
 /usr/include/stdc-predef.h:
 
@@ -497,8 +496,6 @@ src/ags/object/ags_connectable.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

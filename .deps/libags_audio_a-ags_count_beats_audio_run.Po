@@ -561,8 +561,8 @@ libags_audio_a-ags_count_beats_audio_run.o: \
  src/ags/audio/recall/ags_delay_audio_run.h \
  src/ags/audio/recall/ags_count_beats_audio.h \
  src/ags/util/ags_id_generator.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/file/ags_file.h src/ags/object/ags_connectable.h \
+ src/ags/object/ags_config.h src/ags/file/ags_file.h \
+ src/ags/object/ags_connectable.h \
  src/ags/object/ags_dynamic_connectable.h src/ags/object/ags_countable.h \
  src/ags/object/ags_seekable.h src/ags/object/ags_plugin.h \
  src/ags/object/ags_soundcard.h src/ags/file/ags_file_stock.h \
@@ -1910,8 +1910,6 @@ src/ags/audio/recall/ags_count_beats_audio.h:
 src/ags/util/ags_id_generator.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

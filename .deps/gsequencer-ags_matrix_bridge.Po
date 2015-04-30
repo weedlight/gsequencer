@@ -557,12 +557,12 @@ gsequencer-ags_matrix_bridge.o: src/ags/X/machine/ags_matrix_bridge.c \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/X/machine/ags_matrix_bridge_callbacks.h \
  src/ags/object/ags_connectable.h src/ags/main.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/object/ags_plugin.h src/ags/audio/ags_input.h \
- /usr/include/glib-2.0/glib/gstdio.h /usr/include/glib-2.0/glib/gprintf.h \
- /usr/include/sys/stat.h /usr/include/bits/stat.h \
- src/ags/X/machine/ags_matrix_bulk_input.h src/ags/X/ags_effect_bulk.h
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/object/ags_plugin.h \
+ src/ags/audio/ags_input.h /usr/include/glib-2.0/glib/gstdio.h \
+ /usr/include/glib-2.0/glib/gprintf.h /usr/include/sys/stat.h \
+ /usr/include/bits/stat.h src/ags/X/machine/ags_matrix_bulk_input.h \
+ src/ags/X/ags_effect_bulk.h
 
 /usr/include/stdc-predef.h:
 
@@ -1875,8 +1875,6 @@ src/ags/object/ags_connectable.h:
 src/ags/main.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

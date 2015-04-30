@@ -556,13 +556,12 @@ gsequencer-ags_editor_callbacks.o: src/ags/X/ags_editor_callbacks.c \
  src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/X/ags_editor.h src/ags/object/ags_soundcard.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/X/ags_machine.h src/ags/X/editor/ags_toolbar.h \
- src/ags/X/editor/ags_machine_selector.h src/ags/X/editor/ags_notebook.h \
- src/ags/X/editor/ags_meter.h src/ags/X/editor/ags_soundset.h \
- src/ags/X/editor/ags_note_edit.h src/ags/widget/ags_ruler.h \
- src/ags/X/editor/ags_pattern_edit.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/X/ags_machine.h \
+ src/ags/X/editor/ags_toolbar.h src/ags/X/editor/ags_machine_selector.h \
+ src/ags/X/editor/ags_notebook.h src/ags/X/editor/ags_meter.h \
+ src/ags/X/editor/ags_soundset.h src/ags/X/editor/ags_note_edit.h \
+ src/ags/widget/ags_ruler.h src/ags/X/editor/ags_pattern_edit.h \
  src/ags/X/editor/ags_automation_edit.h src/ags/audio/ags_automation.h \
  src/ags/audio/ags_acceleration.h src/ags/X/ags_navigation.h \
  src/ags/audio/ags_output.h src/ags/audio/ags_input.h \
@@ -1889,8 +1888,6 @@ src/ags/X/ags_editor.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

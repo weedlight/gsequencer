@@ -578,9 +578,9 @@ libags_audio_a-ags_volume_audio_signal.o: \
  src/ags/audio/recall/ags_volume_channel.h \
  src/ags/audio/ags_recall_channel.h src/ags/object/ags_connectable.h \
  src/ags/main.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/file/ags_file.h src/ags/lib/ags_list.h \
- src/ags/lib/ags_parameter.h src/ags/object/ags_dynamic_connectable.h \
+ src/ags/object/ags_config.h src/ags/file/ags_file.h \
+ src/ags/lib/ags_list.h src/ags/lib/ags_parameter.h \
+ src/ags/object/ags_dynamic_connectable.h \
  src/ags/audio/ags_recall_channel_run.h \
  src/ags/audio/ags_recall_audio_run.h src/ags/audio/ags_recall_audio.h \
  src/ags/audio/ags_audio.h
@@ -1968,8 +1968,6 @@ src/ags/object/ags_connectable.h:
 src/ags/main.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

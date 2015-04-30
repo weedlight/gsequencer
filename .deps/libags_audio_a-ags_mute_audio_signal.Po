@@ -578,8 +578,8 @@ libags_audio_a-ags_mute_audio_signal.o: \
  src/ags/audio/recall/ags_mute_channel.h \
  src/ags/audio/ags_recall_channel.h src/ags/object/ags_connectable.h \
  src/ags/main.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/file/ags_file.h src/ags/object/ags_dynamic_connectable.h \
+ src/ags/object/ags_config.h src/ags/file/ags_file.h \
+ src/ags/object/ags_dynamic_connectable.h \
  src/ags/audio/ags_recall_container.h \
  src/ags/audio/ags_recall_channel_run.h \
  src/ags/audio/ags_recall_audio_run.h
@@ -1973,8 +1973,6 @@ src/ags/object/ags_connectable.h:
 src/ags/main.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

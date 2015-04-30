@@ -574,8 +574,8 @@ gsequencer-ags_display_tact.o: src/ags/X/task/ags_display_tact.c \
  /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
  /usr/include/alsa/seq_midi_event.h src/ags/object/ags_connectable.h \
  src/ags/X/ags_navigation.h src/ags/object/ags_soundcard.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h
 
 /usr/include/stdc-predef.h:
 
@@ -1958,8 +1958,6 @@ src/ags/X/ags_navigation.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

@@ -572,10 +572,10 @@ libags_audio_a-ags_recall_recycling.o: \
  /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
  /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
  /usr/include/alsa/seq_midi_event.h src/ags/main.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/lib/ags_list.h src/ags/lib/ags_parameter.h \
- src/ags/object/ags_marshal.h src/ags/object/ags_connectable.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/lib/ags_list.h \
+ src/ags/lib/ags_parameter.h src/ags/object/ags_marshal.h \
+ src/ags/object/ags_connectable.h \
  src/ags/object/ags_dynamic_connectable.h src/ags/object/ags_soundcard.h \
  src/ags/thread/ags_task_thread.h src/ags/thread/ags_thread_pool.h \
  src/ags/object/ags_main_loop.h src/ags/thread/ags_task.h \
@@ -1964,8 +1964,6 @@ src/ags/audio/ags_note.h:
 src/ags/main.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

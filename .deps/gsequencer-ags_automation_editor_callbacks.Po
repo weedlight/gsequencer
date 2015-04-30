@@ -562,8 +562,8 @@ gsequencer-ags_automation_editor_callbacks.o: \
  src/ags/X/editor/ags_automation_edit.h src/ags/widget/ags_ruler.h \
  src/ags/audio/ags_automation.h src/ags/audio/ags_acceleration.h \
  src/ags/X/ags_navigation.h src/ags/object/ags_soundcard.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h
 
 /usr/include/stdc-predef.h:
 
@@ -1892,8 +1892,6 @@ src/ags/X/ags_navigation.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

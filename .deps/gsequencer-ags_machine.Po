@@ -556,10 +556,10 @@ gsequencer-ags_machine.o: src/ags/X/ags_machine.c \
  src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/X/ags_machine_callbacks.h src/ags/thread/ags_task.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/object/ags_marshal.h src/ags/object/ags_connectable.h \
- src/ags/object/ags_plugin.h src/ags/thread/ags_task_thread.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/object/ags_marshal.h \
+ src/ags/object/ags_connectable.h src/ags/object/ags_plugin.h \
+ src/ags/thread/ags_mutex_manager.h src/ags/thread/ags_task_thread.h \
  src/ags/thread/ags_thread_pool.h src/ags/object/ags_main_loop.h \
  src/ags/file/ags_file_stock.h src/ags/widget/ags_led.h \
  src/ags/widget/ags_vindicator.h src/ags/widget/ags_indicator.h \
@@ -1915,8 +1915,6 @@ src/ags/thread/ags_task.h:
 
 src/ags/object/ags_application_context.h:
 
-src/ags/log/ags_log.h:
-
 src/ags/object/ags_config.h:
 
 src/ags/file/ags_file.h:
@@ -1926,6 +1924,8 @@ src/ags/object/ags_marshal.h:
 src/ags/object/ags_connectable.h:
 
 src/ags/object/ags_plugin.h:
+
+src/ags/thread/ags_mutex_manager.h:
 
 src/ags/thread/ags_task_thread.h:
 

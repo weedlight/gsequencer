@@ -105,12 +105,11 @@ libags_audio_a-ags_devout_thread.o: \
  /usr/include/glib-2.0/gobject/gvaluearray.h \
  /usr/include/glib-2.0/gobject/gvaluetypes.h \
  src/ags/thread/ags_thread-posix.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h /usr/include/libxml2/libxml/tree.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/include/bits/stdio_lim.h \
  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- /usr/include/libxml2/libxml/tree.h \
  /usr/include/libxml2/libxml/xmlversion.h \
  /usr/include/libxml2/libxml/xmlexports.h \
  /usr/include/libxml2/libxml/xmlstring.h \
@@ -862,7 +861,11 @@ src/ags/thread/ags_thread-posix.h:
 
 src/ags/object/ags_application_context.h:
 
-src/ags/log/ags_log.h:
+src/ags/object/ags_config.h:
+
+src/ags/file/ags_file.h:
+
+/usr/include/libxml2/libxml/tree.h:
 
 /usr/include/stdio.h:
 
@@ -877,12 +880,6 @@ src/ags/log/ags_log.h:
 /usr/include/bits/sys_errlist.h:
 
 /usr/include/bits/stdio.h:
-
-src/ags/object/ags_config.h:
-
-src/ags/file/ags_file.h:
-
-/usr/include/libxml2/libxml/tree.h:
 
 /usr/include/libxml2/libxml/xmlversion.h:
 

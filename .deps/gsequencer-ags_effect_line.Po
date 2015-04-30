@@ -555,20 +555,19 @@ gsequencer-ags_effect_line.o: src/ags/X/ags_effect_line.c \
  src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/X/ags_effect_line_callbacks.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/object/ags_marshal.h src/ags/object/ags_connectable.h \
- src/ags/object/ags_plugin.h src/ags/plugin/ags_ladspa_manager.h \
- src/ags/thread/ags_task_thread.h src/ags/thread/ags_thread_pool.h \
- src/ags/object/ags_main_loop.h src/ags/thread/ags_task.h \
- src/ags/audio/ags_recall_ladspa.h src/ags/audio/ags_recall_channel_run.h \
- src/ags/audio/ags_devout.h src/ags/audio/thread/ags_iterator_thread.h \
- /usr/include/alsa/asoundlib.h /usr/include/string.h \
- /usr/include/bits/string.h /usr/include/bits/string2.h \
- /usr/include/fcntl.h /usr/include/bits/fcntl.h \
- /usr/include/bits/fcntl-linux.h /usr/include/bits/stat.h \
- /usr/include/assert.h /usr/include/sys/poll.h /usr/include/bits/poll.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/object/ags_marshal.h \
+ src/ags/object/ags_connectable.h src/ags/object/ags_plugin.h \
+ src/ags/plugin/ags_ladspa_manager.h src/ags/thread/ags_task_thread.h \
+ src/ags/thread/ags_thread_pool.h src/ags/object/ags_main_loop.h \
+ src/ags/thread/ags_task.h src/ags/audio/ags_recall_ladspa.h \
+ src/ags/audio/ags_recall_channel_run.h src/ags/audio/ags_devout.h \
+ src/ags/audio/thread/ags_iterator_thread.h /usr/include/alsa/asoundlib.h \
+ /usr/include/string.h /usr/include/bits/string.h \
+ /usr/include/bits/string2.h /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
+ /usr/include/bits/stat.h /usr/include/assert.h /usr/include/sys/poll.h \
+ /usr/include/bits/poll.h /usr/include/errno.h /usr/include/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/alsa/asoundef.h /usr/include/alsa/version.h \
@@ -1903,8 +1902,6 @@ src/ags/audio/ags_note.h:
 src/ags/X/ags_effect_line_callbacks.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

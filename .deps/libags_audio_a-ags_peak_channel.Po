@@ -575,8 +575,7 @@ libags_audio_a-ags_peak_channel.o: \
  /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
  /usr/include/alsa/seq_midi_event.h src/ags/object/ags_plugin.h \
  src/ags/file/ags_file.h src/ags/object/ags_soundcard.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h
 
 /usr/include/stdc-predef.h:
 
@@ -1963,7 +1962,5 @@ src/ags/file/ags_file.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:

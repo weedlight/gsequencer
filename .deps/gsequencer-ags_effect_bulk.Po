@@ -556,17 +556,17 @@ gsequencer-ags_effect_bulk.o: src/ags/X/ags_effect_bulk.c \
  src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/X/ags_effect_bulk_callbacks.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/object/ags_marshal.h src/ags/object/ags_connectable.h \
- src/ags/object/ags_plugin.h src/ags/object/ags_soundcard.h \
- src/ags/plugin/ags_ladspa_manager.h src/ags/thread/ags_task_thread.h \
- src/ags/thread/ags_thread_pool.h src/ags/object/ags_main_loop.h \
- src/ags/thread/ags_task.h src/ags/audio/ags_output.h \
- src/ags/audio/ags_input.h /usr/include/glib-2.0/glib/gstdio.h \
- /usr/include/glib-2.0/glib/gprintf.h /usr/include/sys/stat.h \
- /usr/include/bits/stat.h src/ags/audio/ags_recall_audio.h \
- src/ags/audio/ags_recall_audio_run.h src/ags/audio/ags_recall_channel.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/object/ags_marshal.h \
+ src/ags/object/ags_connectable.h src/ags/object/ags_plugin.h \
+ src/ags/object/ags_soundcard.h src/ags/plugin/ags_ladspa_manager.h \
+ src/ags/thread/ags_task_thread.h src/ags/thread/ags_thread_pool.h \
+ src/ags/object/ags_main_loop.h src/ags/thread/ags_task.h \
+ src/ags/audio/ags_output.h src/ags/audio/ags_input.h \
+ /usr/include/glib-2.0/glib/gstdio.h /usr/include/glib-2.0/glib/gprintf.h \
+ /usr/include/sys/stat.h /usr/include/bits/stat.h \
+ src/ags/audio/ags_recall_audio.h src/ags/audio/ags_recall_audio_run.h \
+ src/ags/audio/ags_recall_channel.h \
  src/ags/audio/ags_recall_channel_run.h src/ags/audio/ags_devout.h \
  src/ags/audio/thread/ags_iterator_thread.h /usr/include/alsa/asoundlib.h \
  /usr/include/string.h /usr/include/bits/string.h \
@@ -1915,8 +1915,6 @@ src/ags/audio/ags_note.h:
 src/ags/X/ags_effect_bulk_callbacks.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

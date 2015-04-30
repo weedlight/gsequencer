@@ -558,9 +558,8 @@ gsequencer-ags_mixer_input_pad.o: src/ags/X/machine/ags_mixer_input_pad.c \
  src/ags/widget/ags_expander_set.h src/ags/X/ags_line.h \
  src/ags/widget/ags_expander.h src/ags/object/ags_connectable.h \
  src/ags/X/ags_window.h src/ags/object/ags_soundcard.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/X/ags_automation_editor.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/X/ags_automation_editor.h \
  src/ags/X/editor/ags_automation_toolbar.h \
  src/ags/X/editor/ags_port_selection.h src/ags/X/editor/ags_notebook.h \
  src/ags/X/editor/ags_machine_selector.h src/ags/X/ags_machine.h \
@@ -1896,8 +1895,6 @@ src/ags/X/ags_window.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

@@ -557,16 +557,15 @@ gsequencer-ags_synth_input_pad.o: src/ags/X/machine/ags_synth_input_pad.c \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/widget/ags_expander_set.h src/ags/X/ags_line.h \
  src/ags/widget/ags_expander.h src/ags/util/ags_id_generator.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/object/ags_connectable.h src/ags/object/ags_plugin.h \
- src/ags/file/ags_file_stock.h src/ags/widget/ags_led.h \
- src/ags/widget/ags_vindicator.h src/ags/widget/ags_indicator.h \
- src/ags/widget/ags_hindicator.h src/ags/widget/ags_waveform.h \
- src/ags/widget/ags_dial.h src/ags/widget/ags_cartesian.h \
- src/ags/file/ags_file_id_ref.h src/ags/file/ags_file_lookup.h \
- src/ags/X/ags_window.h src/ags/object/ags_soundcard.h \
- src/ags/X/ags_automation_editor.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/object/ags_connectable.h \
+ src/ags/object/ags_plugin.h src/ags/file/ags_file_stock.h \
+ src/ags/widget/ags_led.h src/ags/widget/ags_vindicator.h \
+ src/ags/widget/ags_indicator.h src/ags/widget/ags_hindicator.h \
+ src/ags/widget/ags_waveform.h src/ags/widget/ags_dial.h \
+ src/ags/widget/ags_cartesian.h src/ags/file/ags_file_id_ref.h \
+ src/ags/file/ags_file_lookup.h src/ags/X/ags_window.h \
+ src/ags/object/ags_soundcard.h src/ags/X/ags_automation_editor.h \
  src/ags/X/editor/ags_automation_toolbar.h \
  src/ags/X/editor/ags_port_selection.h src/ags/X/editor/ags_notebook.h \
  src/ags/X/editor/ags_machine_selector.h src/ags/X/ags_machine.h \
@@ -1898,8 +1897,6 @@ src/ags/widget/ags_expander.h:
 src/ags/util/ags_id_generator.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

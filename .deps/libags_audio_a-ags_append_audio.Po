@@ -573,9 +573,8 @@ libags_audio_a-ags_append_audio.o: src/ags/audio/task/ags_append_audio.c \
  /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
  /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
  /usr/include/alsa/seq_midi_event.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/object/ags_connectable.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/object/ags_connectable.h \
  src/ags/server/ags_server_application_context.h \
  src/ags/server/ags_server.h /usr/include/netinet/in.h \
  /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h \
@@ -1967,8 +1966,6 @@ src/ags/audio/ags_note.h:
 /usr/include/alsa/seq_midi_event.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

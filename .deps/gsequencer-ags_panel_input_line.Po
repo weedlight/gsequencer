@@ -587,8 +587,7 @@ gsequencer-ags_panel_input_line.o: \
  src/ags/audio/recall/ags_mute_channel_run.h \
  src/ags/widget/ags_expander_set.h src/ags/X/ags_window.h \
  src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/X/ags_automation_editor.h \
+ src/ags/object/ags_config.h src/ags/X/ags_automation_editor.h \
  src/ags/X/editor/ags_automation_toolbar.h \
  src/ags/X/editor/ags_port_selection.h src/ags/X/editor/ags_notebook.h \
  src/ags/X/editor/ags_machine_selector.h src/ags/X/ags_machine.h \
@@ -2020,8 +2019,6 @@ src/ags/X/ags_window.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

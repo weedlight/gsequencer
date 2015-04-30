@@ -529,9 +529,8 @@ gsequencer-ags_preferences.o: src/ags/X/ags_preferences.c \
  src/ags/X/ags_generic_preferences.h src/ags/X/ags_audio_preferences.h \
  src/ags/X/ags_performance_preferences.h \
  src/ags/X/ags_server_preferences.h src/ags/X/ags_preferences_callbacks.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- /usr/include/libxml2/libxml/tree.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h /usr/include/libxml2/libxml/tree.h \
  /usr/include/libxml2/libxml/xmlversion.h \
  /usr/include/libxml2/libxml/xmlexports.h \
  /usr/include/libxml2/libxml/xmlstring.h \
@@ -1802,8 +1801,6 @@ src/ags/X/ags_server_preferences.h:
 src/ags/X/ags_preferences_callbacks.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

@@ -129,10 +129,10 @@ libags_audio_a-ags_audio_file.o: src/ags/audio/file/ags_audio_file.c \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/file/ags_file.h \
- src/ags/audio/ags_audio_signal.h src/ags/audio/file/ags_playable.h \
- src/ags/audio/ags_devout.h src/ags/audio/ags_recall_id.h \
- src/ags/audio/ags_recycling.h src/ags/audio/ags_recycling_container.h \
+ src/ags/file/ags_file.h src/ags/audio/ags_audio_signal.h \
+ src/ags/audio/file/ags_playable.h src/ags/audio/ags_devout.h \
+ src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
+ src/ags/audio/ags_recycling_container.h \
  src/ags/audio/thread/ags_iterator_thread.h \
  src/ags/thread/ags_thread-posix.h src/ags/audio/ags_channel.h \
  /usr/include/gtk-2.0/gtk/gtk.h /usr/include/gtk-2.0/gdk/gdk.h \
@@ -939,8 +939,6 @@ src/ags/object/ags_connectable.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/file/ags_file.h:
 

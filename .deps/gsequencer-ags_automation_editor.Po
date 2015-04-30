@@ -562,9 +562,9 @@ gsequencer-ags_automation_editor.o: src/ags/X/ags_automation_editor.c \
  src/ags/audio/ags_automation.h src/ags/audio/ags_acceleration.h \
  src/ags/X/ags_automation_editor_callbacks.h src/ags/X/ags_navigation.h \
  src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/object/ags_config.h \
- src/ags/file/ags_file.h src/ags/object/ags_connectable.h \
- src/ags/X/ags_window.h src/ags/X/ags_menu_bar.h src/ags/X/ags_editor.h \
+ src/ags/object/ags_config.h src/ags/file/ags_file.h \
+ src/ags/object/ags_connectable.h src/ags/X/ags_window.h \
+ src/ags/X/ags_menu_bar.h src/ags/X/ags_editor.h \
  src/ags/X/editor/ags_toolbar.h src/ags/X/editor/ags_meter.h \
  src/ags/X/editor/ags_soundset.h src/ags/X/editor/ags_note_edit.h \
  src/ags/X/editor/ags_pattern_edit.h src/ags/X/ags_export_window.h \
@@ -1900,8 +1900,6 @@ src/ags/X/ags_navigation.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

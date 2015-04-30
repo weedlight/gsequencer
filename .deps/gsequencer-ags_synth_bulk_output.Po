@@ -557,9 +557,9 @@ gsequencer-ags_synth_bulk_output.o: \
  src/ags/X/ags_effect_bulk.h src/ags/audio/ags_audio.h \
  src/ags/X/machine/ags_synth_bulk_output_callbacks.h \
  src/ags/object/ags_connectable.h src/ags/main.h \
- src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/object/ags_marshal.h src/ags/object/ags_plugin.h
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/object/ags_marshal.h \
+ src/ags/object/ags_plugin.h
 
 /usr/include/stdc-predef.h:
 
@@ -1872,8 +1872,6 @@ src/ags/object/ags_connectable.h:
 src/ags/main.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/object/ags_config.h:
 

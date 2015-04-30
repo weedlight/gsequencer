@@ -128,7 +128,7 @@ libags_audio_a-ags_audio_signal.o: src/ags/audio/ags_audio_signal.c \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
- src/ags/log/ags_log.h src/ags/file/ags_file.h src/ags/audio/ags_devout.h \
+ src/ags/file/ags_file.h src/ags/audio/ags_devout.h \
  src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
  src/ags/audio/ags_recycling_container.h \
  src/ags/audio/thread/ags_iterator_thread.h \
@@ -945,8 +945,6 @@ src/ags/object/ags_connectable.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
-
-src/ags/log/ags_log.h:
 
 src/ags/file/ags_file.h:
 
