@@ -1,5 +1,5 @@
-libags_a-ags_log.o: src/ags/lib/ags_log.c /usr/include/stdc-predef.h \
- src/ags/lib/ags_log.h /usr/include/glib-2.0/glib.h \
+libags_a-ags_log.o: src/ags/log/ags_log.c /usr/include/stdc-predef.h \
+ src/ags/log/ags_log.h /usr/include/glib-2.0/glib.h \
  /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
@@ -105,15 +105,39 @@ libags_a-ags_log.o: src/ags/lib/ags_log.c /usr/include/stdc-predef.h \
  /usr/include/glib-2.0/gobject/gvaluetypes.h /usr/include/stdio.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
- /usr/include/bits/stdio.h src/ags/lib/ags_list.h /usr/include/stdlib.h \
- /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
- /usr/include/alloca.h /usr/include/bits/stdlib-bsearch.h \
- /usr/include/bits/stdlib-float.h /usr/include/string.h \
+ /usr/include/bits/stdio.h src/ags/object/ags_application_context.h \
+ src/ags/object/ags_config.h src/ags/file/ags_file.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h /usr/include/iconv.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ src/ags/thread/ags_concurrency_provider.h \
+ src/ags/thread/ags_thread-posix.h src/ags/thread/ags_thread_pool.h \
+ src/ags/object/ags_main_loop.h src/ags/thread/ags_mutex_manager.h \
+ src/ags/thread/ags_task_thread.h src/ags/thread/ags_task.h \
+ src/ags/log/task/ags_log_task.h /usr/include/string.h \
  /usr/include/bits/string.h /usr/include/bits/string2.h
 
 /usr/include/stdc-predef.h:
 
-src/ags/lib/ags_log.h:
+src/ags/log/ags_log.h:
 
 /usr/include/glib-2.0/glib.h:
 
@@ -405,7 +429,51 @@ src/ags/lib/ags_log.h:
 
 /usr/include/bits/stdio.h:
 
-src/ags/lib/ags_list.h:
+src/ags/object/ags_application_context.h:
+
+src/ags/object/ags_config.h:
+
+src/ags/file/ags_file.h:
+
+/usr/include/libxml2/libxml/tree.h:
+
+/usr/include/libxml2/libxml/xmlversion.h:
+
+/usr/include/libxml2/libxml/xmlexports.h:
+
+/usr/include/libxml2/libxml/xmlstring.h:
+
+/usr/include/libxml2/libxml/xmlregexp.h:
+
+/usr/include/libxml2/libxml/dict.h:
+
+/usr/include/libxml2/libxml/xmlmemory.h:
+
+/usr/include/libxml2/libxml/threads.h:
+
+/usr/include/libxml2/libxml/globals.h:
+
+/usr/include/libxml2/libxml/parser.h:
+
+/usr/include/libxml2/libxml/hash.h:
+
+/usr/include/libxml2/libxml/valid.h:
+
+/usr/include/libxml2/libxml/xmlerror.h:
+
+/usr/include/libxml2/libxml/list.h:
+
+/usr/include/libxml2/libxml/xmlautomata.h:
+
+/usr/include/libxml2/libxml/entities.h:
+
+/usr/include/libxml2/libxml/encoding.h:
+
+/usr/include/iconv.h:
+
+/usr/include/libxml2/libxml/xmlIO.h:
+
+/usr/include/libxml2/libxml/SAX.h:
 
 /usr/include/stdlib.h:
 
@@ -418,6 +486,26 @@ src/ags/lib/ags_list.h:
 /usr/include/bits/stdlib-bsearch.h:
 
 /usr/include/bits/stdlib-float.h:
+
+/usr/include/libxml2/libxml/xlink.h:
+
+/usr/include/libxml2/libxml/SAX2.h:
+
+src/ags/thread/ags_concurrency_provider.h:
+
+src/ags/thread/ags_thread-posix.h:
+
+src/ags/thread/ags_thread_pool.h:
+
+src/ags/object/ags_main_loop.h:
+
+src/ags/thread/ags_mutex_manager.h:
+
+src/ags/thread/ags_task_thread.h:
+
+src/ags/thread/ags_task.h:
+
+src/ags/log/task/ags_log_task.h:
 
 /usr/include/string.h:
 

@@ -106,7 +106,7 @@ libags_thread_a-ags_concurrency_provider.o: \
  /usr/include/glib-2.0/gobject/gvaluetypes.h \
  src/ags/thread/ags_thread-posix.h src/ags/thread/ags_thread_pool.h \
  src/ags/object/ags_main_loop.h src/ags/object/ags_application_context.h \
- src/ags/lib/ags_log.h /usr/include/stdio.h /usr/include/libio.h \
+ src/ags/log/ags_log.h /usr/include/stdio.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h src/ags/object/ags_config.h \
@@ -425,7 +425,7 @@ src/ags/object/ags_main_loop.h:
 
 src/ags/object/ags_application_context.h:
 
-src/ags/lib/ags_log.h:
+src/ags/log/ags_log.h:
 
 /usr/include/stdio.h:
 

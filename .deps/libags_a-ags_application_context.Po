@@ -103,7 +103,7 @@ libags_a-ags_application_context.o: \
  /usr/include/glib-2.0/gobject/gtypemodule.h \
  /usr/include/glib-2.0/gobject/gtypeplugin.h \
  /usr/include/glib-2.0/gobject/gvaluearray.h \
- /usr/include/glib-2.0/gobject/gvaluetypes.h src/ags/lib/ags_log.h \
+ /usr/include/glib-2.0/gobject/gvaluetypes.h src/ags/log/ags_log.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/include/bits/stdio_lim.h \
  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
@@ -129,7 +129,7 @@ libags_a-ags_application_context.o: \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
- src/ags/object/ags_marshal.h src/ags-lib/object/ags_connectable.h \
+ src/ags/object/ags_marshal.h src/ags/object/ags_connectable.h \
  /usr/include/glib-2.0/gio/gio.h /usr/include/glib-2.0/gio/giotypes.h \
  /usr/include/glib-2.0/gio/gioenums.h /usr/include/glib-2.0/gio/gaction.h \
  /usr/include/glib-2.0/gio/gactiongroup.h \
@@ -550,7 +550,7 @@ src/ags/object/ags_application_context.h:
 
 /usr/include/glib-2.0/gobject/gvaluetypes.h:
 
-src/ags/lib/ags_log.h:
+src/ags/log/ags_log.h:
 
 /usr/include/stdio.h:
 
@@ -628,7 +628,7 @@ src/ags/file/ags_file.h:
 
 src/ags/object/ags_marshal.h:
 
-src/ags-lib/object/ags_connectable.h:
+src/ags/object/ags_connectable.h:
 
 /usr/include/glib-2.0/gio/gio.h:
 

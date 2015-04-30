@@ -1,7 +1,5 @@
-gsequencer-ags_remove_point_from_selection.o: \
- src/ags/audio/task/ags_remove_point_from_selection.c \
- /usr/include/stdc-predef.h \
- src/ags/audio/task/ags_remove_point_from_selection.h \
+libags_a-ags_save_file.o: src/ags/file/task/ags_save_file.c \
+ /usr/include/stdc-predef.h src/ags/file/task/ags_save_file.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/glib-2.0/include/glibconfig.h \
@@ -105,8 +103,8 @@ gsequencer-ags_remove_point_from_selection.o: \
  /usr/include/glib-2.0/gobject/gtypemodule.h \
  /usr/include/glib-2.0/gobject/gtypeplugin.h \
  /usr/include/glib-2.0/gobject/gvaluearray.h \
- /usr/include/glib-2.0/gobject/gvaluetypes.h src/ags/audio/ags_task.h \
- src/ags/audio/ags_notation.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/glib-2.0/gobject/gvaluetypes.h src/ags/thread/ags_task.h \
+ src/ags/file/ags_file.h /usr/include/libxml2/libxml/tree.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/include/bits/stdio_lim.h \
  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
@@ -130,13 +128,11 @@ gsequencer-ags_remove_point_from_selection.o: \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
- src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
- src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
- src/ags-lib/object/ags_connectable.h
+ src/ags/object/ags_connectable.h
 
 /usr/include/stdc-predef.h:
 
-src/ags/audio/task/ags_remove_point_from_selection.h:
+src/ags/file/task/ags_save_file.h:
 
 /usr/include/glib-2.0/glib.h:
 
@@ -414,9 +410,9 @@ src/ags/audio/task/ags_remove_point_from_selection.h:
 
 /usr/include/glib-2.0/gobject/gvaluetypes.h:
 
-src/ags/audio/ags_task.h:
+src/ags/thread/ags_task.h:
 
-src/ags/audio/ags_notation.h:
+src/ags/file/ags_file.h:
 
 /usr/include/libxml2/libxml/tree.h:
 
@@ -488,12 +484,4 @@ src/ags/audio/ags_notation.h:
 
 /usr/include/libxml2/libxml/SAX2.h:
 
-src/ags/thread/ags_timestamp_thread.h:
-
-src/ags/thread/ags_thread-posix.h:
-
-src/ags/audio/ags_timestamp.h:
-
-src/ags/audio/ags_note.h:
-
-src/ags-lib/object/ags_connectable.h:
+src/ags/object/ags_connectable.h:

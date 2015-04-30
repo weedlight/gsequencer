@@ -107,7 +107,7 @@ libags_thread_a-ags_single_thread.o: src/ags/thread/ags_single_thread.c \
  src/ags/thread/ags_thread-posix.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- src/ags-lib/object/ags_connectable.h /usr/include/libxml2/libxml/tree.h \
+ src/ags/object/ags_connectable.h /usr/include/libxml2/libxml/tree.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/include/bits/stdio_lim.h \
  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
@@ -424,7 +424,7 @@ src/ags/thread/ags_thread-posix.h:
 
 /usr/include/getopt.h:
 
-src/ags-lib/object/ags_connectable.h:
+src/ags/object/ags_connectable.h:
 
 /usr/include/libxml2/libxml/tree.h:
 

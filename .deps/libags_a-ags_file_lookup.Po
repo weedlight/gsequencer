@@ -1,4 +1,4 @@
-gsequencer-ags_file_lookup.o: src/ags/file/ags_file_lookup.c \
+libags_a-ags_file_lookup.o: src/ags/file/ags_file_lookup.c \
  /usr/include/stdc-predef.h src/ags/file/ags_file_lookup.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \

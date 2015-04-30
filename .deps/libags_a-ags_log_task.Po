@@ -1,6 +1,7 @@
-gsequencer-ags_toggle_pattern_bit.o: \
- src/ags/audio/task/ags_toggle_pattern_bit.c /usr/include/stdc-predef.h \
- src/ags/audio/task/ags_toggle_pattern_bit.h /usr/include/glib-2.0/glib.h \
+libags_a-ags_log_task.o: src/ags/log/task/ags_log_task.c \
+ /usr/include/stdc-predef.h src/ags/log/task/ags_log_task.h \
+ /usr/include/glib-2.0/glib-object.h \
+ /usr/include/glib-2.0/gobject/gbinding.h /usr/include/glib-2.0/glib.h \
  /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
@@ -86,8 +87,6 @@ gsequencer-ags_toggle_pattern_bit.o: \
  /usr/include/sys/select.h /usr/include/bits/select.h \
  /usr/include/sys/sysmacros.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/bits/sched.h /usr/include/bits/setjmp.h \
- /usr/include/glib-2.0/glib-object.h \
- /usr/include/glib-2.0/gobject/gbinding.h \
  /usr/include/glib-2.0/gobject/gobject.h \
  /usr/include/glib-2.0/gobject/gtype.h \
  /usr/include/glib-2.0/gobject/gvalue.h \
@@ -103,12 +102,13 @@ gsequencer-ags_toggle_pattern_bit.o: \
  /usr/include/glib-2.0/gobject/gtypemodule.h \
  /usr/include/glib-2.0/gobject/gtypeplugin.h \
  /usr/include/glib-2.0/gobject/gvaluearray.h \
- /usr/include/glib-2.0/gobject/gvaluetypes.h src/ags/audio/ags_task.h \
- src/ags/audio/ags_pattern.h src/ags-lib/object/ags_connectable.h \
- /usr/include/libxml2/libxml/tree.h /usr/include/stdio.h \
- /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/glib-2.0/gobject/gvaluetypes.h src/ags/thread/ags_task.h \
+ src/ags/log/ags_log.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
- /usr/include/bits/stdio.h /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/bits/stdio.h src/ags/object/ags_connectable.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
  /usr/include/libxml2/libxml/xmlexports.h \
  /usr/include/libxml2/libxml/xmlstring.h \
  /usr/include/libxml2/libxml/xmlregexp.h \
@@ -131,7 +131,11 @@ gsequencer-ags_toggle_pattern_bit.o: \
 
 /usr/include/stdc-predef.h:
 
-src/ags/audio/task/ags_toggle_pattern_bit.h:
+src/ags/log/task/ags_log_task.h:
+
+/usr/include/glib-2.0/glib-object.h:
+
+/usr/include/glib-2.0/gobject/gbinding.h:
 
 /usr/include/glib-2.0/glib.h:
 
@@ -373,10 +377,6 @@ src/ags/audio/task/ags_toggle_pattern_bit.h:
 
 /usr/include/bits/setjmp.h:
 
-/usr/include/glib-2.0/glib-object.h:
-
-/usr/include/glib-2.0/gobject/gbinding.h:
-
 /usr/include/glib-2.0/gobject/gobject.h:
 
 /usr/include/glib-2.0/gobject/gtype.h:
@@ -409,13 +409,9 @@ src/ags/audio/task/ags_toggle_pattern_bit.h:
 
 /usr/include/glib-2.0/gobject/gvaluetypes.h:
 
-src/ags/audio/ags_task.h:
+src/ags/thread/ags_task.h:
 
-src/ags/audio/ags_pattern.h:
-
-src/ags-lib/object/ags_connectable.h:
-
-/usr/include/libxml2/libxml/tree.h:
+src/ags/log/ags_log.h:
 
 /usr/include/stdio.h:
 
@@ -430,6 +426,10 @@ src/ags-lib/object/ags_connectable.h:
 /usr/include/bits/sys_errlist.h:
 
 /usr/include/bits/stdio.h:
+
+src/ags/object/ags_connectable.h:
+
+/usr/include/libxml2/libxml/tree.h:
 
 /usr/include/libxml2/libxml/xmlversion.h:
 

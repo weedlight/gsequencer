@@ -1,23 +1,26 @@
-gsequencer-ags_add_region_to_selection.o: \
- src/ags/audio/task/ags_add_region_to_selection.c \
- /usr/include/stdc-predef.h \
- src/ags/audio/task/ags_add_region_to_selection.h \
- /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
- /usr/include/glib-2.0/glib/gtypes.h \
+libags_thread_a-ags_task.o: src/ags/thread/ags_task.c \
+ /usr/include/stdc-predef.h src/ags/thread/ags_task.h \
+ /usr/include/pthread.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/byteswap-16.h /usr/include/sched.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stddef.h \
+ /usr/include/time.h /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/xlocale.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/setjmp.h /usr/include/glib-2.0/glib-object.h \
+ /usr/include/glib-2.0/gobject/gbinding.h /usr/include/glib-2.0/glib.h \
+ /usr/include/glib-2.0/glib/galloca.h /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/glib-2.0/include/glibconfig.h \
  /usr/include/glib-2.0/glib/gmacros.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stddef.h \
  /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-64.h /usr/include/bits/posix1_lim.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h \
  /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/float.h \
- /usr/include/glib-2.0/glib/gversionmacros.h /usr/include/time.h \
- /usr/include/bits/time.h /usr/include/bits/types.h \
- /usr/include/bits/typesizes.h /usr/include/xlocale.h \
+ /usr/include/glib-2.0/glib/gversionmacros.h \
  /usr/include/glib-2.0/glib/garray.h \
  /usr/include/glib-2.0/glib/gasyncqueue.h \
  /usr/include/glib-2.0/glib/gthread.h \
@@ -28,8 +31,8 @@ gsequencer-ags_add_region_to_selection.o: \
  /usr/include/bits/sigset.h /usr/include/bits/signum.h \
  /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \
  /usr/include/bits/sigcontext.h /usr/include/bits/sigstack.h \
- /usr/include/sys/ucontext.h /usr/include/bits/pthreadtypes.h \
- /usr/include/bits/sigthread.h /usr/include/glib-2.0/glib/gbase64.h \
+ /usr/include/sys/ucontext.h /usr/include/bits/sigthread.h \
+ /usr/include/glib-2.0/glib/gbase64.h \
  /usr/include/glib-2.0/glib/gbitlock.h \
  /usr/include/glib-2.0/glib/gbookmarkfile.h \
  /usr/include/glib-2.0/glib/gbytes.h \
@@ -83,14 +86,8 @@ gsequencer-ags_add_region_to_selection.o: \
  /usr/include/glib-2.0/glib/deprecated/gmain.h \
  /usr/include/glib-2.0/glib/deprecated/grel.h \
  /usr/include/glib-2.0/glib/deprecated/gthread.h /usr/include/sys/types.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
  /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/sys/sysmacros.h /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/bits/sched.h /usr/include/bits/setjmp.h \
- /usr/include/glib-2.0/glib-object.h \
- /usr/include/glib-2.0/gobject/gbinding.h \
- /usr/include/glib-2.0/gobject/gobject.h \
+ /usr/include/sys/sysmacros.h /usr/include/glib-2.0/gobject/gobject.h \
  /usr/include/glib-2.0/gobject/gtype.h \
  /usr/include/glib-2.0/gobject/gvalue.h \
  /usr/include/glib-2.0/gobject/gparam.h \
@@ -105,8 +102,8 @@ gsequencer-ags_add_region_to_selection.o: \
  /usr/include/glib-2.0/gobject/gtypemodule.h \
  /usr/include/glib-2.0/gobject/gtypeplugin.h \
  /usr/include/glib-2.0/gobject/gvaluearray.h \
- /usr/include/glib-2.0/gobject/gvaluetypes.h src/ags/audio/ags_task.h \
- src/ags/audio/ags_notation.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/glib-2.0/gobject/gvaluetypes.h \
+ src/ags/object/ags_connectable.h /usr/include/libxml2/libxml/tree.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/include/bits/stdio_lim.h \
  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
@@ -129,14 +126,55 @@ gsequencer-ags_add_region_to_selection.o: \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
- /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
- src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
- src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
- src/ags-lib/object/ags_connectable.h
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h
 
 /usr/include/stdc-predef.h:
 
-src/ags/audio/task/ags_add_region_to_selection.h:
+src/ags/thread/ags_task.h:
+
+/usr/include/pthread.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/sched.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stddef.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/glib-2.0/glib-object.h:
+
+/usr/include/glib-2.0/gobject/gbinding.h:
 
 /usr/include/glib-2.0/glib.h:
 
@@ -148,23 +186,11 @@ src/ags/audio/task/ags_add_region_to_selection.h:
 
 /usr/include/glib-2.0/glib/gmacros.h:
 
-/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stddef.h:
-
 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include-fixed/limits.h:
 
 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
-
-/usr/include/features.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/gnu/stubs-64.h:
 
 /usr/include/bits/posix1_lim.h:
 
@@ -177,16 +203,6 @@ src/ags/audio/task/ags_add_region_to_selection.h:
 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/float.h:
 
 /usr/include/glib-2.0/glib/gversionmacros.h:
-
-/usr/include/time.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/xlocale.h:
 
 /usr/include/glib-2.0/glib/garray.h:
 
@@ -219,8 +235,6 @@ src/ags/audio/task/ags_add_region_to_selection.h:
 /usr/include/bits/sigstack.h:
 
 /usr/include/sys/ucontext.h:
-
-/usr/include/bits/pthreadtypes.h:
 
 /usr/include/bits/sigthread.h:
 
@@ -356,31 +370,11 @@ src/ags/audio/task/ags_add_region_to_selection.h:
 
 /usr/include/sys/types.h:
 
-/usr/include/endian.h:
-
-/usr/include/bits/endian.h:
-
-/usr/include/bits/byteswap.h:
-
-/usr/include/bits/byteswap-16.h:
-
 /usr/include/sys/select.h:
 
 /usr/include/bits/select.h:
 
 /usr/include/sys/sysmacros.h:
-
-/usr/include/pthread.h:
-
-/usr/include/sched.h:
-
-/usr/include/bits/sched.h:
-
-/usr/include/bits/setjmp.h:
-
-/usr/include/glib-2.0/glib-object.h:
-
-/usr/include/glib-2.0/gobject/gbinding.h:
 
 /usr/include/glib-2.0/gobject/gobject.h:
 
@@ -414,9 +408,7 @@ src/ags/audio/task/ags_add_region_to_selection.h:
 
 /usr/include/glib-2.0/gobject/gvaluetypes.h:
 
-src/ags/audio/ags_task.h:
-
-src/ags/audio/ags_notation.h:
+src/ags/object/ags_connectable.h:
 
 /usr/include/libxml2/libxml/tree.h:
 
@@ -487,13 +479,3 @@ src/ags/audio/ags_notation.h:
 /usr/include/libxml2/libxml/xlink.h:
 
 /usr/include/libxml2/libxml/SAX2.h:
-
-src/ags/thread/ags_timestamp_thread.h:
-
-src/ags/thread/ags_thread-posix.h:
-
-src/ags/audio/ags_timestamp.h:
-
-src/ags/audio/ags_note.h:
-
-src/ags-lib/object/ags_connectable.h:

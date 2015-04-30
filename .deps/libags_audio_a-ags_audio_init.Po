@@ -104,7 +104,7 @@ libags_audio_a-ags_audio_init.o: src/ags/audio/ags_audio_init.c \
  /usr/include/glib-2.0/gobject/gtypeplugin.h \
  /usr/include/glib-2.0/gobject/gvaluearray.h \
  /usr/include/glib-2.0/gobject/gvaluetypes.h \
- src/ags/object/ags_application_context.h src/ags/lib/ags_log.h \
+ src/ags/object/ags_application_context.h src/ags/log/ags_log.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/include/bits/stdio_lim.h \
  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
@@ -415,7 +415,7 @@ src/ags/audio/ags_audio_init.h:
 
 src/ags/object/ags_application_context.h:
 
-src/ags/lib/ags_log.h:
+src/ags/log/ags_log.h:
 
 /usr/include/stdio.h:
 

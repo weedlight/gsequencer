@@ -1,5 +1,5 @@
-libags_a-ags_connectable.o: src/ags-lib/object/ags_connectable.c \
- /usr/include/stdc-predef.h src/ags-lib/object/ags_connectable.h \
+libags_a-ags_connectable.o: src/ags/object/ags_connectable.c \
+ /usr/include/stdc-predef.h src/ags/object/ags_connectable.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/glib-2.0/include/glibconfig.h \
@@ -130,7 +130,7 @@ libags_a-ags_connectable.o: src/ags-lib/object/ags_connectable.c \
 
 /usr/include/stdc-predef.h:
 
-src/ags-lib/object/ags_connectable.h:
+src/ags/object/ags_connectable.h:
 
 /usr/include/glib-2.0/glib.h:
 
