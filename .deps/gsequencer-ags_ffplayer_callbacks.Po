@@ -637,27 +637,10 @@ gsequencer-ags_ffplayer_callbacks.o: \
  /usr/include/libinstpatch-1.0/libinstpatch/misc.h \
  /usr/include/libinstpatch-1.0/libinstpatch/version.h \
  src/ags/X/ags_machine_callbacks.h src/ags/thread/ags_task.h \
- src/ags/audio/file/ags_playable.h src/ags/audio/ags_devout.h \
- src/ags/audio/thread/ags_iterator_thread.h /usr/include/alsa/asoundlib.h \
- /usr/include/string.h /usr/include/bits/string.h \
- /usr/include/bits/string2.h /usr/include/fcntl.h \
- /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
- /usr/include/bits/stat.h /usr/include/assert.h /usr/include/sys/poll.h \
- /usr/include/bits/poll.h /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/alsa/asoundef.h /usr/include/alsa/version.h \
- /usr/include/alsa/global.h /usr/include/alsa/input.h \
- /usr/include/alsa/output.h /usr/include/alsa/error.h \
- /usr/include/alsa/conf.h /usr/include/alsa/pcm.h \
- /usr/include/alsa/rawmidi.h /usr/include/alsa/timer.h \
- /usr/include/alsa/hwdep.h /usr/include/alsa/control.h \
- /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
- /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
- /usr/include/alsa/seq_midi_event.h src/ags/audio/task/ags_link_channel.h \
+ src/ags/audio/file/ags_playable.h src/ags/object/ags_soundcard.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/audio/task/ags_link_channel.h \
  src/ags/audio/task/ags_add_audio_signal.h src/ags/X/ags_window.h \
- src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
  src/ags/X/ags_automation_editor.h \
  src/ags/X/editor/ags_automation_toolbar.h \
  src/ags/X/editor/ags_port_selection.h src/ags/X/editor/ags_notebook.h \
@@ -673,8 +656,8 @@ gsequencer-ags_ffplayer_callbacks.o: \
  src/ags/X/ags_performance_preferences.h \
  src/ags/X/ags_server_preferences.h src/ags/audio/ags_input.h \
  /usr/include/glib-2.0/glib/gstdio.h /usr/include/glib-2.0/glib/gprintf.h \
- /usr/include/sys/stat.h src/ags/audio/ags_output.h \
- src/ags/audio/file/ags_audio_file.h \
+ /usr/include/sys/stat.h /usr/include/bits/stat.h \
+ src/ags/audio/ags_output.h src/ags/audio/file/ags_audio_file.h \
  src/ags/audio/file/ags_ipatch_sf2_reader.h /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
@@ -2153,84 +2136,6 @@ src/ags/thread/ags_task.h:
 
 src/ags/audio/file/ags_playable.h:
 
-src/ags/audio/ags_devout.h:
-
-src/ags/audio/thread/ags_iterator_thread.h:
-
-/usr/include/alsa/asoundlib.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/string.h:
-
-/usr/include/bits/string2.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/bits/fcntl.h:
-
-/usr/include/bits/fcntl-linux.h:
-
-/usr/include/bits/stat.h:
-
-/usr/include/assert.h:
-
-/usr/include/sys/poll.h:
-
-/usr/include/bits/poll.h:
-
-/usr/include/errno.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/alsa/asoundef.h:
-
-/usr/include/alsa/version.h:
-
-/usr/include/alsa/global.h:
-
-/usr/include/alsa/input.h:
-
-/usr/include/alsa/output.h:
-
-/usr/include/alsa/error.h:
-
-/usr/include/alsa/conf.h:
-
-/usr/include/alsa/pcm.h:
-
-/usr/include/alsa/rawmidi.h:
-
-/usr/include/alsa/timer.h:
-
-/usr/include/alsa/hwdep.h:
-
-/usr/include/alsa/control.h:
-
-/usr/include/alsa/mixer.h:
-
-/usr/include/alsa/seq_event.h:
-
-/usr/include/alsa/seq.h:
-
-/usr/include/alsa/seqmid.h:
-
-/usr/include/alsa/seq_midi_event.h:
-
-src/ags/audio/task/ags_link_channel.h:
-
-src/ags/audio/task/ags_add_audio_signal.h:
-
-src/ags/X/ags_window.h:
-
 src/ags/object/ags_soundcard.h:
 
 src/ags/object/ags_application_context.h:
@@ -2238,6 +2143,12 @@ src/ags/object/ags_application_context.h:
 src/ags/object/ags_config.h:
 
 src/ags/file/ags_file.h:
+
+src/ags/audio/task/ags_link_channel.h:
+
+src/ags/audio/task/ags_add_audio_signal.h:
+
+src/ags/X/ags_window.h:
 
 src/ags/X/ags_automation_editor.h:
 
@@ -2292,6 +2203,8 @@ src/ags/audio/ags_input.h:
 /usr/include/glib-2.0/glib/gprintf.h:
 
 /usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:
 
 src/ags/audio/ags_output.h:
 

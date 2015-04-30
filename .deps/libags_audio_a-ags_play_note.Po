@@ -102,11 +102,37 @@ libags_audio_a-ags_play_note.o: src/ags/audio/recall/ags_play_note.c \
  /usr/include/glib-2.0/gobject/gtypemodule.h \
  /usr/include/glib-2.0/gobject/gtypeplugin.h \
  /usr/include/glib-2.0/gobject/gvaluearray.h \
- /usr/include/glib-2.0/gobject/gvaluetypes.h src/ags/audio/ags_devout.h \
- src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
- src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_container.h \
- src/ags/audio/thread/ags_iterator_thread.h \
- src/ags/thread/ags_thread-posix.h src/ags/audio/ags_channel.h \
+ /usr/include/glib-2.0/gobject/gvaluetypes.h \
+ src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
+ src/ags/object/ags_config.h src/ags/file/ags_file.h \
+ /usr/include/libxml2/libxml/tree.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/globals.h \
+ /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h /usr/include/iconv.h \
+ /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ src/ags/audio/ags_recall.h src/ags/audio/ags_port.h \
+ /usr/include/ladspa.h src/ags/audio/ags_recall_id.h \
+ src/ags/audio/ags_recycling.h src/ags/audio/ags_audio_signal.h \
+ src/ags/audio/ags_recycling_container.h \
+ src/ags/audio/ags_recall_dependency.h src/ags/audio/ags_channel.h \
  /usr/include/gtk-2.0/gtk/gtk.h /usr/include/gtk-2.0/gdk/gdk.h \
  /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h \
  /usr/include/glib-2.0/gio/gio.h /usr/include/glib-2.0/gio/giotypes.h \
@@ -272,10 +298,8 @@ libags_audio_a-ags_play_note.o: src/ags/audio/recall/ags_play_note.c \
  /usr/include/pango-1.0/pango/pango-layout.h \
  /usr/include/pango-1.0/pango/pango-tabs.h \
  /usr/include/pango-1.0/pango/pango-renderer.h \
- /usr/include/pango-1.0/pango/pango-utils.h /usr/include/stdio.h \
- /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
- /usr/include/bits/stdio.h /usr/lib/gtk-2.0/include/gdkconfig.h \
+ /usr/include/pango-1.0/pango/pango-utils.h \
+ /usr/lib/gtk-2.0/include/gdkconfig.h \
  /usr/include/gtk-2.0/gdk/gdkdisplay.h \
  /usr/include/gtk-2.0/gdk/gdkevents.h /usr/include/gtk-2.0/gdk/gdkcolor.h \
  /usr/include/gtk-2.0/gdk/gdkdnd.h /usr/include/gtk-2.0/gdk/gdkinput.h \
@@ -529,48 +553,9 @@ libags_audio_a-ags_play_note.o: src/ags/audio/recall/ags_play_note.c \
  /usr/include/gtk-2.0/gtk/gtkoldeditable.h \
  /usr/include/gtk-2.0/gtk/gtkoptionmenu.h \
  /usr/include/gtk-2.0/gtk/gtkpreview.h \
- /usr/include/gtk-2.0/gtk/gtktipsquery.h src/ags/audio/ags_recall.h \
- src/ags/audio/ags_port.h /usr/include/ladspa.h \
- src/ags/audio/ags_recall_dependency.h src/ags/audio/ags_notation.h \
- /usr/include/libxml2/libxml/tree.h \
- /usr/include/libxml2/libxml/xmlversion.h \
- /usr/include/libxml2/libxml/xmlexports.h \
- /usr/include/libxml2/libxml/xmlstring.h \
- /usr/include/libxml2/libxml/xmlregexp.h \
- /usr/include/libxml2/libxml/dict.h \
- /usr/include/libxml2/libxml/xmlmemory.h \
- /usr/include/libxml2/libxml/threads.h \
- /usr/include/libxml2/libxml/globals.h \
- /usr/include/libxml2/libxml/parser.h /usr/include/libxml2/libxml/hash.h \
- /usr/include/libxml2/libxml/valid.h \
- /usr/include/libxml2/libxml/xmlerror.h \
- /usr/include/libxml2/libxml/list.h \
- /usr/include/libxml2/libxml/xmlautomata.h \
- /usr/include/libxml2/libxml/entities.h \
- /usr/include/libxml2/libxml/encoding.h /usr/include/iconv.h \
- /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
- /usr/include/stdlib.h /usr/include/bits/waitflags.h \
- /usr/include/bits/waitstatus.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
- /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
- src/ags/thread/ags_timestamp_thread.h src/ags/audio/ags_timestamp.h \
- src/ags/audio/ags_note.h /usr/include/alsa/asoundlib.h \
- /usr/include/string.h /usr/include/bits/string.h \
- /usr/include/bits/string2.h /usr/include/fcntl.h \
- /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
- /usr/include/bits/stat.h /usr/include/assert.h /usr/include/sys/poll.h \
- /usr/include/bits/poll.h /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/alsa/asoundef.h /usr/include/alsa/version.h \
- /usr/include/alsa/global.h /usr/include/alsa/input.h \
- /usr/include/alsa/output.h /usr/include/alsa/error.h \
- /usr/include/alsa/conf.h /usr/include/alsa/pcm.h \
- /usr/include/alsa/rawmidi.h /usr/include/alsa/timer.h \
- /usr/include/alsa/hwdep.h /usr/include/alsa/control.h \
- /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
- /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
- /usr/include/alsa/seq_midi_event.h \
+ /usr/include/gtk-2.0/gtk/gtktipsquery.h src/ags/audio/ags_notation.h \
+ src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
+ src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/audio/recall/ags_play_notation_audio_run.h \
  src/ags/audio/recall/ags_delay_audio_run.h \
  src/ags/audio/ags_recall_audio_run.h src/ags/audio/ags_recall_audio.h \
@@ -859,7 +844,89 @@ src/ags/audio/recall/ags_play_note.h:
 
 /usr/include/glib-2.0/gobject/gvaluetypes.h:
 
-src/ags/audio/ags_devout.h:
+src/ags/object/ags_soundcard.h:
+
+src/ags/object/ags_application_context.h:
+
+src/ags/object/ags_config.h:
+
+src/ags/file/ags_file.h:
+
+/usr/include/libxml2/libxml/tree.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/libxml2/libxml/xmlversion.h:
+
+/usr/include/libxml2/libxml/xmlexports.h:
+
+/usr/include/libxml2/libxml/xmlstring.h:
+
+/usr/include/libxml2/libxml/xmlregexp.h:
+
+/usr/include/libxml2/libxml/dict.h:
+
+/usr/include/libxml2/libxml/xmlmemory.h:
+
+/usr/include/libxml2/libxml/threads.h:
+
+/usr/include/libxml2/libxml/globals.h:
+
+/usr/include/libxml2/libxml/parser.h:
+
+/usr/include/libxml2/libxml/hash.h:
+
+/usr/include/libxml2/libxml/valid.h:
+
+/usr/include/libxml2/libxml/xmlerror.h:
+
+/usr/include/libxml2/libxml/list.h:
+
+/usr/include/libxml2/libxml/xmlautomata.h:
+
+/usr/include/libxml2/libxml/entities.h:
+
+/usr/include/libxml2/libxml/encoding.h:
+
+/usr/include/iconv.h:
+
+/usr/include/libxml2/libxml/xmlIO.h:
+
+/usr/include/libxml2/libxml/SAX.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/libxml2/libxml/xlink.h:
+
+/usr/include/libxml2/libxml/SAX2.h:
+
+src/ags/audio/ags_recall.h:
+
+src/ags/audio/ags_port.h:
+
+/usr/include/ladspa.h:
 
 src/ags/audio/ags_recall_id.h:
 
@@ -869,9 +936,7 @@ src/ags/audio/ags_audio_signal.h:
 
 src/ags/audio/ags_recycling_container.h:
 
-src/ags/audio/thread/ags_iterator_thread.h:
-
-src/ags/thread/ags_thread-posix.h:
+src/ags/audio/ags_recall_dependency.h:
 
 src/ags/audio/ags_channel.h:
 
@@ -1234,20 +1299,6 @@ src/ags/audio/ags_channel.h:
 /usr/include/pango-1.0/pango/pango-renderer.h:
 
 /usr/include/pango-1.0/pango/pango-utils.h:
-
-/usr/include/stdio.h:
-
-/usr/include/libio.h:
-
-/usr/include/_G_config.h:
-
-/usr/include/wchar.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/sys_errlist.h:
-
-/usr/include/bits/stdio.h:
 
 /usr/lib/gtk-2.0/include/gdkconfig.h:
 
@@ -1811,145 +1862,15 @@ src/ags/audio/ags_channel.h:
 
 /usr/include/gtk-2.0/gtk/gtktipsquery.h:
 
-src/ags/audio/ags_recall.h:
-
-src/ags/audio/ags_port.h:
-
-/usr/include/ladspa.h:
-
-src/ags/audio/ags_recall_dependency.h:
-
 src/ags/audio/ags_notation.h:
 
-/usr/include/libxml2/libxml/tree.h:
-
-/usr/include/libxml2/libxml/xmlversion.h:
-
-/usr/include/libxml2/libxml/xmlexports.h:
-
-/usr/include/libxml2/libxml/xmlstring.h:
-
-/usr/include/libxml2/libxml/xmlregexp.h:
-
-/usr/include/libxml2/libxml/dict.h:
-
-/usr/include/libxml2/libxml/xmlmemory.h:
-
-/usr/include/libxml2/libxml/threads.h:
-
-/usr/include/libxml2/libxml/globals.h:
-
-/usr/include/libxml2/libxml/parser.h:
-
-/usr/include/libxml2/libxml/hash.h:
-
-/usr/include/libxml2/libxml/valid.h:
-
-/usr/include/libxml2/libxml/xmlerror.h:
-
-/usr/include/libxml2/libxml/list.h:
-
-/usr/include/libxml2/libxml/xmlautomata.h:
-
-/usr/include/libxml2/libxml/entities.h:
-
-/usr/include/libxml2/libxml/encoding.h:
-
-/usr/include/iconv.h:
-
-/usr/include/libxml2/libxml/xmlIO.h:
-
-/usr/include/libxml2/libxml/SAX.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/stdlib-bsearch.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/libxml2/libxml/xlink.h:
-
-/usr/include/libxml2/libxml/SAX2.h:
-
 src/ags/thread/ags_timestamp_thread.h:
+
+src/ags/thread/ags_thread-posix.h:
 
 src/ags/audio/ags_timestamp.h:
 
 src/ags/audio/ags_note.h:
-
-/usr/include/alsa/asoundlib.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/string.h:
-
-/usr/include/bits/string2.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/bits/fcntl.h:
-
-/usr/include/bits/fcntl-linux.h:
-
-/usr/include/bits/stat.h:
-
-/usr/include/assert.h:
-
-/usr/include/sys/poll.h:
-
-/usr/include/bits/poll.h:
-
-/usr/include/errno.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/alsa/asoundef.h:
-
-/usr/include/alsa/version.h:
-
-/usr/include/alsa/global.h:
-
-/usr/include/alsa/input.h:
-
-/usr/include/alsa/output.h:
-
-/usr/include/alsa/error.h:
-
-/usr/include/alsa/conf.h:
-
-/usr/include/alsa/pcm.h:
-
-/usr/include/alsa/rawmidi.h:
-
-/usr/include/alsa/timer.h:
-
-/usr/include/alsa/hwdep.h:
-
-/usr/include/alsa/control.h:
-
-/usr/include/alsa/mixer.h:
-
-/usr/include/alsa/seq_event.h:
-
-/usr/include/alsa/seq.h:
-
-/usr/include/alsa/seqmid.h:
-
-/usr/include/alsa/seq_midi_event.h:
 
 src/ags/audio/recall/ags_play_notation_audio_run.h:
 

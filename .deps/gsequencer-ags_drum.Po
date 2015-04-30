@@ -577,24 +577,7 @@ gsequencer-ags_drum.o: src/ags/X/machine/ags_drum.c \
  src/ags/audio/recall/ags_delay_audio.h \
  src/ags/audio/recall/ags_count_beats_audio.h \
  src/ags/audio/recall/ags_count_beats_audio_run.h \
- src/ags/audio/recall/ags_copy_pattern_audio.h src/ags/audio/ags_devout.h \
- src/ags/audio/thread/ags_iterator_thread.h /usr/include/alsa/asoundlib.h \
- /usr/include/string.h /usr/include/bits/string.h \
- /usr/include/bits/string2.h /usr/include/fcntl.h \
- /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
- /usr/include/assert.h /usr/include/sys/poll.h /usr/include/bits/poll.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/alsa/asoundef.h /usr/include/alsa/version.h \
- /usr/include/alsa/global.h /usr/include/alsa/input.h \
- /usr/include/alsa/output.h /usr/include/alsa/error.h \
- /usr/include/alsa/conf.h /usr/include/alsa/pcm.h \
- /usr/include/alsa/rawmidi.h /usr/include/alsa/timer.h \
- /usr/include/alsa/hwdep.h /usr/include/alsa/control.h \
- /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
- /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
- /usr/include/alsa/seq_midi_event.h \
+ src/ags/audio/recall/ags_copy_pattern_audio.h \
  src/ags/audio/recall/ags_copy_pattern_audio_run.h \
  src/ags/audio/recall/ags_copy_pattern_channel.h \
  src/ags/audio/ags_recall_channel.h \
@@ -2099,76 +2082,6 @@ src/ags/audio/recall/ags_count_beats_audio.h:
 src/ags/audio/recall/ags_count_beats_audio_run.h:
 
 src/ags/audio/recall/ags_copy_pattern_audio.h:
-
-src/ags/audio/ags_devout.h:
-
-src/ags/audio/thread/ags_iterator_thread.h:
-
-/usr/include/alsa/asoundlib.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/string.h:
-
-/usr/include/bits/string2.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/bits/fcntl.h:
-
-/usr/include/bits/fcntl-linux.h:
-
-/usr/include/assert.h:
-
-/usr/include/sys/poll.h:
-
-/usr/include/bits/poll.h:
-
-/usr/include/errno.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/alsa/asoundef.h:
-
-/usr/include/alsa/version.h:
-
-/usr/include/alsa/global.h:
-
-/usr/include/alsa/input.h:
-
-/usr/include/alsa/output.h:
-
-/usr/include/alsa/error.h:
-
-/usr/include/alsa/conf.h:
-
-/usr/include/alsa/pcm.h:
-
-/usr/include/alsa/rawmidi.h:
-
-/usr/include/alsa/timer.h:
-
-/usr/include/alsa/hwdep.h:
-
-/usr/include/alsa/control.h:
-
-/usr/include/alsa/mixer.h:
-
-/usr/include/alsa/seq_event.h:
-
-/usr/include/alsa/seq.h:
-
-/usr/include/alsa/seqmid.h:
-
-/usr/include/alsa/seq_midi_event.h:
 
 src/ags/audio/recall/ags_copy_pattern_audio_run.h:
 

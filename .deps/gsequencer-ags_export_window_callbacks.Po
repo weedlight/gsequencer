@@ -551,46 +551,29 @@ gsequencer-ags_export_window_callbacks.o: \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/thread/ags_thread-posix.h src/ags/thread/ags_task_thread.h \
  src/ags/thread/ags_thread_pool.h src/ags/object/ags_main_loop.h \
- src/ags/thread/ags_task.h src/ags/audio/ags_devout.h \
- src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
- src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_container.h \
- src/ags/audio/thread/ags_iterator_thread.h src/ags/audio/ags_channel.h \
- src/ags/audio/ags_recall.h src/ags/audio/ags_port.h \
- /usr/include/ladspa.h src/ags/audio/ags_recall_dependency.h \
- src/ags/audio/ags_notation.h src/ags/thread/ags_timestamp_thread.h \
- src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
- /usr/include/alsa/asoundlib.h /usr/include/string.h \
- /usr/include/bits/string.h /usr/include/bits/string2.h \
- /usr/include/fcntl.h /usr/include/bits/fcntl.h \
- /usr/include/bits/fcntl-linux.h /usr/include/bits/stat.h \
- /usr/include/assert.h /usr/include/sys/poll.h /usr/include/bits/poll.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/alsa/asoundef.h /usr/include/alsa/version.h \
- /usr/include/alsa/global.h /usr/include/alsa/input.h \
- /usr/include/alsa/output.h /usr/include/alsa/error.h \
- /usr/include/alsa/conf.h /usr/include/alsa/pcm.h \
- /usr/include/alsa/rawmidi.h /usr/include/alsa/timer.h \
- /usr/include/alsa/hwdep.h /usr/include/alsa/control.h \
- /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
- /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
- /usr/include/alsa/seq_midi_event.h \
+ src/ags/thread/ags_task.h src/ags/object/ags_soundcard.h \
  src/ags/audio/thread/ags_export_thread.h \
  src/ags/audio/file/ags_audio_file.h \
  src/ags/audio/task/ags_export_output.h src/ags/X/ags_window.h \
- src/ags/object/ags_soundcard.h src/ags/X/ags_automation_editor.h \
+ src/ags/X/ags_automation_editor.h \
  src/ags/X/editor/ags_automation_toolbar.h \
- src/ags/X/editor/ags_port_selection.h src/ags/X/editor/ags_notebook.h \
+ src/ags/X/editor/ags_port_selection.h src/ags/audio/ags_port.h \
+ /usr/include/ladspa.h src/ags/X/editor/ags_notebook.h \
  src/ags/X/editor/ags_machine_selector.h src/ags/X/ags_machine.h \
- src/ags/audio/ags_audio.h src/ags/X/editor/ags_automation_edit.h \
- src/ags/widget/ags_ruler.h src/ags/audio/ags_automation.h \
- src/ags/audio/ags_acceleration.h src/ags/X/ags_menu_bar.h \
- src/ags/X/ags_editor.h src/ags/X/editor/ags_toolbar.h \
- src/ags/X/editor/ags_meter.h src/ags/X/editor/ags_soundset.h \
- src/ags/X/editor/ags_note_edit.h src/ags/X/editor/ags_pattern_edit.h \
- src/ags/X/ags_navigation.h src/ags/X/ags_preferences.h \
- src/ags/X/ags_generic_preferences.h src/ags/X/ags_audio_preferences.h \
+ src/ags/audio/ags_audio.h src/ags/audio/ags_channel.h \
+ src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
+ src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_container.h \
+ src/ags/audio/ags_recall.h src/ags/audio/ags_recall_dependency.h \
+ src/ags/audio/ags_notation.h src/ags/thread/ags_timestamp_thread.h \
+ src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
+ src/ags/X/editor/ags_automation_edit.h src/ags/widget/ags_ruler.h \
+ src/ags/audio/ags_automation.h src/ags/audio/ags_acceleration.h \
+ src/ags/X/ags_menu_bar.h src/ags/X/ags_editor.h \
+ src/ags/X/editor/ags_toolbar.h src/ags/X/editor/ags_meter.h \
+ src/ags/X/editor/ags_soundset.h src/ags/X/editor/ags_note_edit.h \
+ src/ags/X/editor/ags_pattern_edit.h src/ags/X/ags_navigation.h \
+ src/ags/X/ags_preferences.h src/ags/X/ags_generic_preferences.h \
+ src/ags/X/ags_audio_preferences.h \
  src/ags/X/ags_performance_preferences.h \
  src/ags/X/ags_server_preferences.h
 
@@ -1884,7 +1867,35 @@ src/ags/object/ags_main_loop.h:
 
 src/ags/thread/ags_task.h:
 
-src/ags/audio/ags_devout.h:
+src/ags/object/ags_soundcard.h:
+
+src/ags/audio/thread/ags_export_thread.h:
+
+src/ags/audio/file/ags_audio_file.h:
+
+src/ags/audio/task/ags_export_output.h:
+
+src/ags/X/ags_window.h:
+
+src/ags/X/ags_automation_editor.h:
+
+src/ags/X/editor/ags_automation_toolbar.h:
+
+src/ags/X/editor/ags_port_selection.h:
+
+src/ags/audio/ags_port.h:
+
+/usr/include/ladspa.h:
+
+src/ags/X/editor/ags_notebook.h:
+
+src/ags/X/editor/ags_machine_selector.h:
+
+src/ags/X/ags_machine.h:
+
+src/ags/audio/ags_audio.h:
+
+src/ags/audio/ags_channel.h:
 
 src/ags/audio/ags_recall_id.h:
 
@@ -1894,15 +1905,7 @@ src/ags/audio/ags_audio_signal.h:
 
 src/ags/audio/ags_recycling_container.h:
 
-src/ags/audio/thread/ags_iterator_thread.h:
-
-src/ags/audio/ags_channel.h:
-
 src/ags/audio/ags_recall.h:
-
-src/ags/audio/ags_port.h:
-
-/usr/include/ladspa.h:
 
 src/ags/audio/ags_recall_dependency.h:
 
@@ -1913,98 +1916,6 @@ src/ags/thread/ags_timestamp_thread.h:
 src/ags/audio/ags_timestamp.h:
 
 src/ags/audio/ags_note.h:
-
-/usr/include/alsa/asoundlib.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/string.h:
-
-/usr/include/bits/string2.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/bits/fcntl.h:
-
-/usr/include/bits/fcntl-linux.h:
-
-/usr/include/bits/stat.h:
-
-/usr/include/assert.h:
-
-/usr/include/sys/poll.h:
-
-/usr/include/bits/poll.h:
-
-/usr/include/errno.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/alsa/asoundef.h:
-
-/usr/include/alsa/version.h:
-
-/usr/include/alsa/global.h:
-
-/usr/include/alsa/input.h:
-
-/usr/include/alsa/output.h:
-
-/usr/include/alsa/error.h:
-
-/usr/include/alsa/conf.h:
-
-/usr/include/alsa/pcm.h:
-
-/usr/include/alsa/rawmidi.h:
-
-/usr/include/alsa/timer.h:
-
-/usr/include/alsa/hwdep.h:
-
-/usr/include/alsa/control.h:
-
-/usr/include/alsa/mixer.h:
-
-/usr/include/alsa/seq_event.h:
-
-/usr/include/alsa/seq.h:
-
-/usr/include/alsa/seqmid.h:
-
-/usr/include/alsa/seq_midi_event.h:
-
-src/ags/audio/thread/ags_export_thread.h:
-
-src/ags/audio/file/ags_audio_file.h:
-
-src/ags/audio/task/ags_export_output.h:
-
-src/ags/X/ags_window.h:
-
-src/ags/object/ags_soundcard.h:
-
-src/ags/X/ags_automation_editor.h:
-
-src/ags/X/editor/ags_automation_toolbar.h:
-
-src/ags/X/editor/ags_port_selection.h:
-
-src/ags/X/editor/ags_notebook.h:
-
-src/ags/X/editor/ags_machine_selector.h:
-
-src/ags/X/ags_machine.h:
-
-src/ags/audio/ags_audio.h:
 
 src/ags/X/editor/ags_automation_edit.h:
 

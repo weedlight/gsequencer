@@ -567,24 +567,8 @@ gsequencer-ags_effect_bulk.o: src/ags/X/ags_effect_bulk.c \
  /usr/include/sys/stat.h /usr/include/bits/stat.h \
  src/ags/audio/ags_recall_audio.h src/ags/audio/ags_recall_audio_run.h \
  src/ags/audio/ags_recall_channel.h \
- src/ags/audio/ags_recall_channel_run.h src/ags/audio/ags_devout.h \
- src/ags/audio/thread/ags_iterator_thread.h /usr/include/alsa/asoundlib.h \
- /usr/include/string.h /usr/include/bits/string.h \
- /usr/include/bits/string2.h /usr/include/fcntl.h \
- /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
- /usr/include/assert.h /usr/include/sys/poll.h /usr/include/bits/poll.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/alsa/asoundef.h /usr/include/alsa/version.h \
- /usr/include/alsa/global.h /usr/include/alsa/input.h \
- /usr/include/alsa/output.h /usr/include/alsa/error.h \
- /usr/include/alsa/conf.h /usr/include/alsa/pcm.h \
- /usr/include/alsa/rawmidi.h /usr/include/alsa/timer.h \
- /usr/include/alsa/hwdep.h /usr/include/alsa/control.h \
- /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
- /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
- /usr/include/alsa/seq_midi_event.h src/ags/audio/ags_recall_container.h \
+ src/ags/audio/ags_recall_channel_run.h \
+ src/ags/audio/ags_recall_container.h \
  src/ags/audio/ags_recall_channel_run_dummy.h \
  src/ags/audio/ags_recall_recycling_dummy.h \
  src/ags/audio/ags_recall_recycling.h src/ags/audio/ags_recall_ladspa.h \
@@ -608,7 +592,8 @@ gsequencer-ags_effect_bulk.o: src/ags/X/ags_effect_bulk.c \
  src/ags/X/ags_server_preferences.h src/ags/X/ags_ladspa_browser.h \
  src/ags/X/ags_bulk_member.h src/ags/X/task/ags_add_bulk_member.h \
  src/ags/X/ags_line_member.h src/ags/X/task/ags_update_bulk_member.h \
- /usr/include/dlfcn.h /usr/include/bits/dlfcn.h
+ /usr/include/dlfcn.h /usr/include/bits/dlfcn.h /usr/include/string.h \
+ /usr/include/bits/string.h /usr/include/bits/string2.h
 
 /usr/include/stdc-predef.h:
 
@@ -1958,76 +1943,6 @@ src/ags/audio/ags_recall_channel.h:
 
 src/ags/audio/ags_recall_channel_run.h:
 
-src/ags/audio/ags_devout.h:
-
-src/ags/audio/thread/ags_iterator_thread.h:
-
-/usr/include/alsa/asoundlib.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/string.h:
-
-/usr/include/bits/string2.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/bits/fcntl.h:
-
-/usr/include/bits/fcntl-linux.h:
-
-/usr/include/assert.h:
-
-/usr/include/sys/poll.h:
-
-/usr/include/bits/poll.h:
-
-/usr/include/errno.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/alsa/asoundef.h:
-
-/usr/include/alsa/version.h:
-
-/usr/include/alsa/global.h:
-
-/usr/include/alsa/input.h:
-
-/usr/include/alsa/output.h:
-
-/usr/include/alsa/error.h:
-
-/usr/include/alsa/conf.h:
-
-/usr/include/alsa/pcm.h:
-
-/usr/include/alsa/rawmidi.h:
-
-/usr/include/alsa/timer.h:
-
-/usr/include/alsa/hwdep.h:
-
-/usr/include/alsa/control.h:
-
-/usr/include/alsa/mixer.h:
-
-/usr/include/alsa/seq_event.h:
-
-/usr/include/alsa/seq.h:
-
-/usr/include/alsa/seqmid.h:
-
-/usr/include/alsa/seq_midi_event.h:
-
 src/ags/audio/ags_recall_container.h:
 
 src/ags/audio/ags_recall_channel_run_dummy.h:
@@ -2111,3 +2026,9 @@ src/ags/X/task/ags_update_bulk_member.h:
 /usr/include/dlfcn.h:
 
 /usr/include/bits/dlfcn.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:

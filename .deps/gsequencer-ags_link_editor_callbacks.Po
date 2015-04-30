@@ -556,30 +556,13 @@ gsequencer-ags_link_editor_callbacks.o: \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
- src/ags/audio/file/ags_audio_file.h src/ags/audio/ags_devout.h \
- src/ags/audio/thread/ags_iterator_thread.h /usr/include/alsa/asoundlib.h \
- /usr/include/string.h /usr/include/bits/string.h \
- /usr/include/bits/string2.h /usr/include/fcntl.h \
- /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
- /usr/include/bits/stat.h /usr/include/assert.h /usr/include/sys/poll.h \
- /usr/include/bits/poll.h /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/alsa/asoundef.h /usr/include/alsa/version.h \
- /usr/include/alsa/global.h /usr/include/alsa/input.h \
- /usr/include/alsa/output.h /usr/include/alsa/error.h \
- /usr/include/alsa/conf.h /usr/include/alsa/pcm.h \
- /usr/include/alsa/rawmidi.h /usr/include/alsa/timer.h \
- /usr/include/alsa/hwdep.h /usr/include/alsa/control.h \
- /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
- /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
- /usr/include/alsa/seq_midi_event.h src/ags/audio/ags_output.h \
+ src/ags/audio/file/ags_audio_file.h src/ags/object/ags_soundcard.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/audio/ags_output.h \
  src/ags/audio/ags_input.h /usr/include/glib-2.0/glib/gstdio.h \
  /usr/include/glib-2.0/glib/gprintf.h /usr/include/sys/stat.h \
- src/ags/audio/recall/ags_play_audio_file.h src/ags/X/ags_window.h \
- src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
- src/ags/object/ags_config.h src/ags/file/ags_file.h \
- src/ags/X/ags_automation_editor.h \
+ /usr/include/bits/stat.h src/ags/audio/recall/ags_play_audio_file.h \
+ src/ags/X/ags_window.h src/ags/X/ags_automation_editor.h \
  src/ags/X/editor/ags_automation_toolbar.h \
  src/ags/X/editor/ags_port_selection.h src/ags/X/editor/ags_notebook.h \
  src/ags/X/editor/ags_machine_selector.h \
@@ -1907,77 +1890,13 @@ src/ags/audio/ags_note.h:
 
 src/ags/audio/file/ags_audio_file.h:
 
-src/ags/audio/ags_devout.h:
+src/ags/object/ags_soundcard.h:
 
-src/ags/audio/thread/ags_iterator_thread.h:
+src/ags/object/ags_application_context.h:
 
-/usr/include/alsa/asoundlib.h:
+src/ags/object/ags_config.h:
 
-/usr/include/string.h:
-
-/usr/include/bits/string.h:
-
-/usr/include/bits/string2.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/bits/fcntl.h:
-
-/usr/include/bits/fcntl-linux.h:
-
-/usr/include/bits/stat.h:
-
-/usr/include/assert.h:
-
-/usr/include/sys/poll.h:
-
-/usr/include/bits/poll.h:
-
-/usr/include/errno.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/alsa/asoundef.h:
-
-/usr/include/alsa/version.h:
-
-/usr/include/alsa/global.h:
-
-/usr/include/alsa/input.h:
-
-/usr/include/alsa/output.h:
-
-/usr/include/alsa/error.h:
-
-/usr/include/alsa/conf.h:
-
-/usr/include/alsa/pcm.h:
-
-/usr/include/alsa/rawmidi.h:
-
-/usr/include/alsa/timer.h:
-
-/usr/include/alsa/hwdep.h:
-
-/usr/include/alsa/control.h:
-
-/usr/include/alsa/mixer.h:
-
-/usr/include/alsa/seq_event.h:
-
-/usr/include/alsa/seq.h:
-
-/usr/include/alsa/seqmid.h:
-
-/usr/include/alsa/seq_midi_event.h:
+src/ags/file/ags_file.h:
 
 src/ags/audio/ags_output.h:
 
@@ -1989,17 +1908,11 @@ src/ags/audio/ags_input.h:
 
 /usr/include/sys/stat.h:
 
+/usr/include/bits/stat.h:
+
 src/ags/audio/recall/ags_play_audio_file.h:
 
 src/ags/X/ags_window.h:
-
-src/ags/object/ags_soundcard.h:
-
-src/ags/object/ags_application_context.h:
-
-src/ags/object/ags_config.h:
-
-src/ags/file/ags_file.h:
 
 src/ags/X/ags_automation_editor.h:
 

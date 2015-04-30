@@ -570,31 +570,17 @@ libags_audio_a-ags_count_beats_audio_run.o: \
  src/ags/widget/ags_indicator.h src/ags/widget/ags_hindicator.h \
  src/ags/widget/ags_waveform.h src/ags/widget/ags_dial.h \
  src/ags/widget/ags_cartesian.h src/ags/file/ags_file_id_ref.h \
- src/ags/file/ags_file_lookup.h src/ags/audio/ags_recall_container.h \
+ src/ags/file/ags_file_lookup.h src/ags/audio/ags_playback_domain.h \
+ src/ags/audio/ags_playback.h src/ags/audio/thread/ags_iterator_thread.h \
+ src/ags/audio/ags_recall_container.h \
  src/ags/audio/thread/ags_audio_loop.h /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
  /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
  src/ags/audio/recall/ags_stream_channel_run.h \
- src/ags/audio/ags_recall_channel_run.h src/ags/audio/ags_devout.h \
- src/ags/audio/thread/ags_iterator_thread.h /usr/include/alsa/asoundlib.h \
- /usr/include/string.h /usr/include/bits/string.h \
- /usr/include/bits/string2.h /usr/include/fcntl.h \
- /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
- /usr/include/bits/stat.h /usr/include/assert.h /usr/include/sys/poll.h \
- /usr/include/bits/poll.h /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/alsa/asoundef.h /usr/include/alsa/version.h \
- /usr/include/alsa/global.h /usr/include/alsa/input.h \
- /usr/include/alsa/output.h /usr/include/alsa/error.h \
- /usr/include/alsa/conf.h /usr/include/alsa/pcm.h \
- /usr/include/alsa/rawmidi.h /usr/include/alsa/timer.h \
- /usr/include/alsa/hwdep.h /usr/include/alsa/control.h \
- /usr/include/alsa/mixer.h /usr/include/alsa/seq_event.h \
- /usr/include/alsa/seq.h /usr/include/alsa/seqmid.h \
- /usr/include/alsa/seq_midi_event.h src/ags/audio/ags_recall_channel.h \
+ src/ags/audio/ags_recall_channel_run.h \
+ src/ags/audio/ags_recall_channel.h \
  src/ags/audio/recall/ags_stream_channel.h
 
 /usr/include/stdc-predef.h:
@@ -1947,6 +1933,12 @@ src/ags/file/ags_file_id_ref.h:
 
 src/ags/file/ags_file_lookup.h:
 
+src/ags/audio/ags_playback_domain.h:
+
+src/ags/audio/ags_playback.h:
+
+src/ags/audio/thread/ags_iterator_thread.h:
+
 src/ags/audio/ags_recall_container.h:
 
 src/ags/audio/thread/ags_audio_loop.h:
@@ -1972,78 +1964,6 @@ src/ags/audio/thread/ags_audio_loop.h:
 src/ags/audio/recall/ags_stream_channel_run.h:
 
 src/ags/audio/ags_recall_channel_run.h:
-
-src/ags/audio/ags_devout.h:
-
-src/ags/audio/thread/ags_iterator_thread.h:
-
-/usr/include/alsa/asoundlib.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/string.h:
-
-/usr/include/bits/string2.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/bits/fcntl.h:
-
-/usr/include/bits/fcntl-linux.h:
-
-/usr/include/bits/stat.h:
-
-/usr/include/assert.h:
-
-/usr/include/sys/poll.h:
-
-/usr/include/bits/poll.h:
-
-/usr/include/errno.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/alsa/asoundef.h:
-
-/usr/include/alsa/version.h:
-
-/usr/include/alsa/global.h:
-
-/usr/include/alsa/input.h:
-
-/usr/include/alsa/output.h:
-
-/usr/include/alsa/error.h:
-
-/usr/include/alsa/conf.h:
-
-/usr/include/alsa/pcm.h:
-
-/usr/include/alsa/rawmidi.h:
-
-/usr/include/alsa/timer.h:
-
-/usr/include/alsa/hwdep.h:
-
-/usr/include/alsa/control.h:
-
-/usr/include/alsa/mixer.h:
-
-/usr/include/alsa/seq_event.h:
-
-/usr/include/alsa/seq.h:
-
-/usr/include/alsa/seqmid.h:
-
-/usr/include/alsa/seq_midi_event.h:
 
 src/ags/audio/ags_recall_channel.h:
 
