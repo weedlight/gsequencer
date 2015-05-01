@@ -108,7 +108,7 @@ libags_audio_a-ags_stream_audio_signal.o: \
  src/ags/audio/ags_recall_channel.h src/ags/audio/ags_recall.h \
  src/ags/audio/ags_port.h /usr/include/ladspa.h \
  src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
- src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_container.h \
+ src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_context.h \
  src/ags/audio/ags_recall_dependency.h src/ags/audio/ags_channel.h \
  /usr/include/gtk-2.0/gtk/gtk.h /usr/include/gtk-2.0/gdk/gdk.h \
  /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h \
@@ -862,7 +862,7 @@ src/ags/audio/ags_recycling.h:
 
 src/ags/audio/ags_audio_signal.h:
 
-src/ags/audio/ags_recycling_container.h:
+src/ags/audio/ags_recycling_context.h:
 
 src/ags/audio/ags_recall_dependency.h:
 

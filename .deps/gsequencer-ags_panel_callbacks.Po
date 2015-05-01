@@ -530,7 +530,7 @@ gsequencer-ags_panel_callbacks.o: src/ags/X/machine/ags_panel_callbacks.c \
  src/ags/X/ags_machine.h src/ags/audio/ags_audio.h \
  src/ags/audio/ags_channel.h src/ags/audio/ags_recall_id.h \
  src/ags/audio/ags_recycling.h src/ags/audio/ags_audio_signal.h \
- src/ags/audio/ags_recycling_container.h src/ags/audio/ags_recall.h \
+ src/ags/audio/ags_recycling_context.h src/ags/audio/ags_recall.h \
  src/ags/audio/ags_port.h /usr/include/ladspa.h \
  src/ags/audio/ags_recall_dependency.h src/ags/audio/ags_notation.h \
  /usr/include/libxml2/libxml/tree.h \
@@ -1803,7 +1803,7 @@ src/ags/audio/ags_recycling.h:
 
 src/ags/audio/ags_audio_signal.h:
 
-src/ags/audio/ags_recycling_container.h:
+src/ags/audio/ags_recycling_context.h:
 
 src/ags/audio/ags_recall.h:
 

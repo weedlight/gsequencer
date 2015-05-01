@@ -581,7 +581,7 @@ gsequencer-main.o: src/ags/main.c /usr/include/stdc-predef.h \
  src/ags/X/editor/ags_machine_selector.h src/ags/X/ags_machine.h \
  src/ags/audio/ags_audio.h src/ags/audio/ags_channel.h \
  src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
- src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_container.h \
+ src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_context.h \
  src/ags/audio/ags_recall.h src/ags/audio/ags_recall_dependency.h \
  src/ags/audio/ags_notation.h src/ags/thread/ags_timestamp_thread.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
@@ -2008,7 +2008,7 @@ src/ags/audio/ags_recycling.h:
 
 src/ags/audio/ags_audio_signal.h:
 
-src/ags/audio/ags_recycling_container.h:
+src/ags/audio/ags_recycling_context.h:
 
 src/ags/audio/ags_recall.h:
 

@@ -561,7 +561,7 @@ gsequencer-ags_export_window.o: src/ags/X/ags_export_window.c \
  src/ags/X/editor/ags_machine_selector.h src/ags/X/ags_machine.h \
  src/ags/audio/ags_audio.h src/ags/audio/ags_channel.h \
  src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
- src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_container.h \
+ src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_context.h \
  src/ags/audio/ags_recall.h src/ags/audio/ags_recall_dependency.h \
  src/ags/X/editor/ags_automation_edit.h src/ags/widget/ags_ruler.h \
  src/ags/audio/ags_automation.h src/ags/audio/ags_acceleration.h \
@@ -1896,7 +1896,7 @@ src/ags/audio/ags_recycling.h:
 
 src/ags/audio/ags_audio_signal.h:
 
-src/ags/audio/ags_recycling_container.h:
+src/ags/audio/ags_recycling_context.h:
 
 src/ags/audio/ags_recall.h:
 

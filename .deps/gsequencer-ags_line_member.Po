@@ -529,7 +529,7 @@ gsequencer-ags_line_member.o: src/ags/X/ags_line_member.c \
  /usr/include/gtk-2.0/gtk/gtktipsquery.h src/ags/audio/ags_recall.h \
  src/ags/audio/ags_port.h /usr/include/ladspa.h \
  src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
- src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_container.h \
+ src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_context.h \
  src/ags/audio/ags_recall_dependency.h src/ags/thread/ags_task.h \
  src/ags/X/ags_line_member_callbacks.h \
  src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
@@ -1805,7 +1805,7 @@ src/ags/audio/ags_recycling.h:
 
 src/ags/audio/ags_audio_signal.h:
 
-src/ags/audio/ags_recycling_container.h:
+src/ags/audio/ags_recycling_context.h:
 
 src/ags/audio/ags_recall_dependency.h:
 
