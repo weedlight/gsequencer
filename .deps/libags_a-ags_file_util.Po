@@ -558,16 +558,8 @@ libags_a-ags_file_util.o: src/ags/file/ags_file_util.c \
  src/ags/widget/ags_hindicator.h src/ags/widget/ags_waveform.h \
  src/ags/widget/ags_dial.h src/ags/widget/ags_cartesian.h \
  src/ags/file/ags_file_id_ref.h src/ags/file/ags_file_lookup.h \
- src/ags/file/ags_file_launch.h src/ags/audio/ags_audio.h \
- src/ags/audio/ags_channel.h src/ags/audio/ags_recall_id.h \
- src/ags/audio/ags_recycling.h src/ags/audio/ags_audio_signal.h \
- src/ags/audio/ags_recycling_context.h src/ags/audio/ags_recall.h \
- src/ags/audio/ags_port.h /usr/include/ladspa.h \
- src/ags/audio/ags_recall_dependency.h src/ags/audio/ags_notation.h \
- src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
- src/ags/audio/ags_note.h src/ags/audio/file/ags_audio_file.h \
- /usr/include/string.h /usr/include/bits/string.h \
- /usr/include/bits/string2.h
+ src/ags/file/ags_file_launch.h /usr/include/string.h \
+ /usr/include/bits/string.h /usr/include/bits/string2.h
 
 /usr/include/stdc-predef.h:
 
@@ -1882,36 +1874,6 @@ src/ags/file/ags_file_id_ref.h:
 src/ags/file/ags_file_lookup.h:
 
 src/ags/file/ags_file_launch.h:
-
-src/ags/audio/ags_audio.h:
-
-src/ags/audio/ags_channel.h:
-
-src/ags/audio/ags_recall_id.h:
-
-src/ags/audio/ags_recycling.h:
-
-src/ags/audio/ags_audio_signal.h:
-
-src/ags/audio/ags_recycling_context.h:
-
-src/ags/audio/ags_recall.h:
-
-src/ags/audio/ags_port.h:
-
-/usr/include/ladspa.h:
-
-src/ags/audio/ags_recall_dependency.h:
-
-src/ags/audio/ags_notation.h:
-
-src/ags/thread/ags_timestamp_thread.h:
-
-src/ags/thread/ags_thread-posix.h:
-
-src/ags/audio/ags_note.h:
-
-src/ags/audio/file/ags_audio_file.h:
 
 /usr/include/string.h:
 

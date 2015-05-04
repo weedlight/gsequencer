@@ -587,7 +587,8 @@ libags_audio_a-ags_audio_application_context.o: \
  /usr/include/glib-2.0/glib/gprintf.h /usr/include/sys/stat.h \
  src/ags/audio/ags_playback_domain.h src/ags/audio/ags_playback.h \
  src/ags/audio/thread/ags_iterator_thread.h src/ags/audio/ags_pattern.h \
- src/ags/thread/ags_task.h src/ags/audio/ags_recall_container.h
+ src/ags/thread/ags_task.h src/ags/audio/ags_recall_container.h \
+ src/ags/audio/file/ags_audio_file.h
 
 /usr/include/stdc-predef.h:
 
@@ -2014,3 +2015,5 @@ src/ags/audio/ags_pattern.h:
 src/ags/thread/ags_task.h:
 
 src/ags/audio/ags_recall_container.h:
+
+src/ags/audio/file/ags_audio_file.h:
