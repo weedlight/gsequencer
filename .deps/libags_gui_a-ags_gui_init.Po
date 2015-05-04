@@ -526,7 +526,7 @@ libags_gui_a-ags_gui_init.o: src/ags/widget/ags_gui_init.c \
  /usr/include/gtk-2.0/gtk/gtkoldeditable.h \
  /usr/include/gtk-2.0/gtk/gtkoptionmenu.h \
  /usr/include/gtk-2.0/gtk/gtkpreview.h \
- /usr/include/gtk-2.0/gtk/gtktipsquery.h src/ags/thread/ags_thread_init.h \
+ /usr/include/gtk-2.0/gtk/gtktipsquery.h \
  src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
  src/ags/file/ags_file.h /usr/include/libxml2/libxml/tree.h \
  /usr/include/libxml2/libxml/xmlversion.h \
@@ -548,7 +548,8 @@ libags_gui_a-ags_gui_init.o: src/ags/widget/ags_gui_init.c \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
- /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ src/ags/thread/ags_thread_init.h
 
 /usr/include/stdc-predef.h:
 
@@ -1766,8 +1767,6 @@ src/ags/widget/ags_gui_init.h:
 
 /usr/include/gtk-2.0/gtk/gtktipsquery.h:
 
-src/ags/thread/ags_thread_init.h:
-
 src/ags/object/ags_application_context.h:
 
 src/ags/object/ags_config.h:
@@ -1829,3 +1828,5 @@ src/ags/file/ags_file.h:
 /usr/include/libxml2/libxml/xlink.h:
 
 /usr/include/libxml2/libxml/SAX2.h:
+
+src/ags/thread/ags_thread_init.h:

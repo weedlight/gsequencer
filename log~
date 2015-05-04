@@ -1,0 +1,1078 @@
+make  all-recursive
+make[1]: Entering directory '/home/minos/ags-devel'
+Making all in po
+make[2]: Entering directory '/home/minos/ags-devel/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/minos/ags-devel/po'
+Making all in .
+make[2]: Entering directory '/home/minos/ags-devel'
+gcc -DHAVE_CONFIG_H -I.    -g -O2 -g -std=gnu11 -Wuninitialized -Wreturn-type -Wunused-variable -Wunused-but-set-variable -Wmaybe-uninitialized -Wimplicit-function-declaration -Wparentheses -Wpointer-sign -Wdeprecated-declarations -Wcomment -O -I./src -I/usr/include -I/usr/include/uuid   -I/usr/include/alsa  -I/usr/include/libxml2   -I/usr/include/libinstpatch-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -pthread -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -pthread -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/harfbuzz -I/usr/include/libdrm -I/usr/include/libpng16 -I/usr/X11/include  -pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/libdrm -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libpng16 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/X11/include  -g -O2 -MT libags_audio_a-ags_audio_file_xml.o -MD -MP -MF .deps/libags_audio_a-ags_audio_file_xml.Tpo -c -o libags_audio_a-ags_audio_file_xml.o `test -f 'src/ags/audio/file/ags_audio_file_xml.c' || echo './'`src/ags/audio/file/ags_audio_file_xml.c
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_soundcard’:
+src/ags/audio/file/ags_audio_file_xml.c:105:15: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+     type_name = xmlGetProp(node,
+               ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_soundcard’:
+src/ags/audio/file/ags_audio_file_xml.c:211:19: warning: unused variable ‘child’ [-Wunused-variable]
+   xmlNode *node, *child;
+                   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_audio’:
+src/ags/audio/file/ags_audio_file_xml.c:616:23: warning: passing argument 1 of ‘xmlStrncmp’ makes pointer from integer without a cast
+        if(!xmlStrncmp(xmlStrncmp(channel_node->name,
+                       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘int’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:616:12: error: too few arguments to function ‘xmlStrncmp’
+        if(!xmlStrncmp(xmlStrncmp(channel_node->name,
+            ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: declared here
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:618:13: error: expected ‘)’ before ‘{’ token
+         12)){
+             ^
+src/ags/audio/file/ags_audio_file_xml.c:642:6: error: expected expression before ‘}’ token
+      }
+      ^
+src/ags/audio/file/ags_audio_file_xml.c:695:17: warning: pointer targets in passing argument 1 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+  if(!xmlStrncmp((gchar *) xmlGetProp(child, (xmlChar *) "is-play\0"),
+                 ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:719:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-notation-list\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_audio_resolve_soundcard’:
+src/ags/audio/file/ags_audio_file_xml.c:740:7: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+       "soundcard\0");
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:761:10: warning: passing argument 2 of ‘ags_audio_signal_new’ from incompatible pointer type
+          channel->first_recycling,
+          ^
+In file included from ./src/ags/audio/ags_recycling.h:24:0,
+                 from ./src/ags/audio/ags_recall_id.h:25,
+                 from ./src/ags/audio/ags_channel.h:25,
+                 from ./src/ags/audio/ags_audio.h:25,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:31,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+./src/ags/audio/ags_audio_signal.h:127:17: note: expected ‘struct GObject *’ but argument is of type ‘struct AgsRecycling *’
+ AgsAudioSignal* ags_audio_signal_new(GObject *soundcard,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:777:10: warning: passing argument 2 of ‘ags_audio_signal_new’ from incompatible pointer type
+          channel->first_recycling,
+          ^
+In file included from ./src/ags/audio/ags_recycling.h:24:0,
+                 from ./src/ags/audio/ags_recall_id.h:25,
+                 from ./src/ags/audio/ags_channel.h:25,
+                 from ./src/ags/audio/ags_audio.h:25,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:31,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+./src/ags/audio/ags_audio_signal.h:127:17: note: expected ‘struct GObject *’ but argument is of type ‘struct AgsRecycling *’
+ AgsAudioSignal* ags_audio_signal_new(GObject *soundcard,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_audio’:
+src/ags/audio/file/ags_audio_file_xml.c:898:19: error: ‘AGS_FILETRUE’ undeclared (first use in this function)
+       (xmlChar *) AGS_FILETRUE);
+                   ^
+src/ags/audio/file/ags_audio_file_xml.c:898:19: note: each undeclared identifier is reported only once for each function it appears in
+src/ags/audio/file/ags_audio_file_xml.c:897:7: warning: pointer targets in passing argument 2 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "is-play\0",
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:907:19: error: ‘AGS_FILEFALSE’ undeclared (first use in this function)
+       (xmlChar *) AGS_FILEFALSE);
+                   ^
+src/ags/audio/file/ags_audio_file_xml.c:906:7: warning: pointer targets in passing argument 2 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "is-play\0",
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_audio_resolve_soundcard’:
+src/ags/audio/file/ags_audio_file_xml.c:929:7: warning: pointer targets in passing argument 2 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "soundcard\0",
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_audio_list’:
+src/ags/audio/file/ags_audio_file_xml.c:978:13: warning: unused variable ‘current’ [-Wunused-variable]
+   AgsAudio *current;
+             ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_channel’:
+src/ags/audio/file/ags_audio_file_xml.c:1035:33: warning: pointer targets in passing argument 1 of ‘xmlXPathEval’ differ in signedness [-Wpointer-sign]
+     xpath_object = xmlXPathEval("./ags-output\0",
+                                 ^
+In file included from src/ags/audio/file/ags_audio_file_xml.c:23:0:
+/usr/include/libxml2/libxml/xpath.h:519:7: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+       xmlXPathEval  (const xmlChar *str,
+       ^
+src/ags/audio/file/ags_audio_file_xml.c:1120:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-recall-container-list\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1126:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-recall-list\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1130:45: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+  if(!xmlStrncmp((gchar *) xmlGetProp(child, "is-play\0"),
+                                             ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1130:17: warning: pointer targets in passing argument 1 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+  if(!xmlStrncmp((gchar *) xmlGetProp(child, "is-play\0"),
+                 ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1131:10: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+          "TRUE\0",
+          ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1154:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-pattern-list\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1165:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-output\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1172:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-input\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1179:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-playback\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1024:12: warning: variable ‘is_output’ set but not used [-Wunused-but-set-variable]
+   gboolean is_output;
+            ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_channel_resolve_link’:
+src/ags/audio/file/ags_audio_file_xml.c:1201:7: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+       "link\0");
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_channel’:
+src/ags/audio/file/ags_audio_file_xml.c:1311:19: error: ‘AGS_FILETRUE’ undeclared (first use in this function)
+       (xmlChar *) AGS_FILETRUE);
+                   ^
+src/ags/audio/file/ags_audio_file_xml.c:1310:7: warning: pointer targets in passing argument 2 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "is-play\0",
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1320:19: error: ‘AGS_FILEFALSE’ undeclared (first use in this function)
+       (xmlChar *) AGS_FILEFALSE);
+                   ^
+src/ags/audio/file/ags_audio_file_xml.c:1319:7: warning: pointer targets in passing argument 2 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "is-play\0",
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1343:7: warning: passing argument 3 of ‘ags_file_write_playback’ from incompatible pointer type
+       channel->playback);
+       ^
+src/ags/audio/file/ags_audio_file_xml.c:408:1: note: expected ‘struct AgsPlayback *’ but argument is of type ‘struct GObject *’
+ ags_file_write_playback(AgsFile *file, xmlNode *parent, AgsPlayback *play)
+ ^
+src/ags/audio/file/ags_audio_file_xml.c:1227:15: warning: unused variable ‘link_id’ [-Wunused-variable]
+   gchar *id, *link_id;
+               ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_channel_resolve_link’:
+src/ags/audio/file/ags_audio_file_xml.c:1360:7: warning: pointer targets in passing argument 2 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "link\0",
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_input’:
+src/ags/audio/file/ags_audio_file_xml.c:1513:9: warning: passing argument 3 of ‘ags_file_write_file_link’ from incompatible pointer type
+         input->file_link);
+         ^
+In file included from src/ags/audio/file/ags_audio_file_xml.c:19:0:
+./src/ags/audio/file/ags_audio_file_xml.h:83:10: note: expected ‘struct AgsFileLink *’ but argument is of type ‘struct GObject *’
+ xmlNode* ags_file_write_file_link(AgsFile *file, xmlNode *parent, AgsFileLink *file_link);
+          ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall’:
+src/ags/audio/file/ags_audio_file_xml.c:1581:22: error: ‘AGS_FILETYPE_PROP’ undeclared (first use in this function)
+          (xmlChar *) AGS_FILETYPE_PROP);
+                      ^
+src/ags/audio/file/ags_audio_file_xml.c:1583:29: warning: pointer targets in passing argument 1 of ‘g_type_from_name’ differ in signedness [-Wpointer-sign]
+     type = g_type_from_name(type_name);
+                             ^
+In file included from /usr/include/glib-2.0/gobject/gobject.h:24:0,
+                 from /usr/include/glib-2.0/gobject/gbinding.h:29,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:23,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/glib-2.0/gobject/gtype.h:687:23: note: expected ‘const gchar *’ but argument is of type ‘xmlChar *’
+ GType                 g_type_from_name               (const gchar     *name);
+                       ^
+src/ags/audio/file/ags_audio_file_xml.c:1604:23: error: ‘AGS_FILEVERSION_PROP’ undeclared (first use in this function)
+           (xmlChar *) AGS_FILEVERSION_PROP);
+                       ^
+src/ags/audio/file/ags_audio_file_xml.c:1607:24: error: ‘AGS_FILEBUILD_ID_PROP’ undeclared (first use in this function)
+            (xmlChar *) AGS_FILEBUILD_ID_PROP);
+                        ^
+src/ags/audio/file/ags_audio_file_xml.c:1610:22: error: ‘AGS_FILEFLAGS_PROP’ undeclared (first use in this function)
+          (xmlChar *) AGS_FILEFLAGS_PROP),
+                      ^
+src/ags/audio/file/ags_audio_file_xml.c:1654:10: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+          "effect\0");
+          ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1657:8: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+        "name\0");
+        ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1671:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-recall-audio-run\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1677:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-recall-channel\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1683:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-recall-channel-run\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1689:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-recall-recycling\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1695:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-recall-audio-signal\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1701:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-recall-list\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1721:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-port-list\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1723:17: warning: unused variable ‘file_lookup’ [-Wunused-variable]
+  AgsFileLookup *file_lookup;
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1736:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-parameter\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:1738:2: warning: implicit declaration of function ‘ags_file_util_read_parameter’ [-Wimplicit-function-declaration]
+  ags_file_util_read_parameter(file,
+  ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall_resolve_audio’:
+src/ags/audio/file/ags_audio_file_xml.c:1759:15: warning: assignment from incompatible pointer type
+   file_id_ref = ags_file_find_id_ref_by_node(file_lookup->file,
+               ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall_resolve_channel’:
+src/ags/audio/file/ags_audio_file_xml.c:1783:15: warning: assignment from incompatible pointer type
+   file_id_ref = ags_file_find_id_ref_by_node(file_lookup->file,
+               ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall_resolve_soundcard’:
+src/ags/audio/file/ags_audio_file_xml.c:1831:7: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+       "soundcard\0");
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+In file included from /usr/include/glib-2.0/gobject/gbinding.h:29:0,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:23,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_recall’:
+/usr/include/glib-2.0/gobject/gobject.h:105:37: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+ #define G_OBJECT_TYPE_NAME(object)  (g_type_name (G_OBJECT_TYPE (object)))
+                                     ^
+src/ags/audio/file/ags_audio_file_xml.c:1873:7: note: in expansion of macro ‘G_OBJECT_TYPE_NAME’
+       G_OBJECT_TYPE_NAME(recall));
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘const gchar *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1877:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       recall->version);
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1881:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       recall->build_id);
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1900:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       recall->effect);
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1904:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       recall->name);
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1949:3: warning: implicit declaration of function ‘ags_file_util_write_parameter’ [-Wimplicit-function-declaration]
+   ags_file_util_write_parameter(file,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:1848:9: warning: unused variable ‘i’ [-Wunused-variable]
+   guint i;
+         ^
+src/ags/audio/file/ags_audio_file_xml.c:1846:10: warning: unused variable ‘list’ [-Wunused-variable]
+   GList *list;
+          ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_recall_resolve_soundcard’:
+src/ags/audio/file/ags_audio_file_xml.c:1969:7: warning: pointer targets in passing argument 2 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "soundcard\0",
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall_container’:
+src/ags/audio/file/ags_audio_file_xml.c:2104:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-value\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:2062:12: warning: unused variable ‘type_name’ [-Wunused-variable]
+   xmlChar *type_name;
+            ^
+src/ags/audio/file/ags_audio_file_xml.c:2059:18: warning: unused variable ‘file_lookup’ [-Wunused-variable]
+   AgsFileLookup *file_lookup;
+                  ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_recall_container’:
+src/ags/audio/file/ags_audio_file_xml.c:2151:18: warning: unused variable ‘file_lookup’ [-Wunused-variable]
+   AgsFileLookup *file_lookup;
+                  ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_recall_container_list’:
+src/ags/audio/file/ags_audio_file_xml.c:2299:23: warning: unused variable ‘current’ [-Wunused-variable]
+   AgsRecallContainer *current;
+                       ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall_audio’:
+src/ags/audio/file/ags_audio_file_xml.c:2361:7: warning: pointer targets in passing argument 2 of ‘xmlStrcmp’ differ in signedness [-Wpointer-sign]
+       ags_plugin_get_xml_type(AGS_PLUGIN(recall)))){
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:64:17: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+                 xmlStrcmp                (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall_audio_run’:
+src/ags/audio/file/ags_audio_file_xml.c:2433:7: warning: pointer targets in passing argument 2 of ‘xmlStrcmp’ differ in signedness [-Wpointer-sign]
+       ags_plugin_get_xml_type(AGS_PLUGIN(recall)))){
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:64:17: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+                 xmlStrcmp                (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall_channel’:
+src/ags/audio/file/ags_audio_file_xml.c:2505:7: warning: pointer targets in passing argument 2 of ‘xmlStrcmp’ differ in signedness [-Wpointer-sign]
+       ags_plugin_get_xml_type(AGS_PLUGIN(recall)))){
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:64:17: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+                 xmlStrcmp                (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall_channel_run’:
+src/ags/audio/file/ags_audio_file_xml.c:2577:7: warning: pointer targets in passing argument 2 of ‘xmlStrcmp’ differ in signedness [-Wpointer-sign]
+       ags_plugin_get_xml_type(AGS_PLUGIN(recall)))){
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:64:17: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+                 xmlStrcmp                (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall_recycling’:
+src/ags/audio/file/ags_audio_file_xml.c:2650:7: warning: pointer targets in passing argument 2 of ‘xmlStrcmp’ differ in signedness [-Wpointer-sign]
+       ags_plugin_get_xml_type(AGS_PLUGIN(recall)))){
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:64:17: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+                 xmlStrcmp                (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recall_audio_signal’:
+src/ags/audio/file/ags_audio_file_xml.c:2722:7: warning: pointer targets in passing argument 2 of ‘xmlStrcmp’ differ in signedness [-Wpointer-sign]
+       ags_plugin_get_xml_type(AGS_PLUGIN(recall)))){
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:64:17: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+                 xmlStrcmp                (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_port’:
+src/ags/audio/file/ags_audio_file_xml.c:2837:2: warning: implicit declaration of function ‘ags_file_util_read_value’ [-Wimplicit-function-declaration]
+  ags_file_util_read_value(file,
+  ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_port_resolve_port_value’:
+src/ags/audio/file/ags_audio_file_xml.c:2873:15: warning: assignment from incompatible pointer type
+   file_id_ref = ags_file_find_id_ref_by_reference(file_lookup->file,
+               ^
+src/ags/audio/file/ags_audio_file_xml.c:2868:10: warning: unused variable ‘xpath’ [-Wunused-variable]
+   gchar *xpath;
+          ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_port’:
+src/ags/audio/file/ags_audio_file_xml.c:2887:5: warning: ‘return’ with no value, in function returning non-void
+     return;
+     ^
+src/ags/audio/file/ags_audio_file_xml.c:2913:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       port->specifier);
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:2917:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       port->control_port);
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3028:3: warning: implicit declaration of function ‘ags_file_util_write_value’ [-Wimplicit-function-declaration]
+   ags_file_util_write_value(file,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:2881:18: warning: unused variable ‘file_lookup’ [-Wunused-variable]
+   AgsFileLookup *file_lookup;
+                  ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_port_list’:
+src/ags/audio/file/ags_audio_file_xml.c:3062:35: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+       (gchar *) xmlGetProp(child, "specifier\0"));
+                                   ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+In file included from /usr/include/glib-2.0/glib.h:62:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:22,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+src/ags/audio/file/ags_audio_file_xml.c:3070:59: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+      g_message("found: %s\0", (gchar *) xmlGetProp(child, "specifier\0"));
+                                                           ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3042:17: warning: unused variable ‘iter’ [-Wunused-variable]
+   GList *list, *iter;
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:3040:17: warning: unused variable ‘port_id_ref’ [-Wunused-variable]
+   AgsFileIdRef *port_id_ref;
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_recycling’:
+src/ags/audio/file/ags_audio_file_xml.c:3176:22: error: ‘AGS_FILEFLAGS_PROP’ undeclared (first use in this function)
+          (xmlChar *) AGS_FILEFLAGS_PROP),
+                      ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_audio_signal’:
+src/ags/audio/file/ags_audio_file_xml.c:3348:22: error: ‘AGS_FILEFLAGS_PROP’ undeclared (first use in this function)
+          (xmlChar *) AGS_FILEFLAGS_PROP),
+                      ^
+src/ags/audio/file/ags_audio_file_xml.c:3353:15: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+               "samplerate\0"),
+               ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3358:16: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+                "buffer-size\0"),
+                ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3363:15: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+               "resolution\0"),
+               ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3368:11: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+           "length\0"),
+           ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3373:15: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+               "last-frame\0"),
+               ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3378:15: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+               "loop-start\0"),
+               ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3383:13: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+             "loop-end\0"),
+             ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3388:10: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+          "delay\0"),
+          ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3393:11: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+           "attack\0"),
+           ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_stream’:
+src/ags/audio/file/ags_audio_file_xml.c:3601:11: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+           "index\0"),
+           ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3607:7: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+       "encoding\0");
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3606:12: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+   encoding = (gchar *) xmlGetProp(node,
+            ^
+src/ags/audio/file/ags_audio_file_xml.c:3610:4: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+    "base64\0",
+    ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:3613:8: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+        "demuxer\0");
+        ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3612:13: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+     demuxer = (gchar *) xmlGetProp(node,
+             ^
+src/ags/audio/file/ags_audio_file_xml.c:3616:6: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+      "raw\0",
+      ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:3621:36: warning: pointer targets in passing argument 1 of ‘g_base64_decode’ differ in signedness [-Wpointer-sign]
+       list->data = g_base64_decode(content,
+                                    ^
+In file included from /usr/include/glib-2.0/glib.h:35:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:22,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/glib-2.0/glib/gbase64.h:52:9: note: expected ‘const gchar *’ but argument is of type ‘xmlChar *’
+ guchar *g_base64_decode         (const gchar  *text,
+         ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_stream’:
+src/ags/audio/file/ags_audio_file_xml.c:3663:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       file->audio_encoding);
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3667:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       file->audio_format);
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3669:11: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+   content = g_base64_encode(stream->data,
+           ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_stream_list_sort’:
+src/ags/audio/file/ags_audio_file_xml.c:3695:14: warning: unused variable ‘k’ [-Wunused-variable]
+     guint j, k;
+              ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_pattern’:
+src/ags/audio/file/ags_audio_file_xml.c:3844:8: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+        "dim-1st-level\0"),
+        ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3849:8: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+        "dim-2nd-level\0"),
+        ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3854:8: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+        "length\0"),
+        ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:3882:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-pattern-data-list\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_pattern_resolve_port’:
+src/ags/audio/file/ags_audio_file_xml.c:3903:7: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+       "port\0");
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+In file included from /usr/include/glib-2.0/gobject/gbinding.h:29:0,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:23,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/glib-2.0/gobject/gobject.h:51:37: warning: passing argument 1 of ‘ags_port_safe_write’ from incompatible pointer type
+ #define G_OBJECT(object)            (G_TYPE_CHECK_INSTANCE_CAST ((object), G_TYPE_OBJECT, GObject))
+                                     ^
+src/ags/audio/file/ags_audio_file_xml.c:3919:25: note: in expansion of macro ‘G_OBJECT’
+     ags_port_safe_write(G_OBJECT(id_ref->ref),
+                         ^
+In file included from ./src/ags/audio/ags_recall.h:25:0,
+                 from ./src/ags/audio/ags_channel.h:26,
+                 from ./src/ags/audio/ags_audio.h:25,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:31,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+./src/ags/audio/ags_port.h:86:6: note: expected ‘struct AgsPort *’ but argument is of type ‘struct GObject *’
+ void ags_port_safe_write(AgsPort *port, GValue *value);
+      ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_pattern’:
+src/ags/audio/file/ags_audio_file_xml.c:3929:12: warning: unused variable ‘content’ [-Wunused-variable]
+   xmlChar *content;
+            ^
+src/ags/audio/file/ags_audio_file_xml.c:3928:19: warning: unused variable ‘child’ [-Wunused-variable]
+   xmlNode *node, *child;
+                   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_pattern_resolve_port’:
+src/ags/audio/file/ags_audio_file_xml.c:4009:7: warning: pointer targets in passing argument 2 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "port\0",
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_pattern_data’:
+src/ags/audio/file/ags_audio_file_xml.c:4123:14: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+              "index-1st-level\0"),
+              ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4130:14: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+              "index-2nd-level\0"),
+              ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4147:5: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+     "coding\0");
+     ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4146:10: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+   coding = (gchar *) xmlGetProp(node,
+          ^
+src/ags/audio/file/ags_audio_file_xml.c:4150:4: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+    "human readable\0",
+    ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c:4153:7: warning: ‘g_strncasecmp’ is deprecated (declared at /usr/include/glib-2.0/glib/gstrfuncs.h:203) [-Wdeprecated-declarations]
+       if(!g_strncasecmp(&(content[k]),
+       ^
+src/ags/audio/file/ags_audio_file_xml.c:4153:25: warning: pointer targets in passing argument 1 of ‘g_strncasecmp’ differ in signedness [-Wpointer-sign]
+       if(!g_strncasecmp(&(content[k]),
+                         ^
+In file included from /usr/include/glib-2.0/glib.h:79:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:22,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/glib-2.0/glib/gstrfuncs.h:203:23: note: expected ‘const gchar *’ but argument is of type ‘xmlChar *’
+ gint                  g_strncasecmp    (const gchar *s1,
+                       ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_pattern_data’:
+src/ags/audio/file/ags_audio_file_xml.c:4193:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "0\0");
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4205:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "human readable\0");
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_pattern_data_list’:
+src/ags/audio/file/ags_audio_file_xml.c:4263:10: warning: unused variable ‘list’ [-Wunused-variable]
+   GList *list;
+          ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_notation’:
+src/ags/audio/file/ags_audio_file_xml.c:4326:22: error: ‘AGS_FILEFLAGS_PROP’ undeclared (first use in this function)
+          (xmlChar *) AGS_FILEFLAGS_PROP),
+                      ^
+src/ags/audio/file/ags_audio_file_xml.c:4331:11: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+           "audio-channel\0"),
+           ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4336:13: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+             "key\0"));
+             ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4339:12: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+            "base-frequency\0"),
+            ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4343:9: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+         "tact\0"),
+         ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4347:15: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+               "bpm\0"),
+               ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4351:17: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+                 "max-note-length\0"),
+                 ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4355:10: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+          "loop-start\0");
+          ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4354:8: warning: pointer targets in assignment differ in signedness [-Wpointer-sign]
+   prop = (gchar *) xmlGetProp(node,
+        ^
+src/ags/audio/file/ags_audio_file_xml.c:4358:52: warning: pointer targets in passing argument 1 of ‘g_ascii_strtod’ differ in signedness [-Wpointer-sign]
+     gobject->start_loop = (gdouble) g_ascii_strtod(prop,
+                                                    ^
+In file included from /usr/include/glib-2.0/glib.h:79:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:22,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/glib-2.0/glib/gstrfuncs.h:149:23: note: expected ‘const gchar *’ but argument is of type ‘xmlChar *’
+ gdouble               g_ascii_strtod   (const gchar  *nptr,
+                       ^
+src/ags/audio/file/ags_audio_file_xml.c:4361:15: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+               "loop-end\0"),
+               ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c:4387:7: warning: pointer targets in passing argument 2 of ‘xmlStrncmp’ differ in signedness [-Wpointer-sign]
+       "ags-note-list\0",
+       ^
+In file included from /usr/include/libxml2/libxml/tree.h:18:0,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:25,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/xmlstring.h:67:17: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+                 xmlStrncmp               (const xmlChar *str1,
+                 ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_read_notation_resolve_port’:
+src/ags/audio/file/ags_audio_file_xml.c:4407:7: warning: pointer targets in passing argument 2 of ‘xmlGetProp’ differ in signedness [-Wpointer-sign]
+       "port\0");
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:1028:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlGetProp  (const xmlNode *node,
+   ^
+In file included from /usr/include/glib-2.0/gobject/gbinding.h:29:0,
+                 from /usr/include/glib-2.0/glib-object.h:23,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:23,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/glib-2.0/gobject/gobject.h:51:37: warning: passing argument 1 of ‘ags_port_safe_write’ from incompatible pointer type
+ #define G_OBJECT(object)            (G_TYPE_CHECK_INSTANCE_CAST ((object), G_TYPE_OBJECT, GObject))
+                                     ^
+src/ags/audio/file/ags_audio_file_xml.c:4423:25: note: in expansion of macro ‘G_OBJECT’
+     ags_port_safe_write(G_OBJECT(port),
+                         ^
+In file included from ./src/ags/audio/ags_recall.h:25:0,
+                 from ./src/ags/audio/ags_channel.h:26,
+                 from ./src/ags/audio/ags_audio.h:25,
+                 from ./src/ags/audio/file/ags_audio_file_xml.h:31,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+./src/ags/audio/ags_port.h:86:6: note: expected ‘struct AgsPort *’ but argument is of type ‘struct GObject *’
+ void ags_port_safe_write(AgsPort *port, GValue *value);
+      ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_notation’:
+src/ags/audio/file/ags_audio_file_xml.c:4458:7: warning: pointer targets in passing argument 3 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       notation->key);
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘gchar *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+src/ags/audio/file/ags_audio_file_xml.c: In function ‘ags_file_write_notation_resolve_port’:
+src/ags/audio/file/ags_audio_file_xml.c:4530:7: warning: pointer targets in passing argument 2 of ‘xmlNewProp’ differ in signedness [-Wpointer-sign]
+       "port\0",
+       ^
+In file included from ./src/ags/audio/file/ags_audio_file_xml.h:25:0,
+                 from src/ags/audio/file/ags_audio_file_xml.c:19:
+/usr/include/libxml2/libxml/tree.h:789:3: note: expected ‘const xmlChar *’ but argument is of type ‘char *’
+   xmlNewProp  (xmlNodePtr node,
+   ^
+Makefile:3509: recipe for target 'libags_audio_a-ags_audio_file_xml.o' failed
+make[2]: *** [libags_audio_a-ags_audio_file_xml.o] Error 1
+make[2]: Leaving directory '/home/minos/ags-devel'
+Makefile:7682: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/minos/ags-devel'
+Makefile:1863: recipe for target 'all' failed
+make: *** [all] Error 2
