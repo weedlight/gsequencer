@@ -131,7 +131,12 @@ libags_audio_a-ags_soundcard_thread.o: \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/object/ags_connectable.h src/ags/object/ags_soundcard.h \
- src/ags/thread/ags_timestamp_thread.h
+ src/ags/thread/ags_timestamp_thread.h \
+ src/ags/audio/thread/ags_audio_loop.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h
 
 /usr/include/stdc-predef.h:
 
@@ -496,3 +501,23 @@ src/ags/object/ags_connectable.h:
 src/ags/object/ags_soundcard.h:
 
 src/ags/thread/ags_timestamp_thread.h:
+
+src/ags/audio/thread/ags_audio_loop.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
