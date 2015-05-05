@@ -1,0 +1,76 @@
+/* AGS - Advanced GTK Sequencer
+ * Copyright (C) 2015 Joël Krähemann
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ */
+
+#ifndef __AGS_REPLICATOR_BRIDGE_H__
+#define __AGS_REPLICATOR_BRIDGE_H__
+
+#include <glib.h>
+#include <glib-object.h>
+#include <pango/pango.h>
+#include <gtk/gtk.h>
+
+#include <ags/X/ags_machine.h>
+
+#include <ags/audio/file/ags_ipatch.h>
+
+#define AGS_TYPE_REPLICATOR_BRIDGE                (ags_replicator_bridge_get_type())
+#define AGS_REPLICATOR_BRIDGE(obj)                (G_TYPE_CHECK_INSTANCE_CAST((obj), AGS_TYPE_REPLICATOR_BRIDGE, AgsReplicator_Bridge))
+#define AGS_REPLICATOR_BRIDGE_CLASS(class)        (G_TYPE_CHECK_CLASS_CAST((class), AGS_TYPE_REPLICATOR_BRIDGE, AgsReplicator_BridgeClass))
+#define AGS_IS_REPLICATOR_BRIDGE(obj)             (G_TYPE_CHECK_INSTANCE_TYPE((obj), AGS_TYPE_REPLICATOR_BRIDGE))
+#define AGS_IS_REPLICATOR_BRIDGE_CLASS(class)     (G_TYPE_CHECK_CLASS_TYPE ((class), AGS_TYPE_REPLICATOR_BRIDGE))
+#define AGS_REPLICATOR_BRIDGE_GET_CLASS(obj)      (G_TYPE_INSTANCE_GET_CLASS (obj, AGS_TYPE_REPLICATOR_BRIDGE, AgsReplicator_BridgeClass))
+
+typedef struct _AgsReplicator_Bridge AgsReplicator_Bridge;
+typedef struct _AgsReplicator_BridgeClass AgsReplicator_BridgeClass;
+
+struct _AgsReplicator_Bridge
+{
+  AgsMachine machine;
+
+  guint mapped_output_pad;
+  guint mapped_input_pad;
+
+  gchar *name;
+  gchar *xml_type;
+
+  GtkButton *open;
+
+  guint control_width;
+  guint control_height;
+  
+  GtkDrawingArea *drawing_area;
+  GtkAdjustment *hadjustment;
+
+  AgsIpatch *ipatch;
+  GtkComboBoxText *preset;
+  GtkComboBoxText *instrument;
+};
+
+struct _AgsReplicator_BridgeClass
+{
+  AgsMachineClass machine;
+};
+
+GType ags_replicator_bridge_get_type(void);
+
+void ags_replicator_bridge_paint(AgsReplicator_Bridge *replicator_bridge);
+// char* ags_replicator_bridge_sound_string();
+
+AgsReplicator_Bridge* ags_replicator_bridge_new(GObject *soundcard);
+
+#endif /*__AGS_REPLICATOR_BRIDGE_H__*/
