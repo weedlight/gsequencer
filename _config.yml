@@ -1,5 +1,5 @@
 # Site settings
-title: Joël Krähemann
+title: GSequencer
 email: weedlight@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   GSequencer is music composition tool using GObject and Gtk+.
