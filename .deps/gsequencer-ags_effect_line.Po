@@ -572,7 +572,7 @@ gsequencer-ags_effect_line.o: src/ags/X/ags_effect_line.c \
  src/ags/X/editor/ags_automation_edit.h src/ags/widget/ags_ruler.h \
  src/ags/audio/ags_automation.h src/ags/audio/ags_acceleration.h \
  src/ags/X/ags_menu_bar.h src/ags/X/ags_editor.h \
- src/ags/X/editor/ags_toolbar.h src/ags/X/editor/ags_meter.h \
+ src/ags/X/editor/ags_toolbar.h src/ags/X/editor/ags_piano.h \
  src/ags/X/editor/ags_soundset.h src/ags/X/editor/ags_note_edit.h \
  src/ags/X/editor/ags_pattern_edit.h src/ags/X/ags_navigation.h \
  src/ags/X/ags_export_window.h src/ags/X/ags_preferences.h \
@@ -1951,7 +1951,7 @@ src/ags/X/ags_editor.h:
 
 src/ags/X/editor/ags_toolbar.h:
 
-src/ags/X/editor/ags_meter.h:
+src/ags/X/editor/ags_piano.h:
 
 src/ags/X/editor/ags_soundset.h:
 

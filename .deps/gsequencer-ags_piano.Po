@@ -1,5 +1,5 @@
-gsequencer-ags_line_member.o: src/ags/X/ags_line_member.c \
- /usr/include/stdc-predef.h src/ags/X/ags_line_member.h \
+gsequencer-ags_piano.o: src/ags/X/editor/ags_piano.c \
+ /usr/include/stdc-predef.h src/ags/X/editor/ags_piano.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/glib-2.0/include/glibconfig.h \
@@ -526,14 +526,9 @@ gsequencer-ags_line_member.o: src/ags/X/ags_line_member.c \
  /usr/include/gtk-2.0/gtk/gtkoldeditable.h \
  /usr/include/gtk-2.0/gtk/gtkoptionmenu.h \
  /usr/include/gtk-2.0/gtk/gtkpreview.h \
- /usr/include/gtk-2.0/gtk/gtktipsquery.h src/ags/audio/ags_recall.h \
- src/ags/audio/ags_port.h /usr/include/ladspa.h \
- src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
- src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_context.h \
- src/ags/audio/ags_recall_dependency.h src/ags/thread/ags_task.h \
- src/ags/X/ags_line_member_callbacks.h \
- src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
- src/ags/file/ags_file.h /usr/include/libxml2/libxml/tree.h \
+ /usr/include/gtk-2.0/gtk/gtktipsquery.h \
+ src/ags/X/editor/ags_piano_callbacks.h src/ags/object/ags_connectable.h \
+ /usr/include/libxml2/libxml/tree.h \
  /usr/include/libxml2/libxml/xmlversion.h \
  /usr/include/libxml2/libxml/xmlexports.h \
  /usr/include/libxml2/libxml/xmlstring.h \
@@ -554,32 +549,30 @@ gsequencer-ags_line_member.o: src/ags/X/ags_line_member.c \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
- src/ags/object/ags_connectable.h src/ags/thread/ags_thread-posix.h \
- src/ags/thread/ags_task_thread.h src/ags/thread/ags_thread_pool.h \
- src/ags/object/ags_main_loop.h src/ags/audio/ags_audio.h \
- src/ags/audio/ags_channel.h src/ags/audio/ags_notation.h \
- src/ags/thread/ags_timestamp_thread.h src/ags/audio/ags_timestamp.h \
- src/ags/audio/ags_note.h src/ags/widget/ags_dial.h \
- src/ags/X/ags_window.h src/ags/object/ags_soundcard.h \
- src/ags/X/ags_automation_editor.h \
- src/ags/X/editor/ags_automation_toolbar.h \
- src/ags/X/editor/ags_port_selection.h src/ags/X/editor/ags_notebook.h \
- src/ags/X/editor/ags_machine_selector.h src/ags/X/ags_machine.h \
- src/ags/X/editor/ags_automation_edit.h src/ags/widget/ags_ruler.h \
- src/ags/audio/ags_automation.h src/ags/audio/ags_acceleration.h \
- src/ags/X/ags_menu_bar.h src/ags/X/ags_editor.h \
- src/ags/X/editor/ags_toolbar.h src/ags/X/editor/ags_piano.h \
+ src/ags/X/ags_editor.h src/ags/object/ags_soundcard.h \
+ src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
+ src/ags/file/ags_file.h src/ags/audio/ags_audio.h \
+ src/ags/audio/ags_channel.h src/ags/audio/ags_recall_id.h \
+ src/ags/audio/ags_recycling.h src/ags/audio/ags_audio_signal.h \
+ src/ags/audio/ags_recycling_context.h src/ags/audio/ags_recall.h \
+ src/ags/audio/ags_port.h /usr/include/ladspa.h \
+ src/ags/audio/ags_recall_dependency.h src/ags/audio/ags_notation.h \
+ src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
+ src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
+ src/ags/X/ags_machine.h src/ags/X/editor/ags_toolbar.h \
+ src/ags/X/editor/ags_machine_selector.h src/ags/X/editor/ags_notebook.h \
  src/ags/X/editor/ags_soundset.h src/ags/X/editor/ags_note_edit.h \
- src/ags/X/editor/ags_pattern_edit.h src/ags/X/ags_navigation.h \
- src/ags/X/ags_export_window.h src/ags/X/ags_preferences.h \
- src/ags/X/ags_generic_preferences.h src/ags/X/ags_audio_preferences.h \
- src/ags/X/ags_performance_preferences.h \
- src/ags/X/ags_server_preferences.h src/ags/X/ags_line.h \
- src/ags/widget/ags_expander.h src/ags/X/ags_effect_line.h
+ src/ags/widget/ags_ruler.h src/ags/X/editor/ags_pattern_edit.h \
+ src/ags/X/editor/ags_automation_edit.h src/ags/audio/ags_automation.h \
+ src/ags/audio/ags_acceleration.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h
 
 /usr/include/stdc-predef.h:
 
-src/ags/X/ags_line_member.h:
+src/ags/X/editor/ags_piano.h:
 
 /usr/include/glib-2.0/glib.h:
 
@@ -1793,31 +1786,9 @@ src/ags/X/ags_line_member.h:
 
 /usr/include/gtk-2.0/gtk/gtktipsquery.h:
 
-src/ags/audio/ags_recall.h:
+src/ags/X/editor/ags_piano_callbacks.h:
 
-src/ags/audio/ags_port.h:
-
-/usr/include/ladspa.h:
-
-src/ags/audio/ags_recall_id.h:
-
-src/ags/audio/ags_recycling.h:
-
-src/ags/audio/ags_audio_signal.h:
-
-src/ags/audio/ags_recycling_context.h:
-
-src/ags/audio/ags_recall_dependency.h:
-
-src/ags/thread/ags_task.h:
-
-src/ags/X/ags_line_member_callbacks.h:
-
-src/ags/object/ags_application_context.h:
-
-src/ags/object/ags_config.h:
-
-src/ags/file/ags_file.h:
+src/ags/object/ags_connectable.h:
 
 /usr/include/libxml2/libxml/tree.h:
 
@@ -1875,84 +1846,82 @@ src/ags/file/ags_file.h:
 
 /usr/include/libxml2/libxml/SAX2.h:
 
-src/ags/object/ags_connectable.h:
+src/ags/X/ags_editor.h:
 
-src/ags/thread/ags_thread-posix.h:
+src/ags/object/ags_soundcard.h:
 
-src/ags/thread/ags_task_thread.h:
+src/ags/object/ags_application_context.h:
 
-src/ags/thread/ags_thread_pool.h:
+src/ags/object/ags_config.h:
 
-src/ags/object/ags_main_loop.h:
+src/ags/file/ags_file.h:
 
 src/ags/audio/ags_audio.h:
 
 src/ags/audio/ags_channel.h:
 
+src/ags/audio/ags_recall_id.h:
+
+src/ags/audio/ags_recycling.h:
+
+src/ags/audio/ags_audio_signal.h:
+
+src/ags/audio/ags_recycling_context.h:
+
+src/ags/audio/ags_recall.h:
+
+src/ags/audio/ags_port.h:
+
+/usr/include/ladspa.h:
+
+src/ags/audio/ags_recall_dependency.h:
+
 src/ags/audio/ags_notation.h:
 
 src/ags/thread/ags_timestamp_thread.h:
+
+src/ags/thread/ags_thread-posix.h:
 
 src/ags/audio/ags_timestamp.h:
 
 src/ags/audio/ags_note.h:
 
-src/ags/widget/ags_dial.h:
-
-src/ags/X/ags_window.h:
-
-src/ags/object/ags_soundcard.h:
-
-src/ags/X/ags_automation_editor.h:
-
-src/ags/X/editor/ags_automation_toolbar.h:
-
-src/ags/X/editor/ags_port_selection.h:
-
-src/ags/X/editor/ags_notebook.h:
-
-src/ags/X/editor/ags_machine_selector.h:
-
 src/ags/X/ags_machine.h:
-
-src/ags/X/editor/ags_automation_edit.h:
-
-src/ags/widget/ags_ruler.h:
-
-src/ags/audio/ags_automation.h:
-
-src/ags/audio/ags_acceleration.h:
-
-src/ags/X/ags_menu_bar.h:
-
-src/ags/X/ags_editor.h:
 
 src/ags/X/editor/ags_toolbar.h:
 
-src/ags/X/editor/ags_piano.h:
+src/ags/X/editor/ags_machine_selector.h:
+
+src/ags/X/editor/ags_notebook.h:
 
 src/ags/X/editor/ags_soundset.h:
 
 src/ags/X/editor/ags_note_edit.h:
 
+src/ags/widget/ags_ruler.h:
+
 src/ags/X/editor/ags_pattern_edit.h:
 
-src/ags/X/ags_navigation.h:
+src/ags/X/editor/ags_automation_edit.h:
 
-src/ags/X/ags_export_window.h:
+src/ags/audio/ags_automation.h:
 
-src/ags/X/ags_preferences.h:
+src/ags/audio/ags_acceleration.h:
 
-src/ags/X/ags_generic_preferences.h:
+/usr/include/math.h:
 
-src/ags/X/ags_audio_preferences.h:
+/usr/include/bits/huge_val.h:
 
-src/ags/X/ags_performance_preferences.h:
+/usr/include/bits/huge_valf.h:
 
-src/ags/X/ags_server_preferences.h:
+/usr/include/bits/huge_vall.h:
 
-src/ags/X/ags_line.h:
+/usr/include/bits/inf.h:
 
-src/ags/widget/ags_expander.h:
+/usr/include/bits/nan.h:
 
-src/ags/X/ags_effect_line.h:
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:

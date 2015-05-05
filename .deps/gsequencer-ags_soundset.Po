@@ -561,7 +561,7 @@ gsequencer-ags_soundset.o: src/ags/X/editor/ags_soundset.c \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/X/ags_machine.h src/ags/X/editor/ags_toolbar.h \
  src/ags/X/editor/ags_machine_selector.h src/ags/X/editor/ags_notebook.h \
- src/ags/X/editor/ags_meter.h src/ags/X/editor/ags_note_edit.h \
+ src/ags/X/editor/ags_piano.h src/ags/X/editor/ags_note_edit.h \
  src/ags/widget/ags_ruler.h src/ags/X/editor/ags_pattern_edit.h \
  src/ags/X/editor/ags_automation_edit.h src/ags/audio/ags_automation.h \
  src/ags/audio/ags_acceleration.h /usr/include/math.h \
@@ -1894,7 +1894,7 @@ src/ags/X/editor/ags_machine_selector.h:
 
 src/ags/X/editor/ags_notebook.h:
 
-src/ags/X/editor/ags_meter.h:
+src/ags/X/editor/ags_piano.h:
 
 src/ags/X/editor/ags_note_edit.h:
 
