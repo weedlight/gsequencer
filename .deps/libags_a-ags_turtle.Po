@@ -131,7 +131,8 @@ libags_a-ags_turtle.o: src/ags/lib/ags_turtle.c \
  /usr/include/bits/string2.h /usr/include/sys/stat.h \
  /usr/include/bits/stat.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/getopt.h
+ /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/libxml2/libxml/xpath.h
 
 /usr/include/stdc-predef.h:
 
@@ -502,3 +503,5 @@ src/ags/lib/ags_turtle.h:
 /usr/include/bits/confname.h:
 
 /usr/include/getopt.h:
+
+/usr/include/libxml2/libxml/xpath.h:
