@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GSequencer refactoring"
-date:   2015-05-25 01:38:51
+date:   2015-05-5 01:38:51
 categories: gsequencer announcements
 ---
 There many changes fulfilled me really appreciate. Like introduction of AgsApplicationContext and alike replacing AgsMain. The hardest refactoring was subsituting AgsDevout by AgsSoundcard, thought.
