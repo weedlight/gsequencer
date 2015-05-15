@@ -549,7 +549,8 @@ gsequencer-ags_plugin_browser.o: src/ags/X/ags_plugin_browser.c \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
- src/ags/object/ags_applicable.h
+ src/ags/object/ags_applicable.h src/ags/X/ags_lv2_browser.h \
+ src/ags/X/ags_ladspa_browser.h
 
 /usr/include/stdc-predef.h:
 
@@ -1828,3 +1829,7 @@ src/ags/object/ags_connectable.h:
 /usr/include/libxml2/libxml/SAX2.h:
 
 src/ags/object/ags_applicable.h:
+
+src/ags/X/ags_lv2_browser.h:
+
+src/ags/X/ags_ladspa_browser.h:
