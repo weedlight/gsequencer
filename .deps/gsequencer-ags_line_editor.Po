@@ -556,7 +556,7 @@ gsequencer-ags_line_editor.o: src/ags/X/ags_line_editor.c \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/X/ags_link_editor.h src/ags/X/ags_machine.h \
  src/ags/audio/ags_audio.h src/ags/audio/file/ags_audio_file.h \
- src/ags/X/ags_line_member_editor.h src/ags/X/ags_ladspa_browser.h \
+ src/ags/X/ags_line_member_editor.h src/ags/X/ags_plugin_browser.h \
  src/ags/X/ags_line_editor_callbacks.h src/ags/object/ags_connectable.h \
  src/ags/object/ags_applicable.h
 
@@ -1870,7 +1870,7 @@ src/ags/audio/file/ags_audio_file.h:
 
 src/ags/X/ags_line_member_editor.h:
 
-src/ags/X/ags_ladspa_browser.h:
+src/ags/X/ags_plugin_browser.h:
 
 src/ags/X/ags_line_editor_callbacks.h:
 

@@ -565,7 +565,7 @@ gsequencer-ags_machine_editor_callbacks.o: \
  /usr/include/bits/stat.h src/ags/X/ags_pad_editor.h \
  src/ags/X/ags_line_editor.h src/ags/X/ags_link_editor.h \
  src/ags/audio/file/ags_audio_file.h src/ags/X/ags_line_member_editor.h \
- src/ags/X/ags_ladspa_browser.h
+ src/ags/X/ags_plugin_browser.h
 
 /usr/include/stdc-predef.h:
 
@@ -1907,4 +1907,4 @@ src/ags/audio/file/ags_audio_file.h:
 
 src/ags/X/ags_line_member_editor.h:
 
-src/ags/X/ags_ladspa_browser.h:
+src/ags/X/ags_plugin_browser.h:
