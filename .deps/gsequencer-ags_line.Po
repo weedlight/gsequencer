@@ -557,10 +557,17 @@ gsequencer-ags_line.o: src/ags/X/ags_line.c /usr/include/stdc-predef.h \
  src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
  src/ags/file/ags_file.h src/ags/object/ags_marshal.h \
  src/ags/object/ags_connectable.h src/ags/object/ags_plugin.h \
- src/ags/plugin/ags_ladspa_manager.h src/ags/thread/ags_task_thread.h \
- src/ags/thread/ags_thread_pool.h src/ags/object/ags_main_loop.h \
- src/ags/thread/ags_task.h src/ags/audio/ags_recall_ladspa.h \
- src/ags/audio/ags_recall_channel_run.h \
+ src/ags/plugin/ags_ladspa_manager.h src/ags/plugin/ags_lv2_manager.h \
+ src/ags/lib/ags_turtle.h /usr/include/lv2.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ src/ags/thread/ags_task_thread.h src/ags/thread/ags_thread_pool.h \
+ src/ags/object/ags_main_loop.h src/ags/thread/ags_task.h \
+ src/ags/audio/ags_recall_ladspa.h src/ags/audio/ags_recall_channel_run.h \
  src/ags/audio/ags_recall_audio_run.h src/ags/audio/ags_recall_audio.h \
  src/ags/audio/ags_audio.h src/ags/audio/ags_recall_channel.h \
  src/ags/audio/recall/ags_peak_channel_run.h src/ags/widget/ags_dial.h \
@@ -1899,6 +1906,36 @@ src/ags/object/ags_connectable.h:
 src/ags/object/ags_plugin.h:
 
 src/ags/plugin/ags_ladspa_manager.h:
+
+src/ags/plugin/ags_lv2_manager.h:
+
+src/ags/lib/ags_turtle.h:
+
+/usr/include/lv2.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
 
 src/ags/thread/ags_task_thread.h:
 

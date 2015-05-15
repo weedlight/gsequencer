@@ -552,19 +552,26 @@ gsequencer-ags_line_member_editor_callbacks.o: \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
- src/ags/plugin/ags_ladspa_manager.h src/ags/object/ags_plugin.h \
- src/ags/thread/ags_thread-posix.h src/ags/thread/ags_task_thread.h \
- src/ags/thread/ags_thread_pool.h src/ags/object/ags_main_loop.h \
- src/ags/thread/ags_task.h src/ags/audio/ags_output.h \
- src/ags/audio/ags_channel.h src/ags/audio/ags_recall_id.h \
- src/ags/audio/ags_recycling.h src/ags/audio/ags_audio_signal.h \
- src/ags/audio/ags_recycling_context.h src/ags/audio/ags_recall.h \
- src/ags/audio/ags_port.h /usr/include/ladspa.h \
- src/ags/audio/ags_recall_dependency.h src/ags/audio/ags_notation.h \
- src/ags/thread/ags_timestamp_thread.h src/ags/audio/ags_timestamp.h \
- src/ags/audio/ags_note.h src/ags/audio/task/ags_add_effect.h \
- src/ags/X/ags_window.h src/ags/object/ags_soundcard.h \
- src/ags/X/ags_automation_editor.h \
+ src/ags/plugin/ags_ladspa_manager.h src/ags/plugin/ags_lv2_manager.h \
+ src/ags/lib/ags_turtle.h /usr/include/lv2.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ src/ags/object/ags_plugin.h src/ags/thread/ags_thread-posix.h \
+ src/ags/thread/ags_task_thread.h src/ags/thread/ags_thread_pool.h \
+ src/ags/object/ags_main_loop.h src/ags/thread/ags_task.h \
+ src/ags/audio/ags_output.h src/ags/audio/ags_channel.h \
+ src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
+ src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_context.h \
+ src/ags/audio/ags_recall.h src/ags/audio/ags_port.h \
+ /usr/include/ladspa.h src/ags/audio/ags_recall_dependency.h \
+ src/ags/audio/ags_notation.h src/ags/thread/ags_timestamp_thread.h \
+ src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
+ src/ags/audio/task/ags_add_effect.h src/ags/X/ags_window.h \
+ src/ags/object/ags_soundcard.h src/ags/X/ags_automation_editor.h \
  src/ags/X/editor/ags_automation_toolbar.h \
  src/ags/X/editor/ags_port_selection.h src/ags/X/editor/ags_notebook.h \
  src/ags/X/editor/ags_machine_selector.h src/ags/X/ags_machine.h \
@@ -587,7 +594,8 @@ gsequencer-ags_line_member_editor_callbacks.o: \
  src/ags/X/ags_property_editor.h \
  src/ags/X/ags_property_collection_editor.h src/ags/X/ags_resize_editor.h \
  src/ags/X/ags_line_editor.h src/ags/X/ags_link_editor.h \
- src/ags/audio/file/ags_audio_file.h /usr/include/dlfcn.h \
+ src/ags/audio/file/ags_audio_file.h src/ags/X/ags_lv2_browser.h \
+ src/ags/X/ags_ladspa_browser.h /usr/include/dlfcn.h \
  /usr/include/bits/dlfcn.h /usr/include/string.h \
  /usr/include/bits/string.h /usr/include/bits/string2.h
 
@@ -1877,6 +1885,36 @@ src/ags/file/ags_file.h:
 
 src/ags/plugin/ags_ladspa_manager.h:
 
+src/ags/plugin/ags_lv2_manager.h:
+
+src/ags/lib/ags_turtle.h:
+
+/usr/include/lv2.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
 src/ags/object/ags_plugin.h:
 
 src/ags/thread/ags_thread-posix.h:
@@ -2006,6 +2044,10 @@ src/ags/X/ags_line_editor.h:
 src/ags/X/ags_link_editor.h:
 
 src/ags/audio/file/ags_audio_file.h:
+
+src/ags/X/ags_lv2_browser.h:
+
+src/ags/X/ags_ladspa_browser.h:
 
 /usr/include/dlfcn.h:
 

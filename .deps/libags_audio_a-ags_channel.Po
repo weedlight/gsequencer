@@ -559,13 +559,18 @@ libags_audio_a-ags_channel.o: src/ags/audio/ags_channel.c \
  src/ags/file/ags_file.h src/ags/lib/ags_list.h \
  src/ags/object/ags_marshal.h src/ags/object/ags_connectable.h \
  src/ags/object/ags_dynamic_connectable.h src/ags/object/ags_soundcard.h \
- src/ags/plugin/ags_ladspa_manager.h src/ags/thread/ags_task_thread.h \
- src/ags/thread/ags_thread_pool.h src/ags/object/ags_main_loop.h \
- src/ags/thread/ags_task.h \
+ src/ags/plugin/ags_ladspa_manager.h src/ags/plugin/ags_lv2_manager.h \
+ src/ags/lib/ags_turtle.h /usr/include/lv2.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ src/ags/thread/ags_task_thread.h src/ags/thread/ags_thread_pool.h \
+ src/ags/object/ags_main_loop.h src/ags/thread/ags_task.h \
  src/ags/server/ags_server_application_context.h \
  src/ags/server/ags_server.h /usr/include/netinet/in.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/sys/socket.h /usr/include/sys/uio.h /usr/include/bits/uio.h \
  /usr/include/bits/socket.h /usr/include/bits/socket_type.h \
  /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
@@ -585,7 +590,8 @@ libags_audio_a-ags_channel.o: src/ags/audio/ags_channel.c \
  src/ags/audio/ags_recall_recycling_dummy.h \
  src/ags/audio/ags_recall_recycling.h src/ags/audio/ags_recall_ladspa.h \
  src/ags/audio/ags_recall_ladspa_run.h \
- src/ags/audio/ags_recall_audio_signal.h \
+ src/ags/audio/ags_recall_audio_signal.h src/ags/audio/ags_recall_lv2.h \
+ src/ags/audio/ags_recall_lv2_run.h \
  src/ags/audio/thread/ags_recycling_thread.h \
  src/ags/audio/task/ags_add_recall_container.h \
  src/ags/audio/task/ags_add_recall.h \
@@ -1910,6 +1916,36 @@ src/ags/object/ags_soundcard.h:
 
 src/ags/plugin/ags_ladspa_manager.h:
 
+src/ags/plugin/ags_lv2_manager.h:
+
+src/ags/lib/ags_turtle.h:
+
+/usr/include/lv2.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
 src/ags/thread/ags_task_thread.h:
 
 src/ags/thread/ags_thread_pool.h:
@@ -1923,12 +1959,6 @@ src/ags/server/ags_server_application_context.h:
 src/ags/server/ags_server.h:
 
 /usr/include/netinet/in.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h:
-
-/usr/include/stdint.h:
-
-/usr/include/bits/wchar.h:
 
 /usr/include/sys/socket.h:
 
@@ -1999,6 +2029,10 @@ src/ags/audio/ags_recall_ladspa.h:
 src/ags/audio/ags_recall_ladspa_run.h:
 
 src/ags/audio/ags_recall_audio_signal.h:
+
+src/ags/audio/ags_recall_lv2.h:
+
+src/ags/audio/ags_recall_lv2_run.h:
 
 src/ags/audio/thread/ags_recycling_thread.h:
 
