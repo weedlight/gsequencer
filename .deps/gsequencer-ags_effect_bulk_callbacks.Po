@@ -555,7 +555,7 @@ gsequencer-ags_effect_bulk_callbacks.o: \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
- src/ags/X/ags_ladspa_browser.h
+ src/ags/X/ags_plugin_browser.h
 
 /usr/include/stdc-predef.h:
 
@@ -1861,4 +1861,4 @@ src/ags/audio/ags_timestamp.h:
 
 src/ags/audio/ags_note.h:
 
-src/ags/X/ags_ladspa_browser.h:
+src/ags/X/ags_plugin_browser.h:

@@ -562,7 +562,11 @@ gsequencer-ags_update_bulk_member.o: \
  /usr/include/bits/stat.h src/ags/audio/ags_recall_ladspa.h \
  src/ags/audio/ags_recall_channel_run.h \
  src/ags/audio/ags_recall_audio_run.h src/ags/audio/ags_recall_audio.h \
- src/ags/audio/ags_recall_channel.h src/ags/X/ags_effect_bulk.h
+ src/ags/audio/ags_recall_channel.h src/ags/audio/ags_recall_lv2.h \
+ /usr/include/lv2.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h src/ags/lib/ags_turtle.h \
+ src/ags/X/ags_effect_bulk.h
 
 /usr/include/stdc-predef.h:
 
@@ -1893,5 +1897,17 @@ src/ags/audio/ags_recall_audio_run.h:
 src/ags/audio/ags_recall_audio.h:
 
 src/ags/audio/ags_recall_channel.h:
+
+src/ags/audio/ags_recall_lv2.h:
+
+/usr/include/lv2.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+src/ags/lib/ags_turtle.h:
 
 src/ags/X/ags_effect_bulk.h:
