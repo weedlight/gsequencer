@@ -528,12 +528,17 @@ gsequencer-ags_lv2_bridge_callbacks.o: \
  /usr/include/gtk-2.0/gtk/gtkoptionmenu.h \
  /usr/include/gtk-2.0/gtk/gtkpreview.h \
  /usr/include/gtk-2.0/gtk/gtktipsquery.h \
- src/ags/X/machine/ags_lv2_bridge.h src/ags/audio/ags_channel.h \
- src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
- src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_context.h \
- src/ags/audio/ags_recall.h src/ags/audio/ags_port.h \
- /usr/include/ladspa.h src/ags/audio/ags_recall_dependency.h \
- src/ags/audio/ags_notation.h /usr/include/libxml2/libxml/tree.h \
+ src/ags/X/machine/ags_lv2_bridge.h /usr/include/lv2.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/lib/lv2/ui.lv2/ui.h \
+ /usr/lib/lv2/lv2core.lv2/lv2.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdbool.h \
+ src/ags/audio/ags_channel.h src/ags/audio/ags_recall_id.h \
+ src/ags/audio/ags_recycling.h src/ags/audio/ags_audio_signal.h \
+ src/ags/audio/ags_recycling_context.h src/ags/audio/ags_recall.h \
+ src/ags/audio/ags_port.h /usr/include/ladspa.h \
+ src/ags/audio/ags_recall_dependency.h src/ags/audio/ags_notation.h \
+ /usr/include/libxml2/libxml/tree.h \
  /usr/include/libxml2/libxml/xmlversion.h \
  /usr/include/libxml2/libxml/xmlexports.h \
  /usr/include/libxml2/libxml/xmlstring.h \
@@ -1775,6 +1780,20 @@ src/ags/X/machine/ags_lv2_bridge_callbacks.h:
 /usr/include/gtk-2.0/gtk/gtktipsquery.h:
 
 src/ags/X/machine/ags_lv2_bridge.h:
+
+/usr/include/lv2.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/lib/lv2/ui.lv2/ui.h:
+
+/usr/lib/lv2/lv2core.lv2/lv2.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdbool.h:
 
 src/ags/audio/ags_channel.h:
 
