@@ -555,19 +555,21 @@ gsequencer-ags_effect_bulk.o: src/ags/X/ags_effect_bulk.c \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
- src/ags/X/ags_effect_bulk_callbacks.h \
+ src/ags/X/ags_effect_bulk_callbacks.h /usr/include/lv2.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/lib/lv2/ui.lv2/ui.h \
+ /usr/lib/lv2/lv2core.lv2/lv2.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdbool.h \
  src/ags/object/ags_application_context.h src/ags/object/ags_config.h \
  src/ags/file/ags_file.h src/ags/object/ags_marshal.h \
  src/ags/object/ags_connectable.h src/ags/object/ags_plugin.h \
  src/ags/object/ags_soundcard.h src/ags/plugin/ags_ladspa_manager.h \
  src/ags/plugin/ags_lv2_manager.h src/ags/lib/ags_turtle.h \
- /usr/include/lv2.h \
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/math.h \
- /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
- /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
- /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
- /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ /usr/include/math.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+ /usr/include/bits/mathinline.h src/ags/plugin/ags_lv2ui_manager.h \
  src/ags/thread/ags_task_thread.h src/ags/thread/ags_thread_pool.h \
  src/ags/object/ags_main_loop.h src/ags/thread/ags_task.h \
  src/ags/audio/ags_output.h src/ags/audio/ags_input.h \
@@ -1908,6 +1910,20 @@ src/ags/audio/ags_note.h:
 
 src/ags/X/ags_effect_bulk_callbacks.h:
 
+/usr/include/lv2.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/lib/lv2/ui.lv2/ui.h:
+
+/usr/lib/lv2/lv2core.lv2/lv2.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdbool.h:
+
 src/ags/object/ags_application_context.h:
 
 src/ags/object/ags_config.h:
@@ -1928,14 +1944,6 @@ src/ags/plugin/ags_lv2_manager.h:
 
 src/ags/lib/ags_turtle.h:
 
-/usr/include/lv2.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include/stdint.h:
-
-/usr/include/stdint.h:
-
-/usr/include/bits/wchar.h:
-
 /usr/include/math.h:
 
 /usr/include/bits/huge_val.h:
@@ -1953,6 +1961,8 @@ src/ags/lib/ags_turtle.h:
 /usr/include/bits/mathcalls.h:
 
 /usr/include/bits/mathinline.h:
+
+src/ags/plugin/ags_lv2ui_manager.h:
 
 src/ags/thread/ags_task_thread.h:
 
