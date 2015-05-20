@@ -560,7 +560,10 @@ gsequencer-ags_listing_editor.o: src/ags/X/ags_listing_editor.c \
  src/ags/X/ags_machine_editor.h \
  src/ags/X/ags_property_collection_editor.h src/ags/X/ags_resize_editor.h \
  src/ags/object/ags_connectable.h src/ags/object/ags_applicable.h \
- src/ags/audio/ags_output.h src/ags/X/ags_pad_editor.h
+ src/ags/audio/ags_output.h src/ags/audio/ags_input.h \
+ /usr/include/glib-2.0/glib/gstdio.h /usr/include/glib-2.0/glib/gprintf.h \
+ /usr/include/sys/stat.h /usr/include/bits/stat.h \
+ src/ags/X/ags_pad_editor.h
 
 /usr/include/stdc-predef.h:
 
@@ -1883,5 +1886,15 @@ src/ags/object/ags_connectable.h:
 src/ags/object/ags_applicable.h:
 
 src/ags/audio/ags_output.h:
+
+src/ags/audio/ags_input.h:
+
+/usr/include/glib-2.0/glib/gstdio.h:
+
+/usr/include/glib-2.0/glib/gprintf.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:
 
 src/ags/X/ags_pad_editor.h:
