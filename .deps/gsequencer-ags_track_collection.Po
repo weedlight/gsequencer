@@ -548,7 +548,8 @@ gsequencer-ags_track_collection.o: \
  /usr/include/stdlib.h /usr/include/bits/waitflags.h \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
- /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ src/ags/object/ags_applicable.h
 
 /usr/include/stdc-predef.h:
 
@@ -1825,3 +1826,5 @@ src/ags/object/ags_connectable.h:
 /usr/include/libxml2/libxml/xlink.h:
 
 /usr/include/libxml2/libxml/SAX2.h:
+
+src/ags/object/ags_applicable.h:

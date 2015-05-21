@@ -549,16 +549,17 @@ gsequencer-ags_midi_import_wizard.o: \
  /usr/include/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
- src/ags/audio/ags_output.h src/ags/audio/ags_channel.h \
- src/ags/audio/ags_recall_id.h src/ags/audio/ags_recycling.h \
- src/ags/audio/ags_audio_signal.h src/ags/audio/ags_recycling_context.h \
- src/ags/audio/ags_recall.h src/ags/audio/ags_port.h \
- /usr/include/ladspa.h src/ags/audio/ags_recall_dependency.h \
- src/ags/audio/ags_notation.h src/ags/thread/ags_timestamp_thread.h \
- src/ags/thread/ags_thread-posix.h src/ags/audio/ags_timestamp.h \
- src/ags/audio/ags_note.h src/ags/audio/ags_input.h \
- /usr/include/glib-2.0/glib/gstdio.h /usr/include/glib-2.0/glib/gprintf.h \
- /usr/include/sys/stat.h /usr/include/bits/stat.h src/ags/X/ags_window.h \
+ src/ags/object/ags_applicable.h src/ags/audio/ags_output.h \
+ src/ags/audio/ags_channel.h src/ags/audio/ags_recall_id.h \
+ src/ags/audio/ags_recycling.h src/ags/audio/ags_audio_signal.h \
+ src/ags/audio/ags_recycling_context.h src/ags/audio/ags_recall.h \
+ src/ags/audio/ags_port.h /usr/include/ladspa.h \
+ src/ags/audio/ags_recall_dependency.h src/ags/audio/ags_notation.h \
+ src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
+ src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
+ src/ags/audio/ags_input.h /usr/include/glib-2.0/glib/gstdio.h \
+ /usr/include/glib-2.0/glib/gprintf.h /usr/include/sys/stat.h \
+ /usr/include/bits/stat.h src/ags/X/ags_window.h \
  src/ags/object/ags_soundcard.h src/ags/object/ags_application_context.h \
  src/ags/object/ags_config.h src/ags/file/ags_file.h \
  src/ags/X/ags_automation_editor.h \
@@ -575,7 +576,9 @@ gsequencer-ags_midi_import_wizard.o: \
  src/ags/X/ags_preferences.h src/ags/X/ags_generic_preferences.h \
  src/ags/X/ags_audio_preferences.h \
  src/ags/X/ags_performance_preferences.h \
- src/ags/X/ags_server_preferences.h
+ src/ags/X/ags_server_preferences.h \
+ src/ags/X/import/ags_track_collection.h \
+ src/ags/X/import/ags_track_collection_mapper.h
 
 /usr/include/stdc-predef.h:
 
@@ -1853,6 +1856,8 @@ src/ags/object/ags_connectable.h:
 
 /usr/include/libxml2/libxml/SAX2.h:
 
+src/ags/object/ags_applicable.h:
+
 src/ags/audio/ags_output.h:
 
 src/ags/audio/ags_channel.h:
@@ -1952,3 +1957,7 @@ src/ags/X/ags_audio_preferences.h:
 src/ags/X/ags_performance_preferences.h:
 
 src/ags/X/ags_server_preferences.h:
+
+src/ags/X/import/ags_track_collection.h:
+
+src/ags/X/import/ags_track_collection_mapper.h:
