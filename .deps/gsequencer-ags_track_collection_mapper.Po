@@ -579,6 +579,7 @@ gsequencer-ags_track_collection_mapper.o: \
  src/ags/X/ags_audio_preferences.h \
  src/ags/X/ags_performance_preferences.h \
  src/ags/X/ags_server_preferences.h \
+ src/ags/X/import/ags_midi_import_wizard.h \
  src/ags/X/import/ags_track_collection.h src/ags/X/machine/ags_drum.h \
  src/ags/audio/ags_recall_container.h \
  src/ags/X/machine/ags_drum_input_pad.h src/ags/X/ags_pad.h \
@@ -2047,6 +2048,8 @@ src/ags/X/ags_audio_preferences.h:
 src/ags/X/ags_performance_preferences.h:
 
 src/ags/X/ags_server_preferences.h:
+
+src/ags/X/import/ags_midi_import_wizard.h:
 
 src/ags/X/import/ags_track_collection.h:
 

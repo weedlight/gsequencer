@@ -550,6 +550,7 @@ gsequencer-ags_track_collection.o: \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/X/import/ags_track_collection_callbacks.h \
  src/ags/object/ags_connectable.h src/ags/object/ags_applicable.h \
+ src/ags/audio/midi/ags_midi_parser.h \
  src/ags/X/import/ags_track_collection_mapper.h \
  /usr/include/libxml2/libxml/xpath.h
 
@@ -1830,6 +1831,8 @@ src/ags/X/import/ags_track_collection_callbacks.h:
 src/ags/object/ags_connectable.h:
 
 src/ags/object/ags_applicable.h:
+
+src/ags/audio/midi/ags_midi_parser.h:
 
 src/ags/X/import/ags_track_collection_mapper.h:
 
