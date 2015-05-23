@@ -129,11 +129,16 @@ libags_audio_a-ags_automation.o: src/ags/audio/ags_automation.c \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  src/ags/audio/ags_acceleration.h src/ags/object/ags_connectable.h \
  src/ags/object/ags_tactable.h src/ags/object/ags_portlet.h \
- src/ags/audio/ags_port.h /usr/include/ladspa.h \
- src/ags/audio/ags_timestamp.h /usr/include/errno.h \
- /usr/include/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
- /usr/include/asm-generic/errno-base.h
+ src/ags/audio/ags_port.h /usr/include/ladspa.h src/ags/audio/ags_audio.h \
+ src/ags/audio/ags_channel.h src/ags/audio/ags_recall_id.h \
+ src/ags/audio/ags_recycling.h src/ags/audio/ags_audio_signal.h \
+ src/ags/audio/ags_recycling_context.h src/ags/audio/ags_recall.h \
+ src/ags/audio/ags_recall_dependency.h src/ags/audio/ags_notation.h \
+ src/ags/thread/ags_timestamp_thread.h src/ags/thread/ags_thread-posix.h \
+ src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h
 
 /usr/include/stdc-predef.h:
 
@@ -497,7 +502,31 @@ src/ags/audio/ags_port.h:
 
 /usr/include/ladspa.h:
 
+src/ags/audio/ags_audio.h:
+
+src/ags/audio/ags_channel.h:
+
+src/ags/audio/ags_recall_id.h:
+
+src/ags/audio/ags_recycling.h:
+
+src/ags/audio/ags_audio_signal.h:
+
+src/ags/audio/ags_recycling_context.h:
+
+src/ags/audio/ags_recall.h:
+
+src/ags/audio/ags_recall_dependency.h:
+
+src/ags/audio/ags_notation.h:
+
+src/ags/thread/ags_timestamp_thread.h:
+
+src/ags/thread/ags_thread-posix.h:
+
 src/ags/audio/ags_timestamp.h:
+
+src/ags/audio/ags_note.h:
 
 /usr/include/errno.h:
 

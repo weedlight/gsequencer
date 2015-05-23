@@ -130,9 +130,14 @@ libags_audio_a-ags_notation.o: src/ags/audio/ags_notation.c \
  src/ags/audio/ags_timestamp.h src/ags/audio/ags_note.h \
  src/ags/object/ags_connectable.h src/ags/object/ags_tactable.h \
  src/ags/object/ags_portlet.h src/ags/audio/ags_port.h \
- /usr/include/ladspa.h /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h
+ /usr/include/ladspa.h src/ags/audio/ags_audio.h \
+ src/ags/audio/ags_channel.h src/ags/audio/ags_recall_id.h \
+ src/ags/audio/ags_recycling.h src/ags/audio/ags_audio_signal.h \
+ src/ags/audio/ags_recycling_context.h src/ags/audio/ags_recall.h \
+ src/ags/audio/ags_recall_dependency.h /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h
 
 /usr/include/stdc-predef.h:
 
@@ -501,6 +506,22 @@ src/ags/object/ags_portlet.h:
 src/ags/audio/ags_port.h:
 
 /usr/include/ladspa.h:
+
+src/ags/audio/ags_audio.h:
+
+src/ags/audio/ags_channel.h:
+
+src/ags/audio/ags_recall_id.h:
+
+src/ags/audio/ags_recycling.h:
+
+src/ags/audio/ags_audio_signal.h:
+
+src/ags/audio/ags_recycling_context.h:
+
+src/ags/audio/ags_recall.h:
+
+src/ags/audio/ags_recall_dependency.h:
 
 /usr/include/errno.h:
 
