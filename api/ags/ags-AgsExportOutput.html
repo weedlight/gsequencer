@@ -2,30 +2,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>AgsExportOutput</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsExportOutput</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
-<link rel="up" href="task.html" title="Task - Data exchanged between Audio and GUI">
-<link rel="prev" href="ags-AgsDisplayTact.html" title="AgsDisplayTact">
+<link rel="up" href="audio-task.html" title="Audio tasks - Data exchanged between Audio and GUI">
+<link rel="prev" href="ags-AgsChannelSetRecycling.html" title="AgsChannelSetRecycling">
 <link rel="next" href="ags-AgsFreeSelection.html" title="AgsFreeSelection">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
-<tr valign="middle">
-<td><a accesskey="p" href="ags-AgsDisplayTact.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="task.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<th width="100%" align="center">Advanced Gtk+ Sequencer Reference Manual</th>
-<td><a accesskey="n" href="ags-AgsFreeSelection.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-</tr>
-<tr><td colspan="5" class="shortcuts">
-<a href="#ags-AgsExportOutput.synopsis" class="shortcut">Top</a>
-                   | 
-                  <a href="#ags-AgsExportOutput.description" class="shortcut">Description</a>
-</td></tr>
-</table>
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ags-AgsExportOutput.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="audio-task.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ags-AgsChannelSetRecycling.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ags-AgsFreeSelection.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
 <div class="refentry">
 <a name="ags-AgsExportOutput"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
@@ -33,97 +29,96 @@
 <h2><span class="refentrytitle"><a name="ags-AgsExportOutput.top_of_page"></a>AgsExportOutput</span></h2>
 <p>AgsExportOutput — export output object</p>
 </td>
-<td valign="top" align="right"></td>
+<td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
-<a name="ags-AgsExportOutput.synopsis"></a><h2>Synopsis</h2>
-<pre class="synopsis">
-#include &lt;ags/audio/task/ags_export_output.h&gt;
-
-struct              <a class="link" href="ags-AgsExportOutput.html#AgsExportOutput" title="struct AgsExportOutput">AgsExportOutput</a>;
-struct              <a class="link" href="ags-AgsExportOutput.html#AgsExportOutputClass" title="struct AgsExportOutputClass">AgsExportOutputClass</a>;
-<a class="link" href="ags-AgsExportOutput.html#AgsExportOutput" title="struct AgsExportOutput"><span class="returnvalue">AgsExportOutput</span></a> *   <a class="link" href="ags-AgsExportOutput.html#ags-export-output-new" title="ags_export_output_new ()">ags_export_output_new</a>               (<em class="parameter"><code><a class="link" href="ags-AgsExportThread.html#AgsExportThread" title="struct AgsExportThread"><span class="type">AgsExportThread</span></a> *export_thread</code></em>,
-                                                         <em class="parameter"><code><a class="link" href="ags-AgsDevout.html#AgsDevout" title="struct AgsDevout"><span class="type">AgsDevout</span></a> *devout</code></em>,
-                                                         <em class="parameter"><code><GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *filename</code></em>,
-                                                         <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> tic</code></em>,
-                                                         <em class="parameter"><code><GTKDOCLINK HREF="gboolean"><span class="type">gboolean</span></GTKDOCLINK> live_performance</code></em>);
+<div class="refsect1">
+<a name="ags-AgsExportOutput.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<span class="returnvalue">AgsExportOutput</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsExportOutput.html#ags-export-output-new" title="ags_export_output_new ()">ags_export_output_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsExportOutput.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;ags/audio/task/ags_export_output.h&gt;
 </pre>
 </div>
 <div class="refsect1">
 <a name="ags-AgsExportOutput.description"></a><h2>Description</h2>
-<p>
-The <a class="link" href="ags-AgsExportOutput.html#AgsExportOutput" title="struct AgsExportOutput"><span class="type">AgsExportOutput</span></a> task exports <a class="link" href="ags-AgsDevout.html#AgsDevout" title="struct AgsDevout"><span class="type">AgsDevout</span></a> to file.
-</p>
+<p>The <span class="type">AgsExportOutput</span> task exports <span class="type">AgsSoundcard</span> to file.</p>
 </div>
 <div class="refsect1">
-<a name="ags-AgsExportOutput.details"></a><h2>Details</h2>
+<a name="ags-AgsExportOutput.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
-<a name="AgsExportOutput"></a><h3>struct AgsExportOutput</h3>
-<pre class="programlisting">struct AgsExportOutput {
-  AgsTask task;
-
-  AgsExportThread *export_thread;
-  AgsDevout *devout;
-  gchar *filename;
-  guint tic;
-  gboolean live_performance;
-};
-</pre>
-</div>
-<hr>
-<div class="refsect2">
-<a name="AgsExportOutputClass"></a><h3>struct AgsExportOutputClass</h3>
-<pre class="programlisting">struct AgsExportOutputClass {
-  AgsTaskClass task;
-};
-</pre>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-export-output-new"></a><h3>ags_export_output_new ()</h3>
-<pre class="programlisting"><a class="link" href="ags-AgsExportOutput.html#AgsExportOutput" title="struct AgsExportOutput"><span class="returnvalue">AgsExportOutput</span></a> *   ags_export_output_new               (<em class="parameter"><code><a class="link" href="ags-AgsExportThread.html#AgsExportThread" title="struct AgsExportThread"><span class="type">AgsExportThread</span></a> *export_thread</code></em>,
-                                                         <em class="parameter"><code><a class="link" href="ags-AgsDevout.html#AgsDevout" title="struct AgsDevout"><span class="type">AgsDevout</span></a> *devout</code></em>,
-                                                         <em class="parameter"><code><GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *filename</code></em>,
-                                                         <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> tic</code></em>,
-                                                         <em class="parameter"><code><GTKDOCLINK HREF="gboolean"><span class="type">gboolean</span></GTKDOCLINK> live_performance</code></em>);</pre>
-<p>
-Creates an <a class="link" href="ags-AgsExportOutput.html#AgsExportOutput" title="struct AgsExportOutput"><span class="type">AgsExportOutput</span></a>.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
+<a name="ags-export-output-new"></a><h3>ags_export_output_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">AgsExportOutput</span> *
+ags_export_output_new (<em class="parameter"><code><span class="type">AgsExportThread</span> *export_thread</code></em>,
+                       <em class="parameter"><code><a href="../gobject/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *soundcard</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filename</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> tic</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> live_performance</code></em>);</pre>
+<p>Creates an <span class="type">AgsExportOutput</span>.</p>
+<div class="refsect3">
+<a name="id-1.10.46.22.6.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
 <tbody>
 <tr>
-<td><p><span class="term"><em class="parameter"><code>export_thread</code></em> :</span></p></td>
-<td>the <a class="link" href="ags-AgsExportThread.html#AgsExportThread" title="struct AgsExportThread"><span class="type">AgsExportThread</span></a> to start</td>
+<td class="parameter_name"><p>export_thread</p></td>
+<td class="parameter_description"><p>the <span class="type">AgsExportThread</span> to start</p></td>
+<td class="parameter_annotations"> </td>
 </tr>
 <tr>
-<td><p><span class="term"><em class="parameter"><code>devout</code></em> :</span></p></td>
-<td>the <a class="link" href="ags-AgsDevout.html#AgsDevout" title="struct AgsDevout"><span class="type">AgsDevout</span></a> to export</td>
+<td class="parameter_name"><p>soundcard</p></td>
+<td class="parameter_description"><p>the <span class="type">AgsSoundcard</span> to export</p></td>
+<td class="parameter_annotations"> </td>
 </tr>
 <tr>
-<td><p><span class="term"><em class="parameter"><code>filename</code></em> :</span></p></td>
-<td>the filename to save</td>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>the filename to save</p></td>
+<td class="parameter_annotations"> </td>
 </tr>
 <tr>
-<td><p><span class="term"><em class="parameter"><code>tic</code></em> :</span></p></td>
-<td>stream duration in tact</td>
+<td class="parameter_name"><p>tic</p></td>
+<td class="parameter_description"><p>stream duration in tact</p></td>
+<td class="parameter_annotations"> </td>
 </tr>
 <tr>
-<td><p><span class="term"><em class="parameter"><code>live_performance</code></em> :</span></p></td>
-<td>if <GTKDOCLINK HREF="TRUE:CAPS"><code class="literal">TRUE</code></GTKDOCLINK> export is done during real-time</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>an new <a class="link" href="ags-AgsExportOutput.html#AgsExportOutput" title="struct AgsExportOutput"><span class="type">AgsExportOutput</span></a>.</td>
+<td class="parameter_name"><p>live_performance</p></td>
+<td class="parameter_description"><p>if <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> export is done during real-time</p></td>
+<td class="parameter_annotations"> </td>
 </tr>
 </tbody>
 </table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.46.22.6.2.6"></a><h4>Returns</h4>
+<p> an new <span class="type">AgsExportOutput</span>.</p>
+<p></p>
+</div>
 <p class="since">Since 0.4</p>
 </div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsExportOutput.other_details"></a><h2>Types and Values</h2>
 </div>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.21</div>
 </body>
 </html>

@@ -1,24 +1,15 @@
 <SIGNAL>
-<NAME>AgsAsyncQueue::interrupt</NAME>
+<NAME>AgsApplicationContext::load-config</NAME>
 <RETURNS>void</RETURNS>
 <FLAGS>l</FLAGS>
-AgsAsyncQueue *agsasyncqueue
+AgsApplicationContext *agsapplicationcontext
 </SIGNAL>
 
 <SIGNAL>
-<NAME>AgsAsyncQueue::pop-context</NAME>
+<NAME>AgsApplicationContext::register-types</NAME>
 <RETURNS>void</RETURNS>
 <FLAGS>l</FLAGS>
-AgsAsyncQueue *agsasyncqueue
-gpointer  arg1
-</SIGNAL>
-
-<SIGNAL>
-<NAME>AgsAsyncQueue::push-context</NAME>
-<RETURNS>void</RETURNS>
-<FLAGS>l</FLAGS>
-AgsAsyncQueue *agsasyncqueue
-gpointer  arg1
+AgsApplicationContext *agsapplicationcontext
 </SIGNAL>
 
 <SIGNAL>
@@ -64,6 +55,13 @@ GObject *arg1
 </SIGNAL>
 
 <SIGNAL>
+<NAME>AgsAudioLoop::stopped-all</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsAudioLoop *agsaudioloop
+</SIGNAL>
+
+<SIGNAL>
 <NAME>AgsAudioSignal::morph-samplerate</NAME>
 <RETURNS>void</RETURNS>
 <FLAGS>l</FLAGS>
@@ -81,10 +79,36 @@ guint  arg1
 </SIGNAL>
 
 <SIGNAL>
+<NAME>AgsAutomationEditor::machine-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsAutomationEditor *agsautomationeditor
+GObject *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsBulkMember::change-port</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsBulkMember *agsbulkmember
+gpointer  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsChannel::add-effect</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsChannel *agschannel
+gchar *arg1
+gchar *arg2
+</SIGNAL>
+
+<SIGNAL>
 <NAME>AgsChannel::done</NAME>
 <RETURNS>void</RETURNS>
 <FLAGS>l</FLAGS>
 AgsChannel *agschannel
+GObject *arg1
 </SIGNAL>
 
 <SIGNAL>
@@ -100,6 +124,40 @@ GObject *arg5
 GObject *arg6
 GObject *arg7
 GObject *arg8
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsChannel::remove-effect</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsChannel *agschannel
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsConfig::get-value</NAME>
+<RETURNS>gchar*</RETURNS>
+<FLAGS>l</FLAGS>
+AgsConfig *agsconfig
+gchar *arg1
+gchar *arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsConfig::load-defaults</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsConfig *agsconfig
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsConfig::set-value</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsConfig *agsconfig
+gchar *arg1
+gchar *arg2
+gchar *arg3
 </SIGNAL>
 
 <SIGNAL>
@@ -170,7 +228,7 @@ AgsDelayAudio *agsdelayaudio
 <FLAGS>l</FLAGS>
 AgsDelayAudioRun *agsdelayaudiorun
 guint  arg1
-guint  arg2
+gdouble  arg2
 guint  arg3
 </SIGNAL>
 
@@ -180,7 +238,7 @@ guint  arg3
 <FLAGS>l</FLAGS>
 AgsDelayAudioRun *agsdelayaudiorun
 guint  arg1
-guint  arg2
+gdouble  arg2
 guint  arg3
 </SIGNAL>
 
@@ -190,7 +248,7 @@ guint  arg3
 <FLAGS>l</FLAGS>
 AgsDelayAudioRun *agsdelayaudiorun
 guint  arg1
-guint  arg2
+gdouble  arg2
 guint  arg3
 </SIGNAL>
 
@@ -200,7 +258,7 @@ guint  arg3
 <FLAGS>l</FLAGS>
 AgsDelayAudioRun *agsdelayaudiorun
 guint  arg1
-guint  arg2
+gdouble  arg2
 guint  arg3
 </SIGNAL>
 
@@ -210,7 +268,7 @@ guint  arg3
 <FLAGS>l</FLAGS>
 AgsDelayAudioRun *agsdelayaudiorun
 guint  arg1
-guint  arg2
+gdouble  arg2
 guint  arg3
 </SIGNAL>
 
@@ -220,15 +278,8 @@ guint  arg3
 <FLAGS>l</FLAGS>
 AgsDelayAudioRun *agsdelayaudiorun
 guint  arg1
-guint  arg2
+gdouble  arg2
 guint  arg3
-</SIGNAL>
-
-<SIGNAL>
-<NAME>AgsDevout::tic</NAME>
-<RETURNS>void</RETURNS>
-<FLAGS>l</FLAGS>
-AgsDevout *agsdevout
 </SIGNAL>
 
 <SIGNAL>
@@ -237,6 +288,101 @@ AgsDevout *agsdevout
 <FLAGS>l</FLAGS>
 AgsEditor *agseditor
 GObject *arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsEffectBridge::resize-audio-channels</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsEffectBridge *agseffectbridge
+guint  arg1
+guint  arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsEffectBridge::resize-pads</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsEffectBridge *agseffectbridge
+gulong  arg1
+guint  arg2
+guint  arg3
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsEffectBulk::add-effect</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsEffectBulk *agseffectbulk
+gchar *arg1
+gchar *arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsEffectBulk::remove-effect</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsEffectBulk *agseffectbulk
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsEffectBulk::resize-audio-channels</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsEffectBulk *agseffectbulk
+guint  arg1
+guint  arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsEffectBulk::resize-pads</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsEffectBulk *agseffectbulk
+guint  arg1
+guint  arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsEffectLine::add-effect</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsEffectLine *agseffectline
+gchar *arg1
+gchar *arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsEffectLine::remove-effect</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsEffectLine *agseffectline
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsEffectPad::resize-lines</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsEffectPad *agseffectpad
+gulong  arg1
+guint  arg2
+guint  arg3
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsFile::open</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsFile *agsfile
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsFile::open-from-data</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsFile *agsfile
 </SIGNAL>
 
 <SIGNAL>
@@ -255,6 +401,13 @@ AgsFile *agsfile
 
 <SIGNAL>
 <NAME>AgsFile::read-start</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsFile *agsfile
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsFile::rw-open</NAME>
 <RETURNS>void</RETURNS>
 <FLAGS>l</FLAGS>
 AgsFile *agsfile
@@ -335,10 +488,49 @@ GObject *arg2
 </SIGNAL>
 
 <SIGNAL>
+<NAME>AgsLibao::tic</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsLibao *agslibao
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsLine::add-effect</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsLine *agsline
+gchar *arg1
+gchar *arg2
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsLine::find-port</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsLine *agsline
+</SIGNAL>
+
+<SIGNAL>
 <NAME>AgsLine::group-changed</NAME>
 <RETURNS>void</RETURNS>
 <FLAGS>l</FLAGS>
 AgsLine *agsline
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsLine::map-recall</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsLine *agsline
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsLine::remove-effect</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsLine *agsline
+guint  arg1
 </SIGNAL>
 
 <SIGNAL>
@@ -366,7 +558,14 @@ GObject *arg1
 </SIGNAL>
 
 <SIGNAL>
-<NAME>AgsMachine::add-default-recalls</NAME>
+<NAME>AgsMachine::find-port</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMachine *agsmachine
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMachine::map-recall</NAME>
 <RETURNS>void</RETURNS>
 <FLAGS>l</FLAGS>
 AgsMachine *agsmachine
@@ -381,11 +580,213 @@ GObject *arg1
 </SIGNAL>
 
 <SIGNAL>
+<NAME>AgsMidiParser::change-channel-pressure</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::change-parameter</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::change-pitch-bend</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::change-program</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::end-of-track</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::key-off</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::key-on</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::key-pressure</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::key-signature</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::meta-event</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::midi-getc</NAME>
+<RETURNS>gint</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::not-defined</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::on-error</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::parse-full</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::parse-header</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::parse-track</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::sequence-number</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::sequencer-meta-event</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::smpte</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::sysex</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::system-common</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::tempo</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::text-event</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsMidiParser::time-signature</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsMidiParser *agsmidiparser
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
 <NAME>AgsNavigation::change-position</NAME>
 <RETURNS>void</RETURNS>
 <FLAGS>l</FLAGS>
 AgsNavigation *agsnavigation
 gdouble  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsPad::find-port</NAME>
+<RETURNS>gpointer</RETURNS>
+<FLAGS>l</FLAGS>
+AgsPad *agspad
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsPad::map-recall</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsPad *agspad
+guint  arg1
 </SIGNAL>
 
 <SIGNAL>
@@ -462,6 +863,14 @@ gpointer  arg2
 <FLAGS>l</FLAGS>
 AgsPort *agsport
 gpointer  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsPortSelection::add-port</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsPortSelection *agsportselection
+GObject *arg1
 </SIGNAL>
 
 <SIGNAL>
@@ -632,6 +1041,21 @@ AgsReturnableThread *agsreturnablethread
 <RETURNS>void</RETURNS>
 <FLAGS>l</FLAGS>
 AgsServer *agsserver
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsSoundcard::offset-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsSoundcard *agssoundcard
+guint  arg1
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AgsSoundcard::tic</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>l</FLAGS>
+AgsSoundcard *agssoundcard
 </SIGNAL>
 
 <SIGNAL>

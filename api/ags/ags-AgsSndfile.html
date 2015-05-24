@@ -2,30 +2,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>AgsSndfile</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsSndfile</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
 <link rel="up" href="audio-file.html" title="Audio files - Reading/Writing audio data from disk">
 <link rel="prev" href="ags-AgsIpatchSF2Reader.html" title="AgsIpatchSF2Reader">
-<link rel="next" href="recall.html" title="Recalls - Effect processors">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="next" href="ags-AgsPlayable.html" title="AgsPlayable">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
-<tr valign="middle">
-<td><a accesskey="p" href="ags-AgsIpatchSF2Reader.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="audio-file.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<th width="100%" align="center">Advanced Gtk+ Sequencer Reference Manual</th>
-<td><a accesskey="n" href="recall.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-</tr>
-<tr><td colspan="5" class="shortcuts">
-<a href="#ags-AgsSndfile.synopsis" class="shortcut">Top</a>
-                   | 
-                  <a href="#ags-AgsSndfile.description" class="shortcut">Description</a>
-</td></tr>
-</table>
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ags-AgsSndfile.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="audio-file.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ags-AgsIpatchSF2Reader.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ags-AgsPlayable.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
 <div class="refentry">
 <a name="ags-AgsSndfile"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
@@ -33,80 +29,93 @@
 <h2><span class="refentrytitle"><a name="ags-AgsSndfile.top_of_page"></a>AgsSndfile</span></h2>
 <p>AgsSndfile — Libsndfile wrapper</p>
 </td>
-<td valign="top" align="right"></td>
+<td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
-<a name="ags-AgsSndfile.synopsis"></a><h2>Synopsis</h2>
-<pre class="synopsis">
-#include &lt;ags/audio/file/ags_sndfile.h&gt;
-
-struct              <a class="link" href="ags-AgsSndfile.html#AgsSndfile" title="struct AgsSndfile">AgsSndfile</a>;
-struct              <a class="link" href="ags-AgsSndfile.html#AgsSndfileClass" title="struct AgsSndfileClass">AgsSndfileClass</a>;
-enum                <a class="link" href="ags-AgsSndfile.html#AgsSndfileFlags" title="enum AgsSndfileFlags">AgsSndfileFlags</a>;
-<a class="link" href="ags-AgsSndfile.html#AgsSndfile" title="struct AgsSndfile"><span class="returnvalue">AgsSndfile</span></a> *        <a class="link" href="ags-AgsSndfile.html#ags-sndfile-new" title="ags_sndfile_new ()">ags_sndfile_new</a>                     ();
+<div class="refsect1">
+<a name="ags-AgsSndfile.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<span class="returnvalue">AgsSndfile</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsSndfile.html#ags-sndfile-new" title="ags_sndfile_new ()">ags_sndfile_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsSndfile.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="ags-AgsSndfile.html#AgsSndfileFlags" title="enum AgsSndfileFlags">AgsSndfileFlags</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsSndfile.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;ags/audio/file/ags_sndfile.h&gt;
 </pre>
 </div>
 <div class="refsect1">
 <a name="ags-AgsSndfile.description"></a><h2>Description</h2>
-<p>
-<a class="link" href="ags-AgsSndfile.html#AgsSndfile" title="struct AgsSndfile"><span class="type">AgsSndfile</span></a> is the base object to ineract with libsndfile.
-</p>
+<p><span class="type">AgsSndfile</span> is the base object to ineract with libsndfile.</p>
 </div>
 <div class="refsect1">
-<a name="ags-AgsSndfile.details"></a><h2>Details</h2>
+<a name="ags-AgsSndfile.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
-<a name="AgsSndfile"></a><h3>struct AgsSndfile</h3>
-<pre class="programlisting">struct AgsSndfile {
-  GObject object;
-
-  guint flags;
-
-  SF_INFO *info;
-  SNDFILE *file;
-
-  guchar *pointer;
-  guchar *current;
-  gsize length;
-};
-</pre>
+<a name="ags-sndfile-new"></a><h3>ags_sndfile_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">AgsSndfile</span> *
+ags_sndfile_new ();</pre>
+<p>Creates an <span class="type">AgsSndfile</span>.</p>
+<div class="refsect3">
+<a name="id-1.10.44.5.7.2.5"></a><h4>Returns</h4>
+<p> an empty <span class="type">AgsSndfile</span>.</p>
+<p></p>
 </div>
-<hr>
-<div class="refsect2">
-<a name="AgsSndfileClass"></a><h3>struct AgsSndfileClass</h3>
-<pre class="programlisting">struct AgsSndfileClass {
-  GObjectClass object;
-};
-</pre>
+<p class="since">Since 0.3</p>
 </div>
-<hr>
+</div>
+<div class="refsect1">
+<a name="ags-AgsSndfile.other_details"></a><h2>Types and Values</h2>
 <div class="refsect2">
 <a name="AgsSndfileFlags"></a><h3>enum AgsSndfileFlags</h3>
-<pre class="programlisting">typedef enum {
-  AGS_SNDFILE_ITER_START    = 1,
-  AGS_SNDFILE_VIRTUAL       = 1 &lt;&lt; 1,
-} AgsSndfileFlags;
-</pre>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-sndfile-new"></a><h3>ags_sndfile_new ()</h3>
-<pre class="programlisting"><a class="link" href="ags-AgsSndfile.html#AgsSndfile" title="struct AgsSndfile"><span class="returnvalue">AgsSndfile</span></a> *        ags_sndfile_new                     ();</pre>
-<p>
-Creates an <a class="link" href="ags-AgsSndfile.html#AgsSndfile" title="struct AgsSndfile"><span class="type">AgsSndfile</span></a>.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody><tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>an empty <a class="link" href="ags-AgsSndfile.html#AgsSndfile" title="struct AgsSndfile"><span class="type">AgsSndfile</span></a>.</td>
-</tr></tbody>
+<div class="refsect3">
+<a name="id-1.10.44.5.8.2.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-SNDFILE-ITER-START:CAPS"></a>AGS_SNDFILE_ITER_START</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-SNDFILE-VIRTUAL:CAPS"></a>AGS_SNDFILE_VIRTUAL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
 </table></div>
-<p class="since">Since 0.3</p>
+</div>
 </div>
 </div>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.21</div>
 </body>
 </html>

@@ -2,34 +2,27 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>AgsMenuBar</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsMenuBar</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
-<link rel="up" href="pt08.html" title="Part VIII. Graphical user interface">
+<link rel="up" href="pt09.html" title="Part IX. Graphical user interface">
 <link rel="prev" href="ags-ags-machine-editor-callbacks.html" title="ags_machine_editor_callbacks">
 <link rel="next" href="ags-ags-menu-bar-callbacks.html" title="ags_menu_bar_callbacks">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
-<tr valign="middle">
-<td><a accesskey="p" href="ags-ags-machine-editor-callbacks.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="pt08.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<th width="100%" align="center">Advanced Gtk+ Sequencer Reference Manual</th>
-<td><a accesskey="n" href="ags-ags-menu-bar-callbacks.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-</tr>
-<tr><td colspan="5" class="shortcuts">
-<a href="#AgsMenuBar.synopsis" class="shortcut">Top</a>
-                   | 
-                  <a href="#AgsMenuBar.description" class="shortcut">Description</a>
-                   | 
-                  <a href="#AgsMenuBar.object-hierarchy" class="shortcut">Object Hierarchy</a>
-                   | 
-                  <a href="#AgsMenuBar.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
-</td></tr>
-</table>
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AgsMenuBar.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AgsMenuBar.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="pt09.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ags-ags-machine-editor-callbacks.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ags-ags-menu-bar-callbacks.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
 <div class="refentry">
 <a name="AgsMenuBar"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
@@ -37,124 +30,224 @@
 <h2><span class="refentrytitle"><a name="AgsMenuBar.top_of_page"></a>AgsMenuBar</span></h2>
 <p>AgsMenuBar — the menu bar.</p>
 </td>
-<td valign="top" align="right"></td>
+<td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
-<a name="AgsMenuBar.synopsis"></a><h2>Synopsis</h2>
-<pre class="synopsis">
-#include &lt;ags/X/ags_menu_bar.h&gt;
-
-struct              <a class="link" href="AgsMenuBar.html#AgsMenuBar-struct" title="struct AgsMenuBar">AgsMenuBar</a>;
-struct              <a class="link" href="AgsMenuBar.html#AgsMenuBarClass" title="struct AgsMenuBarClass">AgsMenuBarClass</a>;
-<a class="link" href="AgsMenuBar.html" title="AgsMenuBar"><span class="returnvalue">AgsMenuBar</span></a> *        <a class="link" href="AgsMenuBar.html#ags-menu-bar-new" title="ags_menu_bar_new ()">ags_menu_bar_new</a>                    ();
-<a href="../gtk3/GtkComboBox.html"><span class="returnvalue">GtkComboBox</span></a> *       <a class="link" href="AgsMenuBar.html#ags-tact-combo-box-new" title="ags_tact_combo_box_new ()">ags_tact_combo_box_new</a>              ();
-<a href="../gtk3/GtkMenu.html"><span class="returnvalue">GtkMenu</span></a> *           <a class="link" href="AgsMenuBar.html#ags-tact-menu-new" title="ags_tact_menu_new ()">ags_tact_menu_new</a>                   ();
-<a href="../gtk3/GtkComboBox.html"><span class="returnvalue">GtkComboBox</span></a> *       <a class="link" href="AgsMenuBar.html#ags-zoom-combo-box-new" title="ags_zoom_combo_box_new ()">ags_zoom_combo_box_new</a>              ();
-<a href="../gtk3/GtkMenu.html"><span class="returnvalue">GtkMenu</span></a> *           <a class="link" href="AgsMenuBar.html#ags-zoom-menu-new" title="ags_zoom_menu_new ()">ags_zoom_menu_new</a>                   ();
-</pre>
+<div class="refsect1">
+<a name="AgsMenuBar.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="AgsMenuBar.html" title="AgsMenuBar"><span class="returnvalue">AgsMenuBar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMenuBar.html#ags-menu-bar-new" title="ags_menu_bar_new ()">ags_menu_bar_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GtkMenu"><span class="returnvalue">GtkMenu</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMenuBar.html#ags-zoom-menu-new" title="ags_zoom_menu_new ()">ags_zoom_menu_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GtkMenu"><span class="returnvalue">GtkMenu</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMenuBar.html#ags-tact-menu-new" title="ags_tact_menu_new ()">ags_tact_menu_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GtkMenu"><span class="returnvalue">GtkMenu</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMenuBar.html#ags-ladspa-menu-new" title="ags_ladspa_menu_new ()">ags_ladspa_menu_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GtkMenu"><span class="returnvalue">GtkMenu</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMenuBar.html#ags-lv2-menu-new" title="ags_lv2_menu_new ()">ags_lv2_menu_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GtkComboBox"><span class="returnvalue">GtkComboBox</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMenuBar.html#ags-zoom-combo-box-new" title="ags_zoom_combo_box_new ()">ags_zoom_combo_box_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GtkComboBox"><span class="returnvalue">GtkComboBox</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMenuBar.html#ags-tact-combo-box-new" title="ags_tact_combo_box_new ()">ags_tact_combo_box_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AgsMenuBar.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="AgsMenuBar.html#AGS-MENU-BAR-LADSPA-FILENAME-KEY:CAPS" title="AGS_MENU_BAR_LADSPA_FILENAME_KEY">AGS_MENU_BAR_LADSPA_FILENAME_KEY</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="AgsMenuBar.html#AGS-MENU-BAR-LADSPA-EFFECT-KEY:CAPS" title="AGS_MENU_BAR_LADSPA_EFFECT_KEY">AGS_MENU_BAR_LADSPA_EFFECT_KEY</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="AgsMenuBar.html#AGS-MENU-BAR-LV2-FILENAME-KEY:CAPS" title="AGS_MENU_BAR_LV2_FILENAME_KEY">AGS_MENU_BAR_LV2_FILENAME_KEY</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="AgsMenuBar.html#AGS-MENU-BAR-LV2-URI-KEY:CAPS" title="AGS_MENU_BAR_LV2_URI_KEY">AGS_MENU_BAR_LV2_URI_KEY</a></td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <div class="refsect1">
 <a name="AgsMenuBar.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="synopsis">
-  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
-   +----<a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
-         +----<a href="../gtk/GtkObject.html">GtkObject</a>
-               +----<a href="../gtk3/GtkWidget.html">GtkWidget</a>
-                     +----<a href="../gtk3/GtkContainer.html">GtkContainer</a>
-                           +----<a href="../gtk3/GtkMenuShell.html">GtkMenuShell</a>
-                                 +----<a href="../gtk3/GtkMenuBar.html">GtkMenuBar</a>
-                                       +----AgsMenuBar
+<pre class="screen">    <GTKDOCLINK HREF="GObject">GObject</GTKDOCLINK>
+    <span class="lineart">╰──</span> <GTKDOCLINK HREF="GInitiallyUnowned">GInitiallyUnowned</GTKDOCLINK>
+        <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkObject">GtkObject</GTKDOCLINK>
+            <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkWidget">GtkWidget</GTKDOCLINK>
+                <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkContainer">GtkContainer</GTKDOCLINK>
+                    <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkMenuShell">GtkMenuShell</GTKDOCLINK>
+                        <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkMenuBar">GtkMenuBar</GTKDOCLINK>
+                            <span class="lineart">╰──</span> AgsMenuBar
 </pre>
 </div>
 <div class="refsect1">
-<a name="AgsMenuBar.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
-<p>
-AgsMenuBar implements
- AtkImplementorIface,  <a href="../gtk3/GtkBuildable.html">GtkBuildable</a> and  AgsConnectable.</p>
+<a name="AgsMenuBar.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;ags/X/ags_menu_bar.h&gt;
+</pre>
 </div>
 <div class="refsect1">
 <a name="AgsMenuBar.description"></a><h2>Description</h2>
-<p>
-<a class="link" href="AgsMenuBar.html" title="AgsMenuBar"><span class="type">AgsMenuBar</span></a> is a composite widget to be used as application's menu bar.
-</p>
+<p><a class="link" href="AgsMenuBar.html" title="AgsMenuBar"><span class="type">AgsMenuBar</span></a> is a composite widget to be used as application's menu bar.</p>
 </div>
 <div class="refsect1">
-<a name="AgsMenuBar.details"></a><h2>Details</h2>
+<a name="AgsMenuBar.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
-<a name="AgsMenuBar-struct"></a><h3>struct AgsMenuBar</h3>
-<pre class="programlisting">struct AgsMenuBar;</pre>
-<p>
-</p>
+<a name="ags-menu-bar-new"></a><h3>ags_menu_bar_new ()</h3>
+<pre class="programlisting"><a class="link" href="AgsMenuBar.html" title="AgsMenuBar"><span class="returnvalue">AgsMenuBar</span></a> *
+ags_menu_bar_new ();</pre>
+<p>Creates an <a class="link" href="AgsMenuBar.html" title="AgsMenuBar"><span class="type">AgsMenuBar</span></a></p>
+<div class="refsect3">
+<a name="id-1.11.42.8.2.5"></a><h4>Returns</h4>
+<p> a new <a class="link" href="AgsMenuBar.html" title="AgsMenuBar"><span class="type">AgsMenuBar</span></a></p>
+<p></p>
 </div>
-<hr>
-<div class="refsect2">
-<a name="AgsMenuBarClass"></a><h3>struct AgsMenuBarClass</h3>
-<pre class="programlisting">struct AgsMenuBarClass {
-  GtkMenuBarClass menu_bar;
-};
-</pre>
-<p>
-</p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-menu-bar-new"></a><h3>ags_menu_bar_new ()</h3>
-<pre class="programlisting"><a class="link" href="AgsMenuBar.html" title="AgsMenuBar"><span class="returnvalue">AgsMenuBar</span></a> *        ags_menu_bar_new                    ();</pre>
-<p>
-Creates an <a class="link" href="AgsMenuBar.html" title="AgsMenuBar"><span class="type">AgsMenuBar</span></a>
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody><tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a new <a class="link" href="AgsMenuBar.html" title="AgsMenuBar"><span class="type">AgsMenuBar</span></a>
-</td>
-</tr></tbody>
-</table></div>
 <p class="since">Since 0.3</p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="ags-tact-combo-box-new"></a><h3>ags_tact_combo_box_new ()</h3>
-<pre class="programlisting"><a href="../gtk3/GtkComboBox.html"><span class="returnvalue">GtkComboBox</span></a> *       ags_tact_combo_box_new              ();</pre>
-<p>
-</p>
+<a name="ags-zoom-menu-new"></a><h3>ags_zoom_menu_new ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GtkMenu"><span class="returnvalue">GtkMenu</span></GTKDOCLINK> *
+ags_zoom_menu_new ();</pre>
 </div>
 <hr>
 <div class="refsect2">
-<a name="ags-tact-menu-new"></a><h3>ags_tact_menu_new ()</h3>
-<pre class="programlisting"><a href="../gtk3/GtkMenu.html"><span class="returnvalue">GtkMenu</span></a> *           ags_tact_menu_new                   ();</pre>
-<p>
-</p>
+<a name="ags-tact-menu-new"></a><h3>ags_tact_menu_new ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GtkMenu"><span class="returnvalue">GtkMenu</span></GTKDOCLINK> *
+ags_tact_menu_new ();</pre>
 </div>
 <hr>
 <div class="refsect2">
-<a name="ags-zoom-combo-box-new"></a><h3>ags_zoom_combo_box_new ()</h3>
-<pre class="programlisting"><a href="../gtk3/GtkComboBox.html"><span class="returnvalue">GtkComboBox</span></a> *       ags_zoom_combo_box_new              ();</pre>
-<p>
-Creates an <a href="../gtk3/GtkComboBox.html"><span class="type">GtkComboBox</span></a> to select tact
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody><tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a new <a href="../gtk3/GtkComboBox.html"><span class="type">GtkComboBox</span></a>
-</td>
-</tr></tbody>
-</table></div>
+<a name="ags-ladspa-menu-new"></a><h3>ags_ladspa_menu_new ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GtkMenu"><span class="returnvalue">GtkMenu</span></GTKDOCLINK> *
+ags_ladspa_menu_new ();</pre>
+<p>Creates an <GTKDOCLINK HREF="GtkMenu"><span class="type">GtkMenu</span></GTKDOCLINK> to select LADSPA plugin.</p>
+<div class="refsect3">
+<a name="id-1.11.42.8.5.5"></a><h4>Returns</h4>
+<p> a new <GTKDOCLINK HREF="GtkMenu"><span class="type">GtkMenu</span></GTKDOCLINK></p>
+<p></p>
+</div>
+<p class="since">Since 0.4.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-lv2-menu-new"></a><h3>ags_lv2_menu_new ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GtkMenu"><span class="returnvalue">GtkMenu</span></GTKDOCLINK> *
+ags_lv2_menu_new ();</pre>
+<p>Creates an <GTKDOCLINK HREF="GtkMenu"><span class="type">GtkMenu</span></GTKDOCLINK> to select lv2 plugin.</p>
+<div class="refsect3">
+<a name="id-1.11.42.8.6.5"></a><h4>Returns</h4>
+<p> a new <GTKDOCLINK HREF="GtkMenu"><span class="type">GtkMenu</span></GTKDOCLINK></p>
+<p></p>
+</div>
+<p class="since">Since 0.4.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-zoom-combo-box-new"></a><h3>ags_zoom_combo_box_new ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GtkComboBox"><span class="returnvalue">GtkComboBox</span></GTKDOCLINK> *
+ags_zoom_combo_box_new ();</pre>
+<p>Creates an <GTKDOCLINK HREF="GtkComboBox"><span class="type">GtkComboBox</span></GTKDOCLINK> to select tact</p>
+<div class="refsect3">
+<a name="id-1.11.42.8.7.5"></a><h4>Returns</h4>
+<p> a new <GTKDOCLINK HREF="GtkComboBox"><span class="type">GtkComboBox</span></GTKDOCLINK></p>
+<p></p>
+</div>
 <p class="since">Since 0.4</p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="ags-zoom-menu-new"></a><h3>ags_zoom_menu_new ()</h3>
-<pre class="programlisting"><a href="../gtk3/GtkMenu.html"><span class="returnvalue">GtkMenu</span></a> *           ags_zoom_menu_new                   ();</pre>
-<p>
-</p>
+<a name="ags-tact-combo-box-new"></a><h3>ags_tact_combo_box_new ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GtkComboBox"><span class="returnvalue">GtkComboBox</span></GTKDOCLINK> *
+ags_tact_combo_box_new ();</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="AgsMenuBar.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AGS-MENU-BAR-LADSPA-FILENAME-KEY:CAPS"></a><h3>AGS_MENU_BAR_LADSPA_FILENAME_KEY</h3>
+<pre class="programlisting">#define AGS_MENU_BAR_LADSPA_FILENAME_KEY "ags-menu-bar-ladspa-filename\0"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AGS-MENU-BAR-LADSPA-EFFECT-KEY:CAPS"></a><h3>AGS_MENU_BAR_LADSPA_EFFECT_KEY</h3>
+<pre class="programlisting">#define AGS_MENU_BAR_LADSPA_EFFECT_KEY "ags-menu-bar-ladspa-effect\0"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AGS-MENU-BAR-LV2-FILENAME-KEY:CAPS"></a><h3>AGS_MENU_BAR_LV2_FILENAME_KEY</h3>
+<pre class="programlisting">#define AGS_MENU_BAR_LV2_FILENAME_KEY "ags-menu-bar-lv2-filename\0"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AGS-MENU-BAR-LV2-URI-KEY:CAPS"></a><h3>AGS_MENU_BAR_LV2_URI_KEY</h3>
+<pre class="programlisting">#define AGS_MENU_BAR_LV2_URI_KEY "ags-menu-bar-lv2-uri\0"
+</pre>
 </div>
 </div>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.21</div>
 </body>
 </html>

@@ -1,20 +1,24 @@
 GObject
+  AgsAcceleration
   AgsTask
     AgsAddAudio
     AgsAddAudioSignal
+    AgsAddBulkMember
+    AgsAddEffect
     AgsAddLineMember
     AgsAddNote
     AgsAddPointToSelection
+    AgsAddRecallContainer
     AgsAddRecall
     AgsAddRegionToSelection
     AgsAppendAudio
+    AgsAppendAudioThreaded
     AgsAppendChannel
     AgsAppendRecall
     AgsApplyBpm
     AgsApplySequencerLength
     AgsApplySynth
     AgsApplyTact
-    AgsApplyWavetable
     AgsAudioSetRecycling
     AgsCancelAudio
     AgsCancelChannel
@@ -28,42 +32,50 @@ GObject
     AgsInitAudio
     AgsInitChannel
     AgsLinkChannel
+    AgsLogTask
     AgsOpenFile
     AgsOpenSingleFile
     AgsRemoveAudio
     AgsRemoveAudioSignal
     AgsRemoveNote
     AgsRemovePointFromSelection
+    AgsRemoveRecallContainer
     AgsRemoveRecall
     AgsRemoveRegionFromSelection
+    AgsResizeAudio
     AgsSaveFile
     AgsScrollOnPlay
     AgsSetAudioChannels
     AgsSetBufferSize
-    AgsSetDevoutPlayFlags
     AgsSetMuted
     AgsSetOutputDevice
+    AgsSetPlaybackFlags
     AgsSetSamplerate
-    AgsStartDevout
+    AgsStartSoundcard
+    AgsStartThread
     AgsToggleLed
     AgsTogglePatternBit
     AgsUnrefAudioSignal
-  AgsAsyncQueue
+    AgsUpdateBulkMember
+  AgsApplicationContext
+    AgsAudioApplicationContext
+    AgsServerApplicationContext
+    AgsThreadApplicationContext
+    AgsXorgApplicationContext
   AgsAudioFile
-  AgsAudioFileXml
   AgsAudio
   AgsThread
     AgsAudioLoop
     AgsAutosaveThread
-    AgsDevoutThread
     AgsExportThread
-    AgsTaskThread
-      AgsGuiTaskThread
     AgsGuiThread
     AgsIteratorThread
+    AgsRecordThread
     AgsRecyclingThread
     AgsReturnableThread
     AgsSingleThread
+    AgsSoundcardThread
+    AgsTaskThread
     AgsTimestampThread
   GInitiallyUnowned
     GtkObject
@@ -85,14 +97,31 @@ GObject
                 AgsPanelInputPad
                 AgsSynthInputPad
               AgsEditor
+              AgsEffectBridge
+                AgsFFPlayerBridge
+                AgsMatrixBridge
+                AgsSynthBridge
+              AgsEffectBulk
+                AgsFFPlayerBulkInput
+                AgsMatrixBulkInput
+                AgsSynthBulkOutput
+              AgsEffectLine
+                AgsFFPlayerInputLine
+                AgsSynthOutputLine
+              AgsEffectPad
+                AgsFFPlayerInputPad
+                AgsSynthOutputPad
               AgsFileSelection
+              AgsGenericPreferences
               AgsInlinePlayer
+              AgsLadspaBrowser
               AgsLineEditor
               AgsLineMemberEditor
               AgsPropertyEditor
                 AgsPropertyListingEditor
                   AgsListingEditor
                 AgsPropertyCollectionEditor
+              AgsLv2Browser
               AgsMachineSelector
               AgsNavigation
               AgsNotebook
@@ -101,56 +130,79 @@ GObject
               AgsPluginPreferences
               AgsServerPreferences
               AgsSF2Chooser
+              AgsTrackCollection
             GtkHBox
               AgsLinkEditor
               AgsOptionMenu
-          GtkBin
-            GtkHandleBox
-              AgsMachine
-                AgsDrum
-                AgsFFPlayer
-                AgsMatrix
-                AgsMixer
-                AgsPanel
-                AgsSynth
-            GtkExpander
-              AgsExpander
-            GtkWindow
-              AgsExportWindow
-              GtkDialog
-                AgsLadspaBrowser
-                AgsMachineEditor
-                AgsMachineSelection
-                AgsPreferences
-              AgsMenu
-              AgsWindow
-            AgsLed
-            GtkFrame
-              AgsLineMember
-              AgsOscillator
-            GtkButton
-              GtkToggleButton
-                GtkCheckButton
-                  GtkRadioButton
-                    AgsMachineRadioButton
           GtkTable
+            AgsAutomationEdit
             AgsExpanderSet
             AgsLinkCollectionEditor
             AgsTable
               AgsMenuItem
             AgsNoteEdit
+            AgsPatternEdit
+            AgsTrackCollectionMapper
+          GtkBin
+            GtkWindow
+              GtkDialog
+                AgsAutomationEditor
+                AgsMachineEditor
+                AgsMachineSelection
+                AgsMidiImportWizard
+                AgsPluginBrowser
+                AgsPreferences
+              AgsExportWindow
+              AgsMenu
+              AgsWindow
+            GtkFrame
+              AgsBulkMember
+              AgsLineMember
+              AgsOscillator
+            GtkHandleBox
+              AgsMachine
+                AgsDrum
+                AgsFFPlayer
+                AgsLadspaBridge
+                AgsLv2Bridge
+                AgsMatrix
+                AgsMixer
+                AgsPanel
+                AgsReplicatorBridge
+                AgsSynth
+            GtkExpander
+              AgsExpander
+            AgsLed
+            GtkButton
+              GtkToggleButton
+                GtkCheckButton
+                  GtkRadioButton
+                    AgsMachineRadioButton
+            GtkToolItem
+              GtkToolButton
+                GtkMenuToolButton
+                  AgsPortSelection
+          GtkToolbar
+            AgsAutomationToolbar
+            AgsToolbar
           GtkMenuShell
             GtkMenuBar
               AgsMenuBar
-          GtkToolbar
-            AgsToolbar
+            GtkMenu
+        GtkDrawingArea
+          AgsAutomationArea
+          AgsPiano
+          AgsSoundset
+        AgsCartesian
         AgsDial
         AgsIndicator
+          AgsHIndicator
           AgsVIndicator
-        GtkDrawingArea
-          AgsMeter
-          AgsRuler
+        AgsRuler
+        AgsWaveform
+      GtkTooltips
   AgsAudioSignal
+  AgsAutomation
   AgsRecall
     AgsRecallAudioSignal
       AgsBufferAudioSignal
@@ -158,10 +210,12 @@ GObject
       AgsMuteAudioSignal
       AgsPlayAudioSignal
       AgsRecallLadspaRun
+      AgsRecallLv2Run
       AgsStreamAudioSignal
       AgsVolumeAudioSignal
     AgsRecallChannel
       AgsBufferChannel
+      AgsCloneChannel
       AgsCopyChannel
       AgsCopyPatternChannel
       AgsLoopChannel
@@ -169,10 +223,12 @@ GObject
       AgsPeakChannel
       AgsPlayChannel
       AgsRecallLadspa
+      AgsRecallLv2
       AgsStreamChannel
       AgsVolumeChannel
     AgsRecallChannelRun
       AgsBufferChannelRun
+      AgsCloneChannelRun
       AgsCopyChannelRun
       AgsCopyPatternChannelRun
       AgsLoopChannelRun
@@ -218,30 +274,35 @@ GObject
   AgsFileLaunch
   AgsFileLink
   AgsFileLookup
-  AgsGarbageCollector
   AgsIpatch
   AgsIpatchSF2Reader
   AgsLadspaManager
-  AgsMain
+  AgsLibao
+  AgsLv2Manager
+  AgsLv2uiManager
+  AgsMidiParser
+  AgsMutexManager
   AgsNotation
   AgsNote
   AgsPattern
+  AgsPlaybackDomain
+  AgsPlayback
   AgsPluginFactory
   AgsPort
   AgsRecallContainer
   AgsRecallDependency
   AgsRecallFactory
   AgsRecallID
-  AgsRecyclingContainer
+  AgsRecyclingContext
   AgsRecycling
   AgsRegistry
   AgsRemoteTask
   AgsServer
   AgsSndfile
-  AgsStream
   AgsThreadPool
   AgsTimestampFactory
   AgsTimestamp
+  AgsTurtle
   GtkStyle
   GdkDrawable
     GdkWindow
@@ -250,28 +311,33 @@ GObject
   GdkScreen
   GdkPixbuf
   GtkAction
-  GtkSettings
 GInterface
   GTypePlugin
   AgsConnectable
   AgsApplicable
-  AgsTreeIterator
-  AgsStackable
   AgsMainLoop
   AtkImplementorIface
   GtkBuildable
   GtkOrientable
+  AgsPortlet
+  GtkToolShell
   AgsPackable
   AgsDynamicConnectable
   AgsPlugin
   AgsMutable
-  AgsCountable
+  AgsConcurrencyProvider
   AgsTactable
+  AgsCountable
+  AgsSoundcard
+  AgsEffect
   AgsPlayable
   GtkActivatable
-  AgsPortlet
   AgsPersistable
   AgsRunnable
   AgsSeekable
-  GtkToolShell
+  AgsServiceProvider
+  AgsSoundProvider
+  AgsStackable
+  AgsTreeIterator
   GIcon
+  GLoadableIcon

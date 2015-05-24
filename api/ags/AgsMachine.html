@@ -2,38 +2,29 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>AgsMachine</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsMachine</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
-<link rel="up" href="pt08.html" title="Part VIII. Graphical user interface">
+<link rel="up" href="pt09.html" title="Part IX. Graphical user interface">
 <link rel="prev" href="ags-ags-listing-editor-callbacks.html" title="ags_listing_editor_callbacks">
 <link rel="next" href="ags-ags-machine-callbacks.html" title="ags_machine_callbacks">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
-<tr valign="middle">
-<td><a accesskey="p" href="ags-ags-listing-editor-callbacks.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="pt08.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<th width="100%" align="center">Advanced Gtk+ Sequencer Reference Manual</th>
-<td><a accesskey="n" href="ags-ags-machine-callbacks.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-</tr>
-<tr><td colspan="5" class="shortcuts">
-<a href="#AgsMachine.synopsis" class="shortcut">Top</a>
-                   | 
-                  <a href="#AgsMachine.description" class="shortcut">Description</a>
-                   | 
-                  <a href="#AgsMachine.object-hierarchy" class="shortcut">Object Hierarchy</a>
-                   | 
-                  <a href="#AgsMachine.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
-                   | 
-                  <a href="#AgsMachine.properties" class="shortcut">Properties</a>
-                   | 
-                  <a href="#AgsMachine.signals" class="shortcut">Signals</a>
-</td></tr>
-</table>
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AgsMachine.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AgsMachine.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AgsMachine.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#AgsMachine.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="pt09.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ags-ags-listing-editor-callbacks.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ags-ags-machine-callbacks.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
 <div class="refentry">
 <a name="AgsMachine"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
@@ -41,345 +32,655 @@
 <h2><span class="refentrytitle"><a name="AgsMachine.top_of_page"></a>AgsMachine</span></h2>
 <p>AgsMachine — visualize audio object.</p>
 </td>
-<td valign="top" align="right"></td>
+<td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
-<a name="AgsMachine.synopsis"></a><h2>Synopsis</h2>
-<pre class="synopsis">
-#include &lt;ags/X/ags_machine.h&gt;
-
-#define             <a class="link" href="AgsMachine.html#AGS-MACHINE-DEFAULT-BUILD-ID:CAPS" title="AGS_MACHINE_DEFAULT_BUILD_ID">AGS_MACHINE_DEFAULT_BUILD_ID</a>
-#define             <a class="link" href="AgsMachine.html#AGS-MACHINE-DEFAULT-VERSION:CAPS" title="AGS_MACHINE_DEFAULT_VERSION">AGS_MACHINE_DEFAULT_VERSION</a>
-struct              <a class="link" href="AgsMachine.html#AgsMachine-struct" title="struct AgsMachine">AgsMachine</a>;
-struct              <a class="link" href="AgsMachine.html#AgsMachineClass" title="struct AgsMachineClass">AgsMachineClass</a>;
-enum                <a class="link" href="AgsMachine.html#AgsMachineFileInputFlags" title="enum AgsMachineFileInputFlags">AgsMachineFileInputFlags</a>;
-enum                <a class="link" href="AgsMachine.html#AgsMachineFlags" title="enum AgsMachineFlags">AgsMachineFlags</a>;
-<span class="returnvalue">void</span>                <a class="link" href="AgsMachine.html#ags-machine-add-default-recalls" title="ags_machine_add_default_recalls ()">ags_machine_add_default_recalls</a>     (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);
-<a href="../gtk3/GtkFileChooserDialog.html"><span class="returnvalue">GtkFileChooserDialog</span></a> * <a class="link" href="AgsMachine.html#ags-machine-file-chooser-dialog-new" title="ags_machine_file_chooser_dialog_new ()">ags_machine_file_chooser_dialog_new</a>
-                                                        (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);
-<a class="link" href="AgsMachine.html" title="AgsMachine"><span class="returnvalue">AgsMachine</span></a> *        <a class="link" href="AgsMachine.html#ags-machine-find-by-name" title="ags_machine_find_by_name ()">ags_machine_find_by_name</a>            (<em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>,
-                                                         <em class="parameter"><code><span class="type">char</span> *name</code></em>);
-<span class="returnvalue">void</span>                <a class="link" href="AgsMachine.html#ags-machine-find-port" title="ags_machine_find_port ()">ags_machine_find_port</a>               (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);
-<a href="../gtk3/GtkListStore.html"><span class="returnvalue">GtkListStore</span></a> *      <a class="link" href="AgsMachine.html#ags-machine-get-possible-links" title="ags_machine_get_possible_links ()">ags_machine_get_possible_links</a>      (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);
-<a class="link" href="AgsMachine.html" title="AgsMachine"><span class="returnvalue">AgsMachine</span></a> *        <a class="link" href="AgsMachine.html#ags-machine-new" title="ags_machine_new ()">ags_machine_new</a>                     (<em class="parameter"><code><a href="../gobject/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *devout</code></em>);
-<span class="returnvalue">void</span>                <a class="link" href="AgsMachine.html#ags-machine-open-files" title="ags_machine_open_files ()">ags_machine_open_files</a>              (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *filenames</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> overwrite_channels</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> create_channels</code></em>);
-<span class="returnvalue">void</span>                <a class="link" href="AgsMachine.html#ags-machine-set-run" title="ags_machine_set_run ()">ags_machine_set_run</a>                 (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> run</code></em>);
-</pre>
-</div>
 <div class="refsect1">
-<a name="AgsMachine.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="synopsis">
-  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
-   +----<a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
-         +----<a href="../gtk/GtkObject.html">GtkObject</a>
-               +----<a href="../gtk3/GtkWidget.html">GtkWidget</a>
-                     +----<a href="../gtk3/GtkContainer.html">GtkContainer</a>
-                           +----<a href="../gtk3/GtkBin.html">GtkBin</a>
-                                 +----<a href="../gtk3/GtkHandleBox.html">GtkHandleBox</a>
-                                       +----AgsMachine
-                                             +----<a class="link" href="AgsDrum.html" title="AgsDrum">AgsDrum</a>
-                                             +----<a class="link" href="AgsFFPlayer.html" title="AgsFFPlayer">AgsFFPlayer</a>
-                                             +----<a class="link" href="AgsMatrix.html" title="AgsMatrix">AgsMatrix</a>
-                                             +----<a class="link" href="AgsMixer.html" title="AgsMixer">AgsMixer</a>
-                                             +----<a class="link" href="AgsPanel.html" title="AgsPanel">AgsPanel</a>
-                                             +----<a class="link" href="AgsSynth.html" title="AgsSynth">AgsSynth</a>
-</pre>
-</div>
-<div class="refsect1">
-<a name="AgsMachine.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
-<p>
-AgsMachine implements
- AtkImplementorIface,  <a href="../gtk3/GtkBuildable.html">GtkBuildable</a>,  AgsConnectable and  <a class="link" href="AgsPlugin.html" title="AgsPlugin">AgsPlugin</a>.</p>
+<a name="AgsMachine.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-set-audio-channels" title="ags_machine_set_audio_channels ()">ags_machine_set_audio_channels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-set-pads" title="ags_machine_set_pads ()">ags_machine_set_pads</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-add-default-recalls" title="ags_machine_add_default_recalls ()">ags_machine_add_default_recalls</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-map-recall" title="ags_machine_map_recall ()">ags_machine_map_recall</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GtkListStore"><span class="returnvalue">GtkListStore</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-get-possible-links" title="ags_machine_get_possible_links ()">ags_machine_get_possible_links</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AgsMachine.html" title="AgsMachine"><span class="returnvalue">AgsMachine</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-find-by-name" title="ags_machine_find_by_name ()">ags_machine_find_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GList"><span class="returnvalue">GList</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-find-port" title="ags_machine_find_port ()">ags_machine_find_port</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-set-run" title="ags_machine_set_run ()">ags_machine_set_run</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GtkFileChooserDialog"><span class="returnvalue">GtkFileChooserDialog</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-file-chooser-dialog-new" title="ags_machine_file_chooser_dialog_new ()">ags_machine_file_chooser_dialog_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-open-files" title="ags_machine_open_files ()">ags_machine_open_files</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AgsMachine.html" title="AgsMachine"><span class="returnvalue">AgsMachine</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsMachine.html#ags-machine-new" title="ags_machine_new ()">ags_machine_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <div class="refsect1">
 <a name="AgsMachine.properties"></a><h2>Properties</h2>
-<pre class="synopsis">
-  "<a class="link" href="AgsMachine.html#AgsMachine--audio" title='The "audio" property'>audio</a>"                    <a class="link" href="AgsAudio.html" title="AgsAudio"><span class="type">AgsAudio</span></a>*             : Read / Write
-</pre>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a class="link" href="AgsAudio.html" title="AgsAudio"><span class="type">AgsAudio</span></a> *</td>
+<td class="property_name"><a class="link" href="AgsMachine.html#AgsMachine--audio" title="The “audio” property">audio</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
 </div>
 <div class="refsect1">
 <a name="AgsMachine.signals"></a><h2>Signals</h2>
-<pre class="synopsis">
-  "<a class="link" href="AgsMachine.html#AgsMachine-add-default-recalls" title='The "add-default-recalls" signal'>add-default-recalls</a>"                            : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><GTKDOCLINK HREF="gpointer"><span class="returnvalue">gpointer</span></GTKDOCLINK></td>
+<td class="signal_name"><a class="link" href="AgsMachine.html#AgsMachine-find-port" title="The “find-port” signal">find-port</a></td>
+<td class="signal_flags"><GTKDOCLINK HREF="G-SIGNAL-RUN-LAST:CAPS">Run Last</GTKDOCLINK></td>
+</tr>
+<tr>
+<td class="signal_type"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK></td>
+<td class="signal_name"><a class="link" href="AgsMachine.html#AgsMachine-map-recall" title="The “map-recall” signal">map-recall</a></td>
+<td class="signal_flags"><GTKDOCLINK HREF="G-SIGNAL-RUN-LAST:CAPS">Run Last</GTKDOCLINK></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AgsMachine.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="AgsMachine.html#AGS-MACHINE-DEFAULT-VERSION:CAPS" title="AGS_MACHINE_DEFAULT_VERSION">AGS_MACHINE_DEFAULT_VERSION</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="AgsMachine.html#AGS-MACHINE-DEFAULT-BUILD-ID:CAPS" title="AGS_MACHINE_DEFAULT_BUILD_ID">AGS_MACHINE_DEFAULT_BUILD_ID</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="AgsMachine.html#AgsMachineFlags" title="enum AgsMachineFlags">AgsMachineFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="AgsMachine.html#AgsMachineFileInputFlags" title="enum AgsMachineFileInputFlags">AgsMachineFileInputFlags</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AgsMachine.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <GTKDOCLINK HREF="GObject">GObject</GTKDOCLINK>
+    <span class="lineart">╰──</span> <GTKDOCLINK HREF="GInitiallyUnowned">GInitiallyUnowned</GTKDOCLINK>
+        <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkObject">GtkObject</GTKDOCLINK>
+            <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkWidget">GtkWidget</GTKDOCLINK>
+                <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkContainer">GtkContainer</GTKDOCLINK>
+                    <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkBin">GtkBin</GTKDOCLINK>
+                        <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkHandleBox">GtkHandleBox</GTKDOCLINK>
+                            <span class="lineart">╰──</span> AgsMachine
+                                <span class="lineart">├──</span> <a class="link" href="AgsDrum.html" title="AgsDrum">AgsDrum</a>
+                                <span class="lineart">├──</span> <a class="link" href="AgsFFPlayer.html" title="AgsFFPlayer">AgsFFPlayer</a>
+                                <span class="lineart">├──</span> <a class="link" href="AgsLadspaBridge.html" title="AgsLadspaBridge">AgsLadspaBridge</a>
+                                <span class="lineart">├──</span> <a class="link" href="AgsLv2Bridge.html" title="AgsLv2Bridge">AgsLv2Bridge</a>
+                                <span class="lineart">├──</span> <a class="link" href="AgsMatrix.html" title="AgsMatrix">AgsMatrix</a>
+                                <span class="lineart">├──</span> <a class="link" href="AgsMixer.html" title="AgsMixer">AgsMixer</a>
+                                <span class="lineart">├──</span> <a class="link" href="AgsPanel.html" title="AgsPanel">AgsPanel</a>
+                                <span class="lineart">├──</span> <GTKDOCLINK HREF="AgsReplicatorBridge">AgsReplicatorBridge</GTKDOCLINK>
+                                <span class="lineart">╰──</span> <a class="link" href="AgsSynth.html" title="AgsSynth">AgsSynth</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="AgsMachine.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;ags/X/ags_machine.h&gt;
 </pre>
 </div>
 <div class="refsect1">
 <a name="AgsMachine.description"></a><h2>Description</h2>
-<p>
-<a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> is a composite widget to act as base class to visualize <a class="link" href="AgsAudio.html" title="AgsAudio"><span class="type">AgsAudio</span></a>.
-</p>
+<p><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> is a composite widget to act as base class to visualize <a class="link" href="AgsAudio.html" title="AgsAudio"><span class="type">AgsAudio</span></a>.</p>
 </div>
 <div class="refsect1">
-<a name="AgsMachine.details"></a><h2>Details</h2>
+<a name="AgsMachine.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
-<a name="AGS-MACHINE-DEFAULT-BUILD-ID:CAPS"></a><h3>AGS_MACHINE_DEFAULT_BUILD_ID</h3>
-<pre class="programlisting">#define AGS_MACHINE_DEFAULT_BUILD_ID "CEST 02-10-2014 19:36\0"
-</pre>
-<p>
-</p>
+<a name="ags-machine-set-audio-channels"></a><h3>ags_machine_set_audio_channels ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_machine_set_audio_channels (<em class="parameter"><code><a class="link" href="AgsAudio.html" title="AgsAudio"><span class="type">AgsAudio</span></a> *audio</code></em>,
+                                <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> audio_channels</code></em>,
+                                <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> audio_channels_old</code></em>,
+                                <em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
 </div>
 <hr>
+<div class="refsect2">
+<a name="ags-machine-set-pads"></a><h3>ags_machine_set_pads ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_machine_set_pads (<em class="parameter"><code><a class="link" href="AgsAudio.html" title="AgsAudio"><span class="type">AgsAudio</span></a> *audio</code></em>,
+                      <em class="parameter"><code><GTKDOCLINK HREF="GType"><span class="type">GType</span></GTKDOCLINK> type</code></em>,
+                      <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> pads</code></em>,
+                      <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> pads_old</code></em>,
+                      <em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-machine-add-default-recalls"></a><h3>ags_machine_add_default_recalls ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_machine_add_default_recalls (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
+<div class="warning"><p><code class="literal">ags_machine_add_default_recalls</code> is deprecated and should not be used in newly-written code.</p></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-machine-map-recall"></a><h3>ags_machine_map_recall ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_machine_map_recall (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
+<p>You may want the <em class="parameter"><code>machine</code></em>
+ to add its default recall.</p>
+<div class="refsect3">
+<a name="id-1.11.38.10.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>machine</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> to add its default recall.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-machine-get-possible-links"></a><h3>ags_machine_get_possible_links ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GtkListStore"><span class="returnvalue">GtkListStore</span></GTKDOCLINK> *
+ags_machine_get_possible_links (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
+<p>Find links suitable for <em class="parameter"><code>machine</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.38.10.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>machine</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.38.10.6.6"></a><h4>Returns</h4>
+<p> a <GTKDOCLINK HREF="GtkListStore"><span class="type">GtkListStore</span></GTKDOCLINK> containing one column with a string representing
+machines by its type and name.</p>
+<p></p>
+</div>
+<p class="since">Since 0.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-machine-find-by-name"></a><h3>ags_machine_find_by_name ()</h3>
+<pre class="programlisting"><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="returnvalue">AgsMachine</span></a> *
+ags_machine_find_by_name (<em class="parameter"><code><GTKDOCLINK HREF="GList"><span class="type">GList</span></GTKDOCLINK> *list</code></em>,
+                          <em class="parameter"><code><GTKDOCLINK HREF="char"><span class="type">char</span></GTKDOCLINK> *name</code></em>);</pre>
+<p>Find the specified by <em class="parameter"><code>name</code></em>
+ machine.</p>
+<div class="refsect3">
+<a name="id-1.11.38.10.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>a <GTKDOCLINK HREF="GList"><span class="type">GList</span></GTKDOCLINK> of <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>the name of machine</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 0.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-machine-find-port"></a><h3>ags_machine_find_port ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GList"><span class="returnvalue">GList</span></GTKDOCLINK> *
+ags_machine_find_port (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
+<p>Lookup ports of associated recalls.</p>
+<div class="refsect3">
+<a name="id-1.11.38.10.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>machine</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a>
+Returns: an <GTKDOCLINK HREF="GList"><span class="type">GList</span></GTKDOCLINK> containing all related <a class="link" href="AgsPort.html" title="AgsPort"><span class="type">AgsPort</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since 0.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-machine-set-run"></a><h3>ags_machine_set_run ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_machine_set_run (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>,
+                     <em class="parameter"><code><GTKDOCLINK HREF="gboolean"><span class="type">gboolean</span></GTKDOCLINK> run</code></em>);</pre>
+<p>Start/stop playback of <em class="parameter"><code>machine</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.11.38.10.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>machine</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>run</p></td>
+<td class="parameter_description"><p>if <GTKDOCLINK HREF="TRUE:CAPS"><code class="literal">TRUE</code></GTKDOCLINK> playback is started, otherwise stopped</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 0.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-machine-file-chooser-dialog-new"></a><h3>ags_machine_file_chooser_dialog_new ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GtkFileChooserDialog"><span class="returnvalue">GtkFileChooserDialog</span></GTKDOCLINK> *
+ags_machine_file_chooser_dialog_new (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
+<p>Creates a new machine file chooser dialog in order to
+open audio files.</p>
+<div class="refsect3">
+<a name="id-1.11.38.10.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>machine</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since 0.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-machine-open-files"></a><h3>ags_machine_open_files ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_machine_open_files (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>,
+                        <em class="parameter"><code><GTKDOCLINK HREF="GSList"><span class="type">GSList</span></GTKDOCLINK> *filenames</code></em>,
+                        <em class="parameter"><code><GTKDOCLINK HREF="gboolean"><span class="type">gboolean</span></GTKDOCLINK> overwrite_channels</code></em>,
+                        <em class="parameter"><code><GTKDOCLINK HREF="gboolean"><span class="type">gboolean</span></GTKDOCLINK> create_channels</code></em>);</pre>
+<p>Opens audio files and modifies or creates new channels if wished.</p>
+<div class="refsect3">
+<a name="id-1.11.38.10.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>machine</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filenames</p></td>
+<td class="parameter_description"><p>the filenames</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>overwrite_channels</p></td>
+<td class="parameter_description"><p>reset channels</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>create_channels</p></td>
+<td class="parameter_description"><p>instantiate new channels</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 0.4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-machine-new"></a><h3>ags_machine_new ()</h3>
+<pre class="programlisting"><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="returnvalue">AgsMachine</span></a> *
+ags_machine_new (<em class="parameter"><code><GTKDOCLINK HREF="GObject"><span class="type">GObject</span></GTKDOCLINK> *soundcard</code></em>);</pre>
+<p>Creates an <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a></p>
+<div class="refsect3">
+<a name="id-1.11.38.10.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>soundcard</p></td>
+<td class="parameter_description"><p>the assigned soundcard.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.11.38.10.12.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a></p>
+<p></p>
+</div>
+<p class="since">Since 0.3</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AgsMachine.other_details"></a><h2>Types and Values</h2>
 <div class="refsect2">
 <a name="AGS-MACHINE-DEFAULT-VERSION:CAPS"></a><h3>AGS_MACHINE_DEFAULT_VERSION</h3>
 <pre class="programlisting">#define AGS_MACHINE_DEFAULT_VERSION "0.4.2\0"
 </pre>
-<p>
-</p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="AgsMachine-struct"></a><h3>struct AgsMachine</h3>
-<pre class="programlisting">struct AgsMachine;</pre>
-<p>
-</p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="AgsMachineClass"></a><h3>struct AgsMachineClass</h3>
-<pre class="programlisting">struct AgsMachineClass {
-  GtkHandleBoxClass handle_box;
-
-  void (*add_default_recalls)(AgsMachine *machine);
-};
+<a name="AGS-MACHINE-DEFAULT-BUILD-ID:CAPS"></a><h3>AGS_MACHINE_DEFAULT_BUILD_ID</h3>
+<pre class="programlisting">#define AGS_MACHINE_DEFAULT_BUILD_ID "CEST 02-10-2014 19:36\0"
 </pre>
-<p>
-</p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="AgsMachineFileInputFlags"></a><h3>enum AgsMachineFileInputFlags</h3>
-<pre class="programlisting">typedef enum {
-  AGS_MACHINE_ACCEPT_WAV          = 1,
-  AGS_MACHINE_ACCEPT_OGG          = 1 &lt;&lt;  1,
-  AGS_MACHINE_ACCEPT_SOUNDFONT2   = 1 &lt;&lt;  2,
-} AgsMachineFileInputFlags;
-</pre>
-<p>
-</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="AgsMachineFlags"></a><h3>enum AgsMachineFlags</h3>
-<pre class="programlisting">typedef enum {
-  AGS_MACHINE_SOLO              = 1,
-  AGS_MACHINE_IS_EFFECT         = 1 &lt;&lt;  1,
-  AGS_MACHINE_IS_SEQUENCER      = 1 &lt;&lt;  2,
-  AGS_MACHINE_IS_SYNTHESIZER    = 1 &lt;&lt;  3,
-  AGS_MACHINE_TAKES_FILE_INPUT  = 1 &lt;&lt;  4,
-  AGS_MACHINE_MAPPED_RECALL     = 1 &lt;&lt;  5,
-  AGS_MACHINE_PREMAPPED_RECALL  = 1 &lt;&lt;  6,
-  AGS_MACHINE_BLOCK_PLAY        = 1 &lt;&lt;  7,
-  AGS_MACHINE_BLOCK_STOP        = 1 &lt;&lt;  8,
-} AgsMachineFlags;
-</pre>
-<p>
-</p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-machine-add-default-recalls"></a><h3>ags_machine_add_default_recalls ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                ags_machine_add_default_recalls     (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
-<p>
-You may want the <em class="parameter"><code>machine</code></em> to add its default recalls.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody><tr>
-<td><p><span class="term"><em class="parameter"><code>machine</code></em> :</span></p></td>
-<td>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> to add its default recalls.</td>
-</tr></tbody>
-</table></div>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-machine-file-chooser-dialog-new"></a><h3>ags_machine_file_chooser_dialog_new ()</h3>
-<pre class="programlisting"><a href="../gtk3/GtkFileChooserDialog.html"><span class="returnvalue">GtkFileChooserDialog</span></a> * ags_machine_file_chooser_dialog_new
-                                                        (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
-<p>
-Creates a new machine file chooser dialog in order to
-open audio files.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody><tr>
-<td><p><span class="term"><em class="parameter"><code>machine</code></em> :</span></p></td>
-<td>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a>
-</td>
-</tr></tbody>
-</table></div>
-<p class="since">Since 0.4</p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-machine-find-by-name"></a><h3>ags_machine_find_by_name ()</h3>
-<pre class="programlisting"><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="returnvalue">AgsMachine</span></a> *        ags_machine_find_by_name            (<em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *list</code></em>,
-                                                         <em class="parameter"><code><span class="type">char</span> *name</code></em>);</pre>
-<p>
-Find the specified by <em class="parameter"><code>name</code></em> machine.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
+<div class="refsect3">
+<a name="id-1.11.38.11.4.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
 <tbody>
 <tr>
-<td><p><span class="term"><em class="parameter"><code>list</code></em> :</span></p></td>
-<td>a <a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a>
-</td>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-SOLO:CAPS"></a>AGS_MACHINE_SOLO</p></td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td><p><span class="term"><em class="parameter"><code>name</code></em> :</span></p></td>
-<td>the name of machine</td>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-IS-EFFECT:CAPS"></a>AGS_MACHINE_IS_EFFECT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-IS-SEQUENCER:CAPS"></a>AGS_MACHINE_IS_SEQUENCER</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-IS-SYNTHESIZER:CAPS"></a>AGS_MACHINE_IS_SYNTHESIZER</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-TAKES-FILE-INPUT:CAPS"></a>AGS_MACHINE_TAKES_FILE_INPUT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-MAPPED-RECALL:CAPS"></a>AGS_MACHINE_MAPPED_RECALL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-PREMAPPED-RECALL:CAPS"></a>AGS_MACHINE_PREMAPPED_RECALL</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-BLOCK-PLAY:CAPS"></a>AGS_MACHINE_BLOCK_PLAY</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-BLOCK-STOP:CAPS"></a>AGS_MACHINE_BLOCK_STOP</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-CONNECTED:CAPS"></a>AGS_MACHINE_CONNECTED</p></td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
-<p class="since">Since 0.3</p>
+</div>
 </div>
 <hr>
 <div class="refsect2">
-<a name="ags-machine-find-port"></a><h3>ags_machine_find_port ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                ags_machine_find_port               (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
-<p>
-Lookup ports of associated recalls.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody><tr>
-<td><p><span class="term"><em class="parameter"><code>machine</code></em> :</span></p></td>
-<td>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a>
-</td>
-</tr></tbody>
-</table></div>
-<p class="since">Since 0.4</p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-machine-get-possible-links"></a><h3>ags_machine_get_possible_links ()</h3>
-<pre class="programlisting"><a href="../gtk3/GtkListStore.html"><span class="returnvalue">GtkListStore</span></a> *      ags_machine_get_possible_links      (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>);</pre>
-<p>
-Find links suitable for <em class="parameter"><code>machine</code></em>.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
+<a name="AgsMachineFileInputFlags"></a><h3>enum AgsMachineFileInputFlags</h3>
+<div class="refsect3">
+<a name="id-1.11.38.11.5.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
 <tbody>
 <tr>
-<td><p><span class="term"><em class="parameter"><code>machine</code></em> :</span></p></td>
-<td>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a>
-</td>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-ACCEPT-WAV:CAPS"></a>AGS_MACHINE_ACCEPT_WAV</p></td>
+<td> </td>
+<td> </td>
 </tr>
 <tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <a href="../gtk3/GtkListStore.html"><span class="type">GtkListStore</span></a> containing one column with a string representing
-machines by its type and name.</td>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-ACCEPT-OGG:CAPS"></a>AGS_MACHINE_ACCEPT_OGG</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MACHINE-ACCEPT-SOUNDFONT2:CAPS"></a>AGS_MACHINE_ACCEPT_SOUNDFONT2</p></td>
+<td> </td>
+<td> </td>
 </tr>
 </tbody>
 </table></div>
-<p class="since">Since 0.4</p>
 </div>
-<hr>
-<div class="refsect2">
-<a name="ags-machine-new"></a><h3>ags_machine_new ()</h3>
-<pre class="programlisting"><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="returnvalue">AgsMachine</span></a> *        ags_machine_new                     (<em class="parameter"><code><a href="../gobject/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *devout</code></em>);</pre>
-<p>
-Creates an <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a>
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>devout</code></em> :</span></p></td>
-<td>the assigned devout.</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a new <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a>
-</td>
-</tr>
-</tbody>
-</table></div>
-<p class="since">Since 0.3</p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-machine-open-files"></a><h3>ags_machine_open_files ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                ags_machine_open_files              (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Singly-Linked-Lists.html#GSList"><span class="type">GSList</span></a> *filenames</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> overwrite_channels</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> create_channels</code></em>);</pre>
-<p>
-Opens audio files and modifies or creates new channels if wished.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>machine</code></em> :</span></p></td>
-<td>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>filenames</code></em> :</span></p></td>
-<td>the filenames</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>overwrite_channels</code></em> :</span></p></td>
-<td>reset channels</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>create_channels</code></em> :</span></p></td>
-<td>instantiate new channels</td>
-</tr>
-</tbody>
-</table></div>
-<p class="since">Since 0.4</p>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-machine-set-run"></a><h3>ags_machine_set_run ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                ags_machine_set_run                 (<em class="parameter"><code><a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> run</code></em>);</pre>
-<p>
-Start/stop playback of <em class="parameter"><code>machine</code></em>.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>machine</code></em> :</span></p></td>
-<td>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>run</code></em> :</span></p></td>
-<td>if <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> playback is started, otherwise stopped</td>
-</tr>
-</tbody>
-</table></div>
-<p class="since">Since 0.4</p>
 </div>
 </div>
 <div class="refsect1">
 <a name="AgsMachine.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
-<a name="AgsMachine--audio"></a><h3>The <code class="literal">"audio"</code> property</h3>
-<pre class="programlisting">  "audio"                    <a class="link" href="AgsAudio.html" title="AgsAudio"><span class="type">AgsAudio</span></a>*             : Read / Write</pre>
-<p>The audio it is assigned to.</p>
+<a name="AgsMachine--audio"></a><h3>The <code class="literal">“audio”</code> property</h3>
+<pre class="programlisting">  “audio”                    <a class="link" href="AgsAudio.html" title="AgsAudio"><span class="type">AgsAudio</span></a> *</pre>
+<p>The assigned <a class="link" href="AgsAudio.html" title="AgsAudio"><span class="type">AgsAudio</span></a> to visualize.</p>
+<p>Flags: Read / Write</p>
 <p class="since">Since 0.3</p>
 </div>
 </div>
 <div class="refsect1">
 <a name="AgsMachine.signal-details"></a><h2>Signal Details</h2>
 <div class="refsect2">
-<a name="AgsMachine-add-default-recalls"></a><h3>The <code class="literal">"add-default-recalls"</code> signal</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+<a name="AgsMachine-find-port"></a><h3>The <code class="literal">“find-port”</code> signal</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="gpointer"><span class="returnvalue">gpointer</span></GTKDOCLINK>
+user_function (<a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine,
+               <GTKDOCLINK HREF="gpointer"><span class="type">gpointer</span></GTKDOCLINK>    user_data)</pre>
+<p>The ::find-port as recall should be mapped</p>
+<div class="refsect3">
+<a name="id-1.11.38.13.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>machine</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> to resize
+Returns: a <GTKDOCLINK HREF="GList"><span class="type">GList</span></GTKDOCLINK> with associated ports</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <GTKDOCLINK HREF="G-SIGNAL-RUN-LAST:CAPS">Run Last</GTKDOCLINK></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AgsMachine-map-recall"></a><h3>The <code class="literal">“map-recall”</code> signal</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+user_function (<a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a> *machine,
+               <GTKDOCLINK HREF="gpointer"><span class="type">gpointer</span></GTKDOCLINK>    user_data)</pre>
+<p>The ::map-recall should be used to add the machine's default recall.</p>
+<div class="refsect3">
+<a name="id-1.11.38.13.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>machine</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AgsMachine.html" title="AgsMachine"><span class="type">AgsMachine</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <GTKDOCLINK HREF="G-SIGNAL-RUN-LAST:CAPS">Run Last</GTKDOCLINK></p>
 </div>
 </div>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.21</div>
 </body>
 </html>

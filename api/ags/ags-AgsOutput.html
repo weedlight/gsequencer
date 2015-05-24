@@ -2,154 +2,172 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>AgsOutput</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsOutput</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
-<link rel="up" href="process-tree.html" title="audio processing tree">
+<link rel="up" href="audio.html" title="Part VIII. The audio layer">
 <link rel="prev" href="ags-AgsNote.html" title="AgsNote">
 <link rel="next" href="ags-AgsPattern.html" title="AgsPattern">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
-<tr valign="middle">
-<td><a accesskey="p" href="ags-AgsNote.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="process-tree.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<th width="100%" align="center">Advanced Gtk+ Sequencer Reference Manual</th>
-<td><a accesskey="n" href="ags-AgsPattern.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-</tr>
-<tr><td colspan="5" class="shortcuts">
-<a href="#ags-AgsOutput.synopsis" class="shortcut">Top</a>
-                   | 
-                  <a href="#ags-AgsOutput.description" class="shortcut">Description</a>
-</td></tr>
-</table>
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ags-AgsOutput.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="audio.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ags-AgsNote.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ags-AgsPattern.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
 <div class="refentry">
 <a name="ags-AgsOutput"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="ags-AgsOutput.top_of_page"></a>AgsOutput</span></h2>
-<p>AgsOutput — Output of <a class="link" href="ags-AgsAudio.html#AgsAudio" title="struct AgsAudio"><span class="type">AgsAudio</span></a></p>
+<p>AgsOutput — Output of <span class="type">AgsAudio</span></p>
 </td>
-<td valign="top" align="right"></td>
+<td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
-<a name="ags-AgsOutput.synopsis"></a><h2>Synopsis</h2>
-<pre class="synopsis">
-#include &lt;ags/audio/ags_output.h&gt;
-
-struct              <a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput">AgsOutput</a>;
-struct              <a class="link" href="ags-AgsOutput.html#AgsOutputClass" title="struct AgsOutputClass">AgsOutputClass</a>;
-<a class="link" href="ags-AgsRecycling.html#AgsRecycling" title="struct AgsRecycling"><span class="returnvalue">AgsRecycling</span></a> *      <a class="link" href="ags-AgsOutput.html#ags-output-find-first-input-recycling" title="ags_output_find_first_input_recycling ()">ags_output_find_first_input_recycling</a>
-                                                        (<em class="parameter"><code><a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="type">AgsOutput</span></a> *output</code></em>);
-<a class="link" href="ags-AgsRecycling.html#AgsRecycling" title="struct AgsRecycling"><span class="returnvalue">AgsRecycling</span></a> *      <a class="link" href="ags-AgsOutput.html#ags-output-find-last-input-recycling" title="ags_output_find_last_input_recycling ()">ags_output_find_last_input_recycling</a>
-                                                        (<em class="parameter"><code><a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="type">AgsOutput</span></a> *output</code></em>);
-<a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="returnvalue">AgsOutput</span></a> *         <a class="link" href="ags-AgsOutput.html#ags-output-new" title="ags_output_new ()">ags_output_new</a>                      (<em class="parameter"><code><GTKDOCLINK HREF="GObject"><span class="type">GObject</span></GTKDOCLINK> *audio</code></em>);
+<div class="refsect1">
+<a name="ags-AgsOutput.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AgsRecycling</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsOutput.html#ags-output-find-first-input-recycling" title="ags_output_find_first_input_recycling ()">ags_output_find_first_input_recycling</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AgsRecycling</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsOutput.html#ags-output-find-last-input-recycling" title="ags_output_find_last_input_recycling ()">ags_output_find_last_input_recycling</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AgsOutput</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsOutput.html#ags-output-new" title="ags_output_new ()">ags_output_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsOutput.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;ags/audio/ags_output.h&gt;
 </pre>
 </div>
 <div class="refsect1">
 <a name="ags-AgsOutput.description"></a><h2>Description</h2>
-<p>
-<a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="type">AgsOutput</span></a> represents an output channel of <a class="link" href="ags-AgsAudio.html#AgsAudio" title="struct AgsAudio"><span class="type">AgsAudio</span></a>.
-</p>
+<p><span class="type">AgsOutput</span> represents an output channel of <span class="type">AgsAudio</span>.</p>
 </div>
 <div class="refsect1">
-<a name="ags-AgsOutput.details"></a><h2>Details</h2>
+<a name="ags-AgsOutput.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
-<a name="AgsOutput"></a><h3>struct AgsOutput</h3>
-<pre class="programlisting">struct AgsOutput {
-  AgsChannel channel;
-};
-</pre>
-</div>
-<hr>
-<div class="refsect2">
-<a name="AgsOutputClass"></a><h3>struct AgsOutputClass</h3>
-<pre class="programlisting">struct AgsOutputClass {
-  AgsChannelClass channel;
-};
-</pre>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-output-find-first-input-recycling"></a><h3>ags_output_find_first_input_recycling ()</h3>
-<pre class="programlisting"><a class="link" href="ags-AgsRecycling.html#AgsRecycling" title="struct AgsRecycling"><span class="returnvalue">AgsRecycling</span></a> *      ags_output_find_first_input_recycling
-                                                        (<em class="parameter"><code><a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="type">AgsOutput</span></a> *output</code></em>);</pre>
-<p>
-Retrieve first input recycling.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>output</code></em> :</span></p></td>
-<td>an <a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="type">AgsOutput</span></a>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the first <a class="link" href="ags-AgsRecycling.html#AgsRecycling" title="struct AgsRecycling"><span class="type">AgsRecycling</span></a> of <a class="link" href="ags-AgsAudio.html#AgsAudio" title="struct AgsAudio"><span class="type">AgsAudio</span></a>
-</td>
-</tr>
-</tbody>
+<a name="ags-output-find-first-input-recycling"></a><h3>ags_output_find_first_input_recycling ()</h3>
+<pre class="programlisting"><span class="returnvalue">AgsRecycling</span> *
+ags_output_find_first_input_recycling (<em class="parameter"><code><span class="type">AgsOutput</span> *output</code></em>);</pre>
+<p>Retrieve first input recycling.</p>
+<div class="refsect3">
+<a name="id-1.10.14.6.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>output</p></td>
+<td class="parameter_description"><p>an <span class="type">AgsOutput</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
 </table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.14.6.2.6"></a><h4>Returns</h4>
+<p> the first <span class="type">AgsRecycling</span> of <span class="type">AgsAudio</span></p>
+<p></p>
+</div>
 <p class="since">Since 0.4</p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="ags-output-find-last-input-recycling"></a><h3>ags_output_find_last_input_recycling ()</h3>
-<pre class="programlisting"><a class="link" href="ags-AgsRecycling.html#AgsRecycling" title="struct AgsRecycling"><span class="returnvalue">AgsRecycling</span></a> *      ags_output_find_last_input_recycling
-                                                        (<em class="parameter"><code><a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="type">AgsOutput</span></a> *output</code></em>);</pre>
-<p>
-Retrieve last input recycling.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>output</code></em> :</span></p></td>
-<td>an <a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="type">AgsOutput</span></a>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the last <a class="link" href="ags-AgsRecycling.html#AgsRecycling" title="struct AgsRecycling"><span class="type">AgsRecycling</span></a> of <a class="link" href="ags-AgsAudio.html#AgsAudio" title="struct AgsAudio"><span class="type">AgsAudio</span></a>
-</td>
-</tr>
-</tbody>
+<a name="ags-output-find-last-input-recycling"></a><h3>ags_output_find_last_input_recycling ()</h3>
+<pre class="programlisting"><span class="returnvalue">AgsRecycling</span> *
+ags_output_find_last_input_recycling (<em class="parameter"><code><span class="type">AgsOutput</span> *output</code></em>);</pre>
+<p>Retrieve last input recycling.</p>
+<div class="refsect3">
+<a name="id-1.10.14.6.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>output</p></td>
+<td class="parameter_description"><p>an <span class="type">AgsOutput</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
 </table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.14.6.3.6"></a><h4>Returns</h4>
+<p> the last <span class="type">AgsRecycling</span> of <span class="type">AgsAudio</span></p>
+<p></p>
+</div>
 <p class="since">Since 0.4</p>
 </div>
 <hr>
 <div class="refsect2">
-<a name="ags-output-new"></a><h3>ags_output_new ()</h3>
-<pre class="programlisting"><a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="returnvalue">AgsOutput</span></a> *         ags_output_new                      (<em class="parameter"><code><GTKDOCLINK HREF="GObject"><span class="type">GObject</span></GTKDOCLINK> *audio</code></em>);</pre>
-<p>
-Creates an <a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="type">AgsOutput</span></a>, linking tree to <em class="parameter"><code>audio</code></em>.
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>audio</code></em> :</span></p></td>
-<td>the <a class="link" href="ags-AgsAudio.html#AgsAudio" title="struct AgsAudio"><span class="type">AgsAudio</span></a>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a new <a class="link" href="ags-AgsOutput.html#AgsOutput" title="struct AgsOutput"><span class="type">AgsOutput</span></a>
-</td>
-</tr>
-</tbody>
+<a name="ags-output-new"></a><h3>ags_output_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">AgsOutput</span> *
+ags_output_new (<em class="parameter"><code><a href="../gobject/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *audio</code></em>);</pre>
+<p>Creates an <span class="type">AgsOutput</span>, linking tree to <em class="parameter"><code>audio</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.10.14.6.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>audio</p></td>
+<td class="parameter_description"><p>the <span class="type">AgsAudio</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
 </table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.14.6.4.6"></a><h4>Returns</h4>
+<p> a new <span class="type">AgsOutput</span></p>
+<p></p>
+</div>
 <p class="since">Since 0.3</p>
 </div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsOutput.other_details"></a><h2>Types and Values</h2>
 </div>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.21</div>
 </body>
 </html>

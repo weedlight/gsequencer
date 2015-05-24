@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsAutomation</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
+<link rel="up" href="audio.html" title="Part VIII. The audio layer">
+<link rel="prev" href="ags-AgsAudioSignal.html" title="AgsAudioSignal">
+<link rel="next" href="ags-AgsChannel.html" title="AgsChannel">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ags-AgsAutomation.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="audio.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ags-AgsAudioSignal.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ags-AgsChannel.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ags-AgsAutomation"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ags-AgsAutomation.top_of_page"></a>AgsAutomation</span></h2>
+<p>AgsAutomation — Automation class supporting selection and clipboard.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ags-AgsAutomation.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-find-near-timestamp" title="ags_automation_find_near_timestamp ()">ags_automation_find_near_timestamp</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-add-acceleration" title="ags_automation_add_acceleration ()">ags_automation_add_acceleration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-remove-acceleration-at-position" title="ags_automation_remove_acceleration_at_position ()">ags_automation_remove_acceleration_at_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-get-selection" title="ags_automation_get_selection ()">ags_automation_get_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-is-acceleration-selected" title="ags_automation_is_acceleration_selected ()">ags_automation_is_acceleration_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AgsAcceleration</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-find-point" title="ags_automation_find_point ()">ags_automation_find_point</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-find-region" title="ags_automation_find_region ()">ags_automation_find_region</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-free-selection" title="ags_automation_free_selection ()">ags_automation_free_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-add-point-to-selection" title="ags_automation_add_point_to_selection ()">ags_automation_add_point_to_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-remove-point-from-selection" title="ags_automation_remove_point_from_selection ()">ags_automation_remove_point_from_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-add-region-to-selection" title="ags_automation_add_region_to_selection ()">ags_automation_add_region_to_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-remove-region-from-selection" title="ags_automation_remove_region_from_selection ()">ags_automation_remove_region_from_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNodePtr</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-copy-selection" title="ags_automation_copy_selection ()">ags_automation_copy_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNodePtr</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-cut-selection" title="ags_automation_cut_selection ()">ags_automation_cut_selection</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-insert-from-clipboard" title="ags_automation_insert_from_clipboard ()">ags_automation_insert_from_clipboard</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-get-current" title="ags_automation_get_current ()">ags_automation_get_current</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AgsAutomation</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsAutomation.html#ags-automation-new" title="ags_automation_new ()">ags_automation_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsAutomation.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;ags/audio/ags_automation.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="ags-AgsAutomation.description"></a><h2>Description</h2>
+<p><span class="type">AgsAutomation</span> acts as a container of <span class="type">AgsNote</span>.</p>
+</div>
+<div class="refsect1">
+<a name="ags-AgsAutomation.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ags-automation-find-near-timestamp"></a><h3>ags_automation_find_near_timestamp ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ags_automation_find_near_timestamp (<em class="parameter"><code><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *automation</code></em>,
+                                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> line</code></em>,
+                                    <em class="parameter"><code><a href="../gobject/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *timestamp</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-add-acceleration"></a><h3>ags_automation_add_acceleration ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ags_automation_add_acceleration (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>,
+                                 <em class="parameter"><code><span class="type">AgsAcceleration</span> *acceleration</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_selection_list</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-remove-acceleration-at-position"></a><h3>ags_automation_remove_acceleration_at_position ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ags_automation_remove_acceleration_at_position
+                               (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-get-selection"></a><h3>ags_automation_get_selection ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ags_automation_get_selection (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-is-acceleration-selected"></a><h3>ags_automation_is_acceleration_selected ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ags_automation_is_acceleration_selected
+                               (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>,
+                                <em class="parameter"><code><span class="type">AgsAcceleration</span> *acceleration</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-find-point"></a><h3>ags_automation_find_point ()</h3>
+<pre class="programlisting"><span class="returnvalue">AgsAcceleration</span> *
+ags_automation_find_point (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_selection_list</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-find-region"></a><h3>ags_automation_find_region ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ags_automation_find_region (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x0</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y0</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x1</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y1</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_selection_list</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-free-selection"></a><h3>ags_automation_free_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ags_automation_free_selection (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-add-point-to-selection"></a><h3>ags_automation_add_point_to_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ags_automation_add_point_to_selection (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>,
+                                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x</code></em>,
+                                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y</code></em>,
+                                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> replace_current_selection</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-remove-point-from-selection"></a><h3>ags_automation_remove_point_from_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ags_automation_remove_point_from_selection
+                               (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-add-region-to-selection"></a><h3>ags_automation_add_region_to_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ags_automation_add_region_to_selection
+                               (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x0</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y0</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x1</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y1</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> replace_current_selection</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-remove-region-from-selection"></a><h3>ags_automation_remove_region_from_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ags_automation_remove_region_from_selection
+                               (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x0</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y0</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x1</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y1</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-copy-selection"></a><h3>ags_automation_copy_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNodePtr</span>
+ags_automation_copy_selection (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-cut-selection"></a><h3>ags_automation_cut_selection ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNodePtr</span>
+ags_automation_cut_selection (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-insert-from-clipboard"></a><h3>ags_automation_insert_from_clipboard ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ags_automation_insert_from_clipboard (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>,
+                                      <em class="parameter"><code><span class="type">xmlNodePtr</span> content</code></em>,
+                                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> reset_x_offset</code></em>,
+                                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> x_offset</code></em>,
+                                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> reset_y_offset</code></em>,
+                                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> y_offset</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-get-current"></a><h3>ags_automation_get_current ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ags_automation_get_current (<em class="parameter"><code><span class="type">AgsAutomation</span> *automation</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-automation-new"></a><h3>ags_automation_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">AgsAutomation</span> *
+ags_automation_new (<em class="parameter"><code><a href="../gobject/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *audio</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> line</code></em>,
+                    <em class="parameter"><code><a href="../gobject/gobject-Type-Information.html#GType"><span class="type">GType</span></a> channel_type</code></em>,
+                    <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *control_name</code></em>);</pre>
+<p>Creates a <span class="type">AgsAutomation</span>.</p>
+<div class="refsect3">
+<a name="id-1.10.8.6.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>line</p></td>
+<td class="parameter_description"><p>the line to apply</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.8.6.18.6"></a><h4>Returns</h4>
+<p> a new <span class="type">AgsAutomation</span></p>
+<p></p>
+</div>
+<p class="since">Since 0.4.2</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsAutomation.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

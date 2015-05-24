@@ -2,34 +2,27 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>AgsPlayPattern</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsPlayPattern</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
-<link rel="up" href="recall.html" title="Recalls - Effect processors">
+<link rel="up" href="audio-recall.html" title="Recalls - Effect processors">
 <link rel="prev" href="AgsPlayNote.html" title="AgsPlayNote">
 <link rel="next" href="AgsPlayRecycling.html" title="AgsPlayRecycling">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
-<tr valign="middle">
-<td><a accesskey="p" href="AgsPlayNote.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="recall.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<th width="100%" align="center">Advanced Gtk+ Sequencer Reference Manual</th>
-<td><a accesskey="n" href="AgsPlayRecycling.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-</tr>
-<tr><td colspan="5" class="shortcuts">
-<a href="#AgsPlayPattern.synopsis" class="shortcut">Top</a>
-                   | 
-                  <a href="#AgsPlayPattern.description" class="shortcut">Description</a>
-                   | 
-                  <a href="#AgsPlayPattern.object-hierarchy" class="shortcut">Object Hierarchy</a>
-                   | 
-                  <a href="#AgsPlayPattern.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
-</td></tr>
-</table>
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AgsPlayPattern.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AgsPlayPattern.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="audio-recall.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AgsPlayNote.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AgsPlayRecycling.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
 <div class="refentry">
 <a name="AgsPlayPattern"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
@@ -37,63 +30,49 @@
 <h2><span class="refentrytitle"><a name="AgsPlayPattern.top_of_page"></a>AgsPlayPattern</span></h2>
 <p>AgsPlayPattern</p>
 </td>
-<td valign="top" align="right"></td>
+<td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
-<a name="AgsPlayPattern.synopsis"></a><h2>Synopsis</h2>
-<pre class="synopsis">struct              <a class="link" href="AgsPlayPattern.html#AgsPlayPattern-struct" title="struct AgsPlayPattern">AgsPlayPattern</a>;
-struct              <a class="link" href="AgsPlayPattern.html#AgsPlayPatternClass" title="struct AgsPlayPatternClass">AgsPlayPatternClass</a>;
-<span class="returnvalue">void</span>                <a class="link" href="AgsPlayPattern.html#ags-play-pattern-connect" title="ags_play_pattern_connect ()">ags_play_pattern_connect</a>            (<em class="parameter"><code><a class="link" href="AgsPlayPattern.html" title="AgsPlayPattern"><span class="type">AgsPlayPattern</span></a> *play_pattern</code></em>);
-</pre>
+<div class="refsect1">
+<a name="AgsPlayPattern.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsPlayPattern.html#ags-play-pattern-connect" title="ags_play_pattern_connect ()">ags_play_pattern_connect</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
 </div>
 <div class="refsect1">
 <a name="AgsPlayPattern.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="synopsis">
-  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
-   +----<a class="link" href="AgsRecall.html" title="AgsRecall">AgsRecall</a>
-         +----AgsPlayPattern
+<pre class="screen">    <GTKDOCLINK HREF="GObject">GObject</GTKDOCLINK>
+    <span class="lineart">╰──</span> <a class="link" href="AgsRecall.html" title="AgsRecall">AgsRecall</a>
+        <span class="lineart">╰──</span> AgsPlayPattern
 </pre>
-</div>
-<div class="refsect1">
-<a name="AgsPlayPattern.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
-<p>
-AgsPlayPattern implements
- AgsConnectable,  <a class="link" href="AgsPackable.html" title="AgsPackable">AgsPackable</a>,  <a class="link" href="AgsDynamicConnectable.html" title="AgsDynamicConnectable">AgsDynamicConnectable</a> and  <a class="link" href="AgsPlugin.html" title="AgsPlugin">AgsPlugin</a>.</p>
 </div>
 <div class="refsect1">
 <a name="AgsPlayPattern.description"></a><h2>Description</h2>
-<p>
-</p>
 </div>
 <div class="refsect1">
-<a name="AgsPlayPattern.details"></a><h2>Details</h2>
+<a name="AgsPlayPattern.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
-<a name="AgsPlayPattern-struct"></a><h3>struct AgsPlayPattern</h3>
-<pre class="programlisting">struct AgsPlayPattern;</pre>
-<p>
-</p>
+<a name="ags-play-pattern-connect"></a><h3>ags_play_pattern_connect ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_play_pattern_connect (<em class="parameter"><code><a class="link" href="AgsPlayPattern.html" title="AgsPlayPattern"><span class="type">AgsPlayPattern</span></a> *play_pattern</code></em>);</pre>
 </div>
-<hr>
-<div class="refsect2">
-<a name="AgsPlayPatternClass"></a><h3>struct AgsPlayPatternClass</h3>
-<pre class="programlisting">struct AgsPlayPatternClass {
-  AgsRecallClass recall;
-};
-</pre>
-<p>
-</p>
 </div>
-<hr>
-<div class="refsect2">
-<a name="ags-play-pattern-connect"></a><h3>ags_play_pattern_connect ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                ags_play_pattern_connect            (<em class="parameter"><code><a class="link" href="AgsPlayPattern.html" title="AgsPlayPattern"><span class="type">AgsPlayPattern</span></a> *play_pattern</code></em>);</pre>
-<p>
-</p>
-</div>
+<div class="refsect1">
+<a name="AgsPlayPattern.other_details"></a><h2>Types and Values</h2>
 </div>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.21</div>
 </body>
 </html>

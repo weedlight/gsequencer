@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsMidiParser</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
+<link rel="up" href="audio-midi.html" title="Audio midi - midi related objects">
+<link rel="prev" href="audio-midi.html" title="Audio midi - midi related objects">
+<link rel="next" href="audio-file.html" title="Audio files - Reading/Writing audio data from disk">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ags-AgsMidiParser.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="audio-midi.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="audio-midi.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="audio-file.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="ags-AgsMidiParser"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="ags-AgsMidiParser.top_of_page"></a>AgsMidiParser</span></h2>
+<p>AgsMidiParser — the menu bar.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="ags-AgsMidiParser.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint16</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-read-gint16" title="ags_midi_parser_read_gint16 ()">ags_midi_parser_read_gint16</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-read-gint24" title="ags_midi_parser_read_gint24 ()">ags_midi_parser_read_gint24</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-read-gint32" title="ags_midi_parser_read_gint32 ()">ags_midi_parser_read_gint32</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">long</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-read-varlength" title="ags_midi_parser_read_varlength ()">ags_midi_parser_read_varlength</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-read-text" title="ags_midi_parser_read_text ()">ags_midi_parser_read_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-ticks-to-sec" title="ags_midi_parser_ticks_to_sec ()">ags_midi_parser_ticks_to_sec</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-midi-getc" title="ags_midi_parser_midi_getc ()">ags_midi_parser_midi_getc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-on-error" title="ags_midi_parser_on_error ()">ags_midi_parser_on_error</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlDoc</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-parse-full" title="ags_midi_parser_parse_full ()">ags_midi_parser_parse_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-parse-header" title="ags_midi_parser_parse_header ()">ags_midi_parser_parse_header</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-parse-track" title="ags_midi_parser_parse_track ()">ags_midi_parser_parse_track</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-channel-message" title="ags_midi_parser_channel_message ()">ags_midi_parser_channel_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-key-on" title="ags_midi_parser_key_on ()">ags_midi_parser_key_on</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-key-off" title="ags_midi_parser_key_off ()">ags_midi_parser_key_off</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-key-pressure" title="ags_midi_parser_key_pressure ()">ags_midi_parser_key_pressure</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-change-parameter" title="ags_midi_parser_change_parameter ()">ags_midi_parser_change_parameter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-change-pitch-bend" title="ags_midi_parser_change_pitch_bend ()">ags_midi_parser_change_pitch_bend</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-change-program" title="ags_midi_parser_change_program ()">ags_midi_parser_change_program</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-change-channel-pressure" title="ags_midi_parser_change_channel_pressure ()">ags_midi_parser_change_channel_pressure</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-not-defined" title="ags_midi_parser_not_defined ()">ags_midi_parser_not_defined</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-sysex" title="ags_midi_parser_sysex ()">ags_midi_parser_sysex</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-system-common" title="ags_midi_parser_system_common ()">ags_midi_parser_system_common</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-meta-event" title="ags_midi_parser_meta_event ()">ags_midi_parser_meta_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-sequence-number" title="ags_midi_parser_sequence_number ()">ags_midi_parser_sequence_number</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-end-of-track" title="ags_midi_parser_end_of_track ()">ags_midi_parser_end_of_track</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-smpte" title="ags_midi_parser_smpte ()">ags_midi_parser_smpte</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-tempo" title="ags_midi_parser_tempo ()">ags_midi_parser_tempo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-time-signature" title="ags_midi_parser_time_signature ()">ags_midi_parser_time_signature</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-key-signature" title="ags_midi_parser_key_signature ()">ags_midi_parser_key_signature</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-sequencer-meta-event" title="ags_midi_parser_sequencer_meta_event ()">ags_midi_parser_sequencer_meta_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-meta-misc" title="ags_midi_parser_meta_misc ()">ags_midi_parser_meta_misc</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">xmlNode</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-text-event" title="ags_midi_parser_text_event ()">ags_midi_parser_text_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AgsMidiParser</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsMidiParser.html#ags-midi-parser-new" title="ags_midi_parser_new ()">ags_midi_parser_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsMidiParser.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ags-AgsMidiParser.html#AGS-MIDI-PARSER-MTHD:CAPS" title="AGS_MIDI_PARSER_MTHD">AGS_MIDI_PARSER_MTHD</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="ags-AgsMidiParser.html#AGS-MIDI-PARSER-MTCK:CAPS" title="AGS_MIDI_PARSER_MTCK">AGS_MIDI_PARSER_MTCK</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="ags-AgsMidiParser.html#AgsMidiParserFlags" title="enum AgsMidiParserFlags">AgsMidiParserFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="ags-AgsMidiParser.html#AgsMidiChunkFlags" title="enum AgsMidiChunkFlags">AgsMidiChunkFlags</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsMidiParser.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;ags/X/ags_midi_parser.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="ags-AgsMidiParser.description"></a><h2>Description</h2>
+<p><span class="type">AgsMidiParser</span> reads your midi parsers.</p>
+</div>
+<div class="refsect1">
+<a name="ags-AgsMidiParser.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ags-midi-parser-read-gint16"></a><h3>ags_midi_parser_read_gint16 ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint16</span>
+ags_midi_parser_read_gint16 (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-read-gint24"></a><h3>ags_midi_parser_read_gint24 ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+ags_midi_parser_read_gint24 (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-read-gint32"></a><h3>ags_midi_parser_read_gint32 ()</h3>
+<pre class="programlisting"><span class="returnvalue">gint32</span>
+ags_midi_parser_read_gint32 (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-read-varlength"></a><h3>ags_midi_parser_read_varlength ()</h3>
+<pre class="programlisting"><span class="returnvalue">long</span>
+ags_midi_parser_read_varlength (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-read-text"></a><h3>ags_midi_parser_read_text ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+ags_midi_parser_read_text (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> length</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-ticks-to-sec"></a><h3>ags_midi_parser_ticks_to_sec ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gdouble"><span class="returnvalue">gdouble</span></a>
+ags_midi_parser_ticks_to_sec (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ticks</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> division</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> tempo</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-midi-getc"></a><h3>ags_midi_parser_midi_getc ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+ags_midi_parser_midi_getc (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-on-error"></a><h3>ags_midi_parser_on_error ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ags_midi_parser_on_error (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                          <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-parse-full"></a><h3>ags_midi_parser_parse_full ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlDoc</span> *
+ags_midi_parser_parse_full (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-parse-header"></a><h3>ags_midi_parser_parse_header ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_parse_header (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-parse-track"></a><h3>ags_midi_parser_parse_track ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_parse_track (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-channel-message"></a><h3>ags_midi_parser_channel_message ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_channel_message (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-key-on"></a><h3>ags_midi_parser_key_on ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_key_on (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                        <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-key-off"></a><h3>ags_midi_parser_key_off ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_key_off (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-key-pressure"></a><h3>ags_midi_parser_key_pressure ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_key_pressure (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-change-parameter"></a><h3>ags_midi_parser_change_parameter ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_change_parameter (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                                  <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-change-pitch-bend"></a><h3>ags_midi_parser_change_pitch_bend ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_change_pitch_bend (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                                   <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-change-program"></a><h3>ags_midi_parser_change_program ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_change_program (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-change-channel-pressure"></a><h3>ags_midi_parser_change_channel_pressure ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_change_channel_pressure
+                               (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-not-defined"></a><h3>ags_midi_parser_not_defined ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_not_defined (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                             <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-sysex"></a><h3>ags_midi_parser_sysex ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_sysex (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-system-common"></a><h3>ags_midi_parser_system_common ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_system_common (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-meta-event"></a><h3>ags_midi_parser_meta_event ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_meta_event (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> status</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-sequence-number"></a><h3>ags_midi_parser_sequence_number ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_sequence_number (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> meta_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-end-of-track"></a><h3>ags_midi_parser_end_of_track ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_end_of_track (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> meta_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-smpte"></a><h3>ags_midi_parser_smpte ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_smpte (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> meta_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-tempo"></a><h3>ags_midi_parser_tempo ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_tempo (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                       <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> meta_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-time-signature"></a><h3>ags_midi_parser_time_signature ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_time_signature (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> meta_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-key-signature"></a><h3>ags_midi_parser_key_signature ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_key_signature (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                               <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> meta_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-sequencer-meta-event"></a><h3>ags_midi_parser_sequencer_meta_event ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_sequencer_meta_event (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                                      <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> meta_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-meta-misc"></a><h3>ags_midi_parser_meta_misc ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_meta_misc (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                           <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> meta_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-text-event"></a><h3>ags_midi_parser_text_event ()</h3>
+<pre class="programlisting"><span class="returnvalue">xmlNode</span> *
+ags_midi_parser_text_event (<em class="parameter"><code><span class="type">AgsMidiParser</span> *midi_parser</code></em>,
+                            <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> meta_type</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-midi-parser-new"></a><h3>ags_midi_parser_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">AgsMidiParser</span> *
+ags_midi_parser_new (<em class="parameter"><code><span class="type">FILE</span> *file</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsMidiParser.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AGS-MIDI-PARSER-MTHD:CAPS"></a><h3>AGS_MIDI_PARSER_MTHD</h3>
+<pre class="programlisting">#define AGS_MIDI_PARSER_MTHD "MThd\0"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AGS-MIDI-PARSER-MTCK:CAPS"></a><h3>AGS_MIDI_PARSER_MTCK</h3>
+<pre class="programlisting">#define AGS_MIDI_PARSER_MTCK "MTrk\0"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AgsMidiParserFlags"></a><h3>enum AgsMidiParserFlags</h3>
+<div class="refsect3">
+<a name="id-1.10.43.2.8.4.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MIDI-PARSER-EOF:CAPS"></a>AGS_MIDI_PARSER_EOF</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MIDI-PARSER-EOT:CAPS"></a>AGS_MIDI_PARSER_EOT</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AgsMidiChunkFlags"></a><h3>enum AgsMidiChunkFlags</h3>
+<div class="refsect3">
+<a name="id-1.10.43.2.8.5.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MIDI-CHUNK-HEADER:CAPS"></a>AGS_MIDI_CHUNK_HEADER</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MIDI-CHUNK-TRACK:CAPS"></a>AGS_MIDI_CHUNK_TRACK</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="AGS-MIDI-CHUNK-UNKNOWN:CAPS"></a>AGS_MIDI_CHUNK_UNKNOWN</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

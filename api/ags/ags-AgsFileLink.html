@@ -2,30 +2,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>AgsFileLink</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsFileLink</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
 <link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
-<link rel="up" href="xml-io.html" title="Part VIII. XML Input/Output - Persist project">
-<link rel="prev" href="ags-AgsFileLaunch.html" title="AgsFileLaunch">
+<link rel="up" href="xml-io.html" title="Part IV. XML Input/Output - Persist project">
+<link rel="prev" href="ags-AgsFileIdRef.html" title="AgsFileIdRef">
 <link rel="next" href="ags-AgsFileLookup.html" title="AgsFileLookup">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
-<tr valign="middle">
-<td><a accesskey="p" href="ags-AgsFileLaunch.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
-<td><a accesskey="u" href="xml-io.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
-<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
-<th width="100%" align="center">Advanced Gtk+ Sequencer Reference Manual</th>
-<td><a accesskey="n" href="ags-AgsFileLookup.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
-</tr>
-<tr><td colspan="5" class="shortcuts">
-<a href="#ags-AgsFileLink.synopsis" class="shortcut">Top</a>
-                   | 
-                  <a href="#ags-AgsFileLink.description" class="shortcut">Description</a>
-</td></tr>
-</table>
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#ags-AgsFileLink.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="xml-io.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ags-AgsFileIdRef.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ags-AgsFileLookup.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
 <div class="refentry">
 <a name="ags-AgsFileLink"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
@@ -33,66 +29,55 @@
 <h2><span class="refentrytitle"><a name="ags-AgsFileLink.top_of_page"></a>AgsFileLink</span></h2>
 <p>AgsFileLink — link objects read of file.</p>
 </td>
-<td valign="top" align="right"></td>
+<td class="gallery_image" valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsynopsisdiv">
-<a name="ags-AgsFileLink.synopsis"></a><h2>Synopsis</h2>
-<pre class="synopsis">
-#include &lt;ags/file/ags_file_link.h&gt;
-
-struct              <a class="link" href="ags-AgsFileLink.html#AgsFileLink" title="struct AgsFileLink">AgsFileLink</a>;
-struct              <a class="link" href="ags-AgsFileLink.html#AgsFileLinkClass" title="struct AgsFileLinkClass">AgsFileLinkClass</a>;
-<a class="link" href="ags-AgsFileLink.html#AgsFileLink" title="struct AgsFileLink"><span class="returnvalue">AgsFileLink</span></a> *       <a class="link" href="ags-AgsFileLink.html#ags-file-link-new" title="ags_file_link_new ()">ags_file_link_new</a>                   ();
+<div class="refsect1">
+<a name="ags-AgsFileLink.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody><tr>
+<td class="function_type">
+<span class="returnvalue">AgsFileLink</span> *
+</td>
+<td class="function_name">
+<a class="link" href="ags-AgsFileLink.html#ags-file-link-new" title="ags_file_link_new ()">ags_file_link_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsFileLink.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;ags/file/ags_file_link.h&gt;
 </pre>
 </div>
 <div class="refsect1">
 <a name="ags-AgsFileLink.description"></a><h2>Description</h2>
-<p>
-The <a class="link" href="ags-AgsFileLink.html#AgsFileLink" title="struct AgsFileLink"><span class="type">AgsFileLink</span></a> links read objects of file.
-</p>
+<p>The <span class="type">AgsFileLink</span> links read objects of file.</p>
 </div>
 <div class="refsect1">
-<a name="ags-AgsFileLink.details"></a><h2>Details</h2>
+<a name="ags-AgsFileLink.functions_details"></a><h2>Functions</h2>
 <div class="refsect2">
-<a name="AgsFileLink"></a><h3>struct AgsFileLink</h3>
-<pre class="programlisting">struct AgsFileLink {
-  GObject object;
-
-  gchar *filename;
-  gchar *data;
-  AgsTimestamp *timestamp;
-};
-</pre>
+<a name="ags-file-link-new"></a><h3>ags_file_link_new ()</h3>
+<pre class="programlisting"><span class="returnvalue">AgsFileLink</span> *
+ags_file_link_new ();</pre>
+<p>Creates an <span class="type">AgsFileLink</span></p>
+<div class="refsect3">
+<a name="id-1.6.5.6.2.5"></a><h4>Returns</h4>
+<p> a new <span class="type">AgsFileLink</span></p>
+<p></p>
 </div>
-<hr>
-<div class="refsect2">
-<a name="AgsFileLinkClass"></a><h3>struct AgsFileLinkClass</h3>
-<pre class="programlisting">struct AgsFileLinkClass {
-  GObjectClass object;
-};
-</pre>
-</div>
-<hr>
-<div class="refsect2">
-<a name="ags-file-link-new"></a><h3>ags_file_link_new ()</h3>
-<pre class="programlisting"><a class="link" href="ags-AgsFileLink.html#AgsFileLink" title="struct AgsFileLink"><span class="returnvalue">AgsFileLink</span></a> *       ags_file_link_new                   ();</pre>
-<p>
-Creates an <a class="link" href="ags-AgsFileLink.html#AgsFileLink" title="struct AgsFileLink"><span class="type">AgsFileLink</span></a>
-</p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody><tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a new <a class="link" href="ags-AgsFileLink.html#AgsFileLink" title="struct AgsFileLink"><span class="type">AgsFileLink</span></a>
-</td>
-</tr></tbody>
-</table></div>
 <p class="since">Since 0.4</p>
 </div>
+</div>
+<div class="refsect1">
+<a name="ags-AgsFileLink.other_details"></a><h2>Types and Values</h2>
 </div>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.21</div>
 </body>
 </html>

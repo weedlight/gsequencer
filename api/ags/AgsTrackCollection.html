@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsTrackCollection</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
+<link rel="up" href="import.html" title="Editor - Piano roll and its controls">
+<link rel="prev" href="ags-ags-midi-import-wizard-callbacks.html" title="ags_midi_import_wizard_callbacks">
+<link rel="next" href="AgsTrackCollectionMapper.html" title="AgsTrackCollectionMapper">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AgsTrackCollection.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AgsTrackCollection.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AgsTrackCollection.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="import.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ags-ags-midi-import-wizard-callbacks.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AgsTrackCollectionMapper.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AgsTrackCollection"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AgsTrackCollection.top_of_page"></a>AgsTrackCollection</span></h2>
+<p>AgsTrackCollection — Property of audio, channels or pads in bulk mode.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AgsTrackCollection.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsTrackCollection.html#ags-track-collection-parse" title="ags_track_collection_parse ()">ags_track_collection_parse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsTrackCollection.html#ags-track-collection-add-mapper" title="ags_track_collection_add_mapper ()">ags_track_collection_add_mapper</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AgsTrackCollection.html" title="AgsTrackCollection"><span class="returnvalue">AgsTrackCollection</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsTrackCollection.html#ags-track-collection-new" title="ags_track_collection_new ()">ags_track_collection_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AgsTrackCollection.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><GTKDOCLINK HREF="gpointer"><span class="type">gpointer</span></GTKDOCLINK></td>
+<td class="property_name"><a class="link" href="AgsTrackCollection.html#AgsTrackCollection--midi-document" title="The “midi-document” property">midi-document</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AgsTrackCollection.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <GTKDOCLINK HREF="GObject">GObject</GTKDOCLINK>
+    <span class="lineart">╰──</span> <GTKDOCLINK HREF="GInitiallyUnowned">GInitiallyUnowned</GTKDOCLINK>
+        <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkObject">GtkObject</GTKDOCLINK>
+            <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkWidget">GtkWidget</GTKDOCLINK>
+                <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkContainer">GtkContainer</GTKDOCLINK>
+                    <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkBox">GtkBox</GTKDOCLINK>
+                        <span class="lineart">╰──</span> <GTKDOCLINK HREF="GtkVBox">GtkVBox</GTKDOCLINK>
+                            <span class="lineart">╰──</span> AgsTrackCollection
+</pre>
+</div>
+<div class="refsect1">
+<a name="AgsTrackCollection.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;ags/X/ags_track_collection.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AgsTrackCollection.description"></a><h2>Description</h2>
+<p><a class="link" href="AgsTrackCollection.html" title="AgsTrackCollection"><span class="type">AgsTrackCollection</span></a> is a composite widget to property. A property editor 
+should be packed by a <a class="link" href="AgsPropertyCollectionEditor.html" title="AgsPropertyCollectionEditor"><span class="type">AgsPropertyCollectionEditor</span></a>.</p>
+</div>
+<div class="refsect1">
+<a name="AgsTrackCollection.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ags-track-collection-parse"></a><h3>ags_track_collection_parse ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_track_collection_parse (<em class="parameter"><code><a class="link" href="AgsTrackCollection.html" title="AgsTrackCollection"><span class="type">AgsTrackCollection</span></a> *track_collection</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-track-collection-add-mapper"></a><h3>ags_track_collection_add_mapper ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_track_collection_add_mapper (<em class="parameter"><code><a class="link" href="AgsTrackCollection.html" title="AgsTrackCollection"><span class="type">AgsTrackCollection</span></a> *track_collection</code></em>,
+                                 <em class="parameter"><code><GTKDOCLINK HREF="xmlNode"><span class="type">xmlNode</span></GTKDOCLINK> *track</code></em>,
+                                 <em class="parameter"><code><GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *instrument</code></em>,
+                                 <em class="parameter"><code><GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *sequence</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-track-collection-new"></a><h3>ags_track_collection_new ()</h3>
+<pre class="programlisting"><a class="link" href="AgsTrackCollection.html" title="AgsTrackCollection"><span class="returnvalue">AgsTrackCollection</span></a> *
+ags_track_collection_new (<em class="parameter"><code><GTKDOCLINK HREF="GType"><span class="type">GType</span></GTKDOCLINK> child_type</code></em>,
+                          <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> child_parameter_count</code></em>,
+                          <em class="parameter"><code><GTKDOCLINK HREF="GParameter"><span class="type">GParameter</span></GTKDOCLINK> *child_parameter</code></em>);</pre>
+<p>Creates an <a class="link" href="AgsTrackCollection.html" title="AgsTrackCollection"><span class="type">AgsTrackCollection</span></a></p>
+<div class="refsect3">
+<a name="id-1.11.65.4.8.4.5"></a><h4>Returns</h4>
+<p> a new <a class="link" href="AgsTrackCollection.html" title="AgsTrackCollection"><span class="type">AgsTrackCollection</span></a></p>
+<p></p>
+</div>
+<p class="since">Since 0.4.3</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AgsTrackCollection.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="AgsTrackCollection.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AgsTrackCollection--midi-document"></a><h3>The <code class="literal">“midi-document”</code> property</h3>
+<pre class="programlisting">  “midi-document”            <GTKDOCLINK HREF="gpointer"><span class="type">gpointer</span></GTKDOCLINK></pre>
+<p>The assigned midi document.</p>
+<p>Flags: Read / Write</p>
+<p class="since">Since 0.4.3</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

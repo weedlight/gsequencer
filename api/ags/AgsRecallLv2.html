@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Advanced Gtk+ Sequencer Reference Manual: AgsRecallLv2</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Advanced Gtk+ Sequencer Reference Manual">
+<link rel="up" href="audio.html" title="Part VIII. The audio layer">
+<link rel="prev" href="AgsRecallLadspaRun.html" title="AgsRecallLadspaRun">
+<link rel="next" href="AgsRecallLv2Run.html" title="AgsRecallLv2Run">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AgsRecallLv2.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AgsRecallLv2.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AgsRecallLv2.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="audio.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AgsRecallLadspaRun.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AgsRecallLv2Run.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AgsRecallLv2"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AgsRecallLv2.top_of_page"></a>AgsRecallLv2</span></h2>
+<p>AgsRecallLv2 — The object interfacing with LV2</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AgsRecallLv2.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GList"><span class="returnvalue">GList</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsRecallLv2.html#ags-recall-lv2-load-ports" title="ags_recall_lv2_load_ports ()">ags_recall_lv2_load_ports</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsRecallLv2.html#ags-recall-lv2-short-to-float" title="ags_recall_lv2_short_to_float ()">ags_recall_lv2_short_to_float</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+</td>
+<td class="function_name">
+<a class="link" href="AgsRecallLv2.html#ags-recall-lv2-float-to-short" title="ags_recall_lv2_float_to_short ()">ags_recall_lv2_float_to_short</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<GTKDOCLINK HREF="GList"><span class="returnvalue">GList</span></GTKDOCLINK> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsRecallLv2.html#ags-recall-ladpsa-find" title="ags_recall_ladpsa_find ()">ags_recall_ladpsa_find</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AgsRecallLv2.html" title="AgsRecallLv2"><span class="returnvalue">AgsRecallLv2</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AgsRecallLv2.html#ags-recall-lv2-new" title="ags_recall_lv2_new ()">ags_recall_lv2_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AgsRecallLv2.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *</td>
+<td class="property_name"><a class="link" href="AgsRecallLv2.html#AgsRecallLv2--filename" title="The “filename” property">filename</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><GTKDOCLINK HREF="gulong"><span class="type">gulong</span></GTKDOCLINK></td>
+<td class="property_name"><a class="link" href="AgsRecallLv2.html#AgsRecallLv2--index" title="The “index” property">index</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="AgsTurtle.html" title="AgsTurtle"><span class="type">AgsTurtle</span></a> *</td>
+<td class="property_name"><a class="link" href="AgsRecallLv2.html#AgsRecallLv2--turtle" title="The “turtle” property">turtle</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *</td>
+<td class="property_name"><a class="link" href="AgsRecallLv2.html#AgsRecallLv2--uri" title="The “uri” property">uri</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AgsRecallLv2.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <GTKDOCLINK HREF="GObject">GObject</GTKDOCLINK>
+    <span class="lineart">╰──</span> <a class="link" href="AgsRecall.html" title="AgsRecall">AgsRecall</a>
+        <span class="lineart">╰──</span> <a class="link" href="AgsRecallChannel.html" title="AgsRecallChannel">AgsRecallChannel</a>
+            <span class="lineart">╰──</span> AgsRecallLv2
+</pre>
+</div>
+<div class="refsect1">
+<a name="AgsRecallLv2.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;ags/audio/ags_recall_lv2.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AgsRecallLv2.description"></a><h2>Description</h2>
+<p><a class="link" href="AgsRecallLv2.html" title="AgsRecallLv2"><span class="type">AgsRecallLv2</span></a> provides LV2 support.</p>
+</div>
+<div class="refsect1">
+<a name="AgsRecallLv2.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ags-recall-lv2-load-ports"></a><h3>ags_recall_lv2_load_ports ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GList"><span class="returnvalue">GList</span></GTKDOCLINK> *
+ags_recall_lv2_load_ports (<em class="parameter"><code><a class="link" href="AgsRecallLv2.html" title="AgsRecallLv2"><span class="type">AgsRecallLv2</span></a> *recall_lv2</code></em>);</pre>
+<p>Set up LV2 ports.</p>
+<div class="refsect3">
+<a name="id-1.10.32.8.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>recall_lv2</p></td>
+<td class="parameter_description"><p>an <a class="link" href="AgsRecallLv2.html" title="AgsRecallLv2"><span class="type">AgsRecallLv2</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.32.8.2.6"></a><h4>Returns</h4>
+<p> a <GTKDOCLINK HREF="GList"><span class="type">GList</span></GTKDOCLINK> containing <a class="link" href="AgsPort.html" title="AgsPort"><span class="type">AgsPort</span></a>.</p>
+<p></p>
+</div>
+<p class="since">Since 0.4.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-recall-lv2-short-to-float"></a><h3>ags_recall_lv2_short_to_float ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_recall_lv2_short_to_float (<em class="parameter"><code>signed <GTKDOCLINK HREF="short"><span class="type">short</span></GTKDOCLINK> *buffer</code></em>,
+                               <em class="parameter"><code><GTKDOCLINK HREF="float"><span class="type">float</span></GTKDOCLINK> *destination</code></em>,
+                               <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> buffer_size</code></em>,
+                               <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> lines</code></em>);</pre>
+<p>Convert data type.</p>
+<div class="refsect3">
+<a name="id-1.10.32.8.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>source</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>destination</p></td>
+<td class="parameter_description"><p>destination</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 0.4.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-recall-lv2-float-to-short"></a><h3>ags_recall_lv2_float_to_short ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="void"><span class="returnvalue">void</span></GTKDOCLINK>
+ags_recall_lv2_float_to_short (<em class="parameter"><code><GTKDOCLINK HREF="float"><span class="type">float</span></GTKDOCLINK> *buffer</code></em>,
+                               <em class="parameter"><code>signed <GTKDOCLINK HREF="short"><span class="type">short</span></GTKDOCLINK> *destination</code></em>,
+                               <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> buffer_size</code></em>,
+                               <em class="parameter"><code><GTKDOCLINK HREF="guint"><span class="type">guint</span></GTKDOCLINK> lines</code></em>);</pre>
+<p>Convert data type.</p>
+<div class="refsect3">
+<a name="id-1.10.32.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>source</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>destination</p></td>
+<td class="parameter_description"><p>destination</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer_size</p></td>
+<td class="parameter_description"><p>buffer_size</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since 0.4.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-recall-ladpsa-find"></a><h3>ags_recall_ladpsa_find ()</h3>
+<pre class="programlisting"><GTKDOCLINK HREF="GList"><span class="returnvalue">GList</span></GTKDOCLINK> *
+ags_recall_ladpsa_find (<em class="parameter"><code><GTKDOCLINK HREF="GList"><span class="type">GList</span></GTKDOCLINK> *recall</code></em>,
+                        <em class="parameter"><code><GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *filename</code></em>,
+                        <em class="parameter"><code><GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *uri</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ags-recall-lv2-new"></a><h3>ags_recall_lv2_new ()</h3>
+<pre class="programlisting"><a class="link" href="AgsRecallLv2.html" title="AgsRecallLv2"><span class="returnvalue">AgsRecallLv2</span></a> *
+ags_recall_lv2_new (<em class="parameter"><code><a class="link" href="AgsChannel.html" title="AgsChannel"><span class="type">AgsChannel</span></a> *source</code></em>,
+                    <em class="parameter"><code><a class="link" href="AgsTurtle.html" title="AgsTurtle"><span class="type">AgsTurtle</span></a> *turtle</code></em>,
+                    <em class="parameter"><code><GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *filename</code></em>,
+                    <em class="parameter"><code><GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *uri</code></em>,
+                    <em class="parameter"><code><GTKDOCLINK HREF="uint32-t"><span class="type">uint32_t</span></GTKDOCLINK> index</code></em>);</pre>
+<p>Creates a <a class="link" href="AgsRecallLv2.html" title="AgsRecallLv2"><span class="type">AgsRecallLv2</span></a></p>
+<div class="refsect3">
+<a name="id-1.10.32.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>source</p></td>
+<td class="parameter_description"><p>the source
+<GTKDOCLINK HREF="turtle"><span class="type">turtle</span></GTKDOCLINK>: the .ttl file</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>filename</p></td>
+<td class="parameter_description"><p>the LV2 plugin filename</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>uri's name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>index</p></td>
+<td class="parameter_description"><p>uri's index</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.10.32.8.6.6"></a><h4>Returns</h4>
+<p> a new <a class="link" href="AgsRecallLv2.html" title="AgsRecallLv2"><span class="type">AgsRecallLv2</span></a></p>
+<p></p>
+</div>
+<p class="since">Since 0.4.3</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AgsRecallLv2.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="AgsRecallLv2.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AgsRecallLv2--filename"></a><h3>The <code class="literal">“filename”</code> property</h3>
+<pre class="programlisting">  “filename”                 <GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *</pre>
+<p>The plugins filename.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since 0.4.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AgsRecallLv2--index"></a><h3>The <code class="literal">“index”</code> property</h3>
+<pre class="programlisting">  “index”                    <GTKDOCLINK HREF="gulong"><span class="type">gulong</span></GTKDOCLINK></pre>
+<p>The uri's index.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 65535</p>
+<p class="since">Since 0.4.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AgsRecallLv2--turtle"></a><h3>The <code class="literal">“turtle”</code> property</h3>
+<pre class="programlisting">  “turtle”                   <a class="link" href="AgsTurtle.html" title="AgsTurtle"><span class="type">AgsTurtle</span></a> *</pre>
+<p>The assigned turtle.</p>
+<p>Flags: Read / Write</p>
+<p class="since">Since 0.4.3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AgsRecallLv2--uri"></a><h3>The <code class="literal">“uri”</code> property</h3>
+<pre class="programlisting">  “uri”                      <GTKDOCLINK HREF="gchar"><span class="type">gchar</span></GTKDOCLINK> *</pre>
+<p>The uri's name.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+<p class="since">Since 0.4.3</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>
